@@ -21,17 +21,6 @@
     });
   }
 
-  // Reading progress along the top bar.
-  var bar = document.querySelector('.progress');
-  if (bar) {
-    var onScroll = function () {
-      var max = document.documentElement.scrollHeight - window.innerHeight;
-      bar.style.width = (max > 0 ? Math.min(100, (window.scrollY / max) * 100) : 0) + '%';
-    };
-    window.addEventListener('scroll', onScroll, { passive: true });
-    onScroll();
-  }
-
   // "Today" needle on the calendar ribbon, placed from the reader's own date.
   var now = document.querySelector('.ribbon .now');
   if (now) {
