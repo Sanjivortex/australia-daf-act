@@ -1,0 +1,242 @@
+{
+  "checked": "27 October 2026",
+  "sources": [
+    {
+      "id": "act",
+      "kind": "Primary law",
+      "title": "Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made",
+      "publisher": "Federal Register of Legislation",
+      "date": "Assented to 8 April 2026",
+      "url": "https://www.legislation.gov.au/C2026A00038/asmade/text",
+      "alt": [
+        {
+          "label": "PDF",
+          "url": "https://www.legislation.gov.au/C2026A00038/asmade/2026-04-08/text/original/pdf"
+        }
+      ],
+      "supports": "Assent date; commencement rule (s 2) and the Register's commencement column; definitions of digital token, DAP, TCP, wrapped token and public digital token infrastructure (ss 761GB, 761GC, 761GD, 765E, 9E); constitutionally-covered corporation rule (s 766M); licensee obligations (ss 912BB to 912BH); DAP/TCP Guide, voting policy and communications (ss 1020AN to 1020AR); design and distribution trigger (s 994B); fundraising rules (ss 741A, 741B); exemptions (ss 9 (me), (mf), 765A(1), 766A(3), 768A(2)(ha), 911A(2)(ja), (jb), 911A(4B)); managed investment scheme carve-outs (s 9 (mc), (md)); ministerial powers (ss 767B, 767C, 768B, 768C, 912BH); transitional rules (ss 1730 to 1733)."
+    },
+    {
+      "id": "constitution",
+      "kind": "Primary law",
+      "title": "Commonwealth of Australia Constitution Act (The Constitution), section 51(xx)",
+      "publisher": "Federal Register of Legislation",
+      "date": "Latest compilation",
+      "url": "https://www.legislation.gov.au/C2004Q00685/latest/text",
+      "supports": "Section 51(xx): \"Foreign corporations, and trading or financial corporations formed within the limits of the Commonwealth\". Used to explain the Act's term \"constitutionally-covered corporation\"."
+    },
+    {
+      "id": "aph",
+      "kind": "Parliament",
+      "title": "Corporations Amendment (Digital Assets Framework) Bill 2025: bill homepage and progress",
+      "publisher": "Parliament of Australia",
+      "date": "Bill r7411",
+      "url": "https://www.aph.gov.au/Parliamentary_Business/Bills_Legislation/Bills_Search_Results/Result?bId=r7411",
+      "supports": "Introduced 26 November 2025; passed the House 4 February 2026; introduced in the Senate and referred to the Senate Economics Legislation Committee 5 February 2026; committee report 16 March 2026; finally passed both Houses 1 April 2026; assent 8 April 2026. Also links the Explanatory Memorandum and Bills Digest."
+    },
+    {
+      "id": "treasury",
+      "kind": "Government",
+      "title": "New digital asset laws to unlock innovation and safeguard investment (joint media release)",
+      "publisher": "Treasurer and Minister for Financial Services",
+      "date": "26 November 2025",
+      "url": "https://ministers.treasury.gov.au/ministers/jim-chalmers-2022/media-releases/new-digital-asset-laws-unlock-innovation-and-safeguard",
+      "supports": "Why the law was introduced (client assets held without financial law safeguards; overseas collapses); two new financial products; AFSL core obligations; small-platform exemption described as under $5,000 per customer and under $10 million in yearly transactions."
+    },
+    {
+      "id": "roadmap",
+      "kind": "Regulator (ASIC)",
+      "title": "ASIC's roadmap for digital assets law reform implementation",
+      "publisher": "Australian Securities and Investments Commission",
+      "date": "20 April 2026",
+      "url": "https://www.asic.gov.au/about-asic/news-centre/news-items/asics-roadmap-for-digital-assets-law-reform-implementation",
+      "supports": "18-month implementation timeline; ASIC's plan to consult on asset-holding standards, transactional and settlement standards and financial requirements; indicative topics (holding on trust, segregation, record keeping, reconciliation, withdrawal rights); at the time, stated commencement of 9 April 2027."
+    },
+    {
+      "id": "asicmay",
+      "kind": "Regulator (ASIC)",
+      "title": "Deadline looms for digital asset businesses to apply for a licence",
+      "publisher": "Australian Securities and Investments Commission",
+      "date": "4 May 2026",
+      "url": "https://asic.gov.au/about-asic/news-centre/news-items/deadline-looms-for-digital-asset-businesses-to-apply-for-a-licence",
+      "supports": "INFO 225 no-action position (then due to end 30 June 2026) concerns licensing under existing law; penalties for unlicensed conduct; Act passed 1 April 2026; at the time, stated commencement of 9 April 2027."
+    },
+    {
+      "id": "asicext",
+      "kind": "Regulator (ASIC)",
+      "title": "ASIC extends no-action position for digital asset businesses to 30 September 2026",
+      "publisher": "Australian Securities and Investments Commission",
+      "date": "25 June 2026",
+      "url": "https://www.asic.gov.au/about-asic/news-centre/news-items/asic-extends-no-action-position-for-digital-asset-businesses-to-30-september-2026",
+      "supports": "Extension of the sector-wide INFO 225 no-action position from 30 June 2026 to 30 September 2026, and its expanded scope."
+    },
+    {
+      "id": "mr245",
+      "kind": "Regulator (ASIC)",
+      "title": "26-245MR ASIC consults on implementation of new digital asset laws",
+      "publisher": "Australian Securities and Investments Commission",
+      "date": "15 October 2026",
+      "url": "https://www.asic.gov.au/about-asic/news-centre/find-a-media-release/2026-releases/26-245mr-asic-consults-on-implementation-of-new-digital-asset-laws",
+      "supports": "New laws commence 8 April 2027; CP 392 contents; consultation closes 5pm AEDT 27 November 2026; \"same activity, same risk, same regulatory outcome\"; no-action deadline extended to 30 September 2026; ASIC recorded over 140 digital asset-related applications."
+    },
+    {
+      "id": "cp392",
+      "kind": "Regulator (ASIC)",
+      "title": "Consultation Paper 392 Digital asset law reform implementation: Proposed standards and guidance",
+      "publisher": "Australian Securities and Investments Commission",
+      "date": "15 October 2026",
+      "url": "https://download.asic.gov.au/media/0pqj5lgc/cp392-published-15-october-2026.pdf",
+      "alt": [
+        {
+          "label": "CP 392 landing page",
+          "url": "https://www.asic.gov.au/regulatory-resources/find-a-document/consultations/cp-392-digital-asset-law-reform-implementation-proposed-standards-and-guidance"
+        }
+      ],
+      "supports": "Next steps timeline (feedback by 27 November 2026; final instruments and guidance March 2027; commencement and applications open 8 April 2027; transition window closes 7 October 2027); purpose of the Act (paras 2 to 5); licensing from 8 October 2027 (para 39); related services need licensing (para 41); continue operating if applied by deadline (para 45); proposed new exemptions (para 38); payments reforms and tokenised stored value facilities (paras 6 and 7)."
+    },
+    {
+      "id": "rg000",
+      "kind": "Regulator (ASIC)",
+      "title": "Draft Regulatory Guide 000 Digital asset platforms and tokenised custody platforms (Attachment 1 to CP 392)",
+      "publisher": "Australian Securities and Investments Commission",
+      "date": "October 2026 (draft for consultation)",
+      "url": "https://download.asic.gov.au/media/a3cpo5ds/attachment-1-to-cp392-published-15-october-2026.pdf",
+      "supports": "A DAP or TCP is a financial product separate from assets held through it (RG 000.20 to 000.21); INFO 225 to be updated on public digital token infrastructure (RG 000.22 note); not every tokenisation arrangement is a TCP and native tokenised fund units are generally a managed investment scheme (RG 000.33 note, RG 000.35 note); DAP scope and technology-provider carve-out (RG 000.36 to 000.41); wrapped token treatment (RG 000.48); managed investment scheme interaction (RG 000.49 to 000.53); custodial staking (RG 000.58 to 000.59); markets and CS facilities prevail (RG 000.60 to 000.62); exemptions do not stop a facility being a DAP or TCP, and Table 3 of key exemptions (RG 000.75 to 000.77); TMD needed where a DAP/TCP Guide is required (Section D table)."
+    },
+    {
+      "id": "tokhome",
+      "kind": "Company (Tokeniser)",
+      "title": "Tokeniser: home page and FAQ",
+      "publisher": "Tokeniser Pty Ltd",
+      "date": "Accessed 27 October 2026",
+      "url": "https://tokeniser.com",
+      "supports": "Tokeniser's own description: SaaS for fund administration and investor portals, operating on Redbelly Network; \"Products issued through Tokeniser operate under an Asset Issuer's existing licensing\"; eligibility (identity, KYC, AML, CTF, wholesale and sophisticated investor tests, TMD) programmed into each asset and checked on every transfer."
+    },
+    {
+      "id": "toktech",
+      "kind": "Company (Tokeniser)",
+      "title": "Tokeniser: Our technology",
+      "publisher": "Tokeniser Pty Ltd",
+      "date": "Accessed 27 October 2026",
+      "url": "https://tokeniser.com/technology",
+      "supports": "Tokeniser's statements that Redbelly is designed to meet the three statutory tests for public digital token infrastructure and to sit outside markets, clearing and settlement, and custody licensing; deterministic finality; TMD enforced at point of transfer."
+    },
+    {
+      "id": "tokpf",
+      "kind": "Company (Tokeniser)",
+      "title": "Tokeniser: Protocol finance",
+      "publisher": "Tokeniser Pty Ltd",
+      "date": "Accessed 27 October 2026",
+      "url": "https://tokeniser.com/protocol-finance",
+      "supports": "Tokeniser's view that automated market maker liquidity, lending and settlement sit in an exempt protocol layer, citing the Explanatory Memorandum; its own guardrails, including that a protocol with a controlling foundation, admin key or privileged role needs to evidence its design against s 9E(2)(c)."
+    },
+    {
+      "id": "tokcomp",
+      "kind": "Company (Tokeniser)",
+      "title": "How does Tokeniser handle investor compliance? (Knowledge Hub)",
+      "publisher": "Tokeniser Pty Ltd",
+      "date": "Accessed 27 October 2026",
+      "url": "https://tokeniser.com/resources/knowledge-hub/australia/how-tokeniser-handles-investor-compliance",
+      "supports": "KYC/AML and investor classification before wallet activation; compliance parameters enforced at transfer; checks and rejections recorded on-chain and in a compliance log; fund manager remains responsible for configuration and remains the AML/CTF reporting entity."
+    },
+    {
+      "id": "tokcust",
+      "kind": "Company (Tokeniser)",
+      "title": "What is self-custodial asset administration? (Knowledge Hub)",
+      "publisher": "Tokeniser Pty Ltd",
+      "date": "Accessed 27 October 2026",
+      "url": "https://tokeniser.com/resources/knowledge-hub/platform/what-is-self-custodial-asset-administration",
+      "supports": "Tokeniser says it does not hold the private key (the investor or a designated key manager does) and provides key management and recovery options."
+    },
+    {
+      "id": "tokabout",
+      "kind": "Company (Tokeniser)",
+      "title": "Tokeniser: About us",
+      "publisher": "Tokeniser Pty Ltd",
+      "date": "Accessed 27 October 2026",
+      "url": "https://tokeniser.com/about",
+      "supports": "Tokeniser describes itself as a Redbelly Network project, and lists a division of responsibility in which IQ-EQ provides trust, registry, fund administration, and licence and service."
+    },
+    {
+      "id": "rbtok",
+      "kind": "Company (Redbelly)",
+      "title": "Asset tokenisation on Redbelly Network",
+      "publisher": "Redbelly Network",
+      "date": "Accessed 27 October 2026",
+      "url": "https://redbelly.network/asset-tokenisation",
+      "supports": "Redbelly's statements that eligibility is enforced at the point of trade using verifiable credentials and that AML, CTF and Travel Rule requirements can be applied as needed."
+    },
+    {
+      "id": "rbreceptor",
+      "kind": "Company (Redbelly)",
+      "title": "Receptor (ID protocol), Redbelly Network technical documentation",
+      "publisher": "Redbelly Network",
+      "date": "Accessed 27 October 2026",
+      "url": "https://docs.redbelly.network/pages/receptor/",
+      "supports": "Receptor is Redbelly's native digital identity and verifiable credential protocol; it facilitates network access; issuers who provide network access are accredited by Redbelly; built on the W3C verifiable credential data model."
+    },
+    {
+      "id": "rbelig",
+      "kind": "Company (Redbelly)",
+      "title": "Eligibility Kit overview, Redbelly Network technical documentation",
+      "publisher": "Redbelly Network",
+      "date": "Accessed 27 October 2026",
+      "url": "https://docs.redbelly.network/pages/eligibility-sdk/overview/",
+      "supports": "Toolkit for real-world asset issuers to verify investor eligibility using zero-knowledge proofs without the user revealing sensitive personal data."
+    },
+    {
+      "id": "rbcriteria",
+      "kind": "Company (Redbelly)",
+      "title": "Configure eligibility criteria, Redbelly Network technical documentation",
+      "publisher": "Redbelly Network",
+      "date": "Accessed 27 October 2026",
+      "url": "https://docs.redbelly.network/pages/eligibility-sdk/configure-eligibility-criteria/",
+      "supports": "Eligibility criteria are written as queries over credentials (for example country, age, AML status); supported credential types include AMLCTFCredential and AUSophisticatedWholesaleInvestorCredential; revocation checks should stay on in production."
+    },
+    {
+      "id": "rbindiv",
+      "kind": "Company (Redbelly)",
+      "title": "Individual onboarding overview, Redbelly Network technical documentation",
+      "publisher": "Redbelly Network",
+      "date": "Accessed 27 October 2026",
+      "url": "https://docs.redbelly.network/pages/eligibility-sdk/onboarding/individual/overview/",
+      "supports": "Individual onboarding to gain access to the Redbelly Network includes wallet authentication, KYC verification and on-chain permission setup."
+    },
+    {
+      "id": "rbbiz",
+      "kind": "Company (Redbelly)",
+      "title": "Business onboarding overview, Redbelly Network technical documentation",
+      "publisher": "Redbelly Network",
+      "date": "Accessed 27 October 2026",
+      "url": "https://docs.redbelly.network/pages/eligibility-sdk/onboarding/business/overview/",
+      "supports": "Business onboarding (KYB) is provided by Averer and deploys an on-chain Business Identifier contract that can delegate access to company wallets."
+    },
+    {
+      "id": "rbnodes",
+      "kind": "Company (Redbelly)",
+      "title": "Network nodes, Redbelly Vine developer portal",
+      "publisher": "Redbelly Network",
+      "date": "Accessed 27 October 2026",
+      "url": "https://vine.redbelly.network/nodes/",
+      "supports": "Node operators are described as successful applicants who receive an invitation to run a node."
+    },
+    {
+      "id": "rbreconfig",
+      "kind": "Company (Redbelly)",
+      "title": "Network reconfiguration, Redbelly Vine developer portal",
+      "publisher": "Redbelly Network",
+      "date": "Accessed 27 October 2026",
+      "url": "https://vine.redbelly.network/nodes/reconfiguration/",
+      "supports": "Governor and candidate nodes; governors are rotated; governors must notify Redbelly of planned downtime and may be demoted or replaced under the governance rules."
+    },
+    {
+      "id": "rbrewards",
+      "kind": "Company (Redbelly)",
+      "title": "Rewards and incentives, Redbelly Vine developer portal",
+      "publisher": "Redbelly Network",
+      "date": "Accessed 27 October 2026",
+      "url": "https://vine.redbelly.network/nodes/rewards-and-incentives/",
+      "supports": "Each node operator must stake RBNT to be eligible to participate in Mainnet; Redbelly reserves the right to slash the stake of misbehaving participants."
+    }
+  ]
+}

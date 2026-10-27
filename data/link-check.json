@@ -1,0 +1,194 @@
+{
+  "checkedOn": "27 October 2026",
+  "results": [
+    {
+      "n": 1,
+      "id": "act",
+      "url": "https://www.legislation.gov.au/C2026A00038/asmade/text",
+      "status": "200",
+      "ok": true
+    },
+    {
+      "n": 1,
+      "id": "act",
+      "url": "https://www.legislation.gov.au/C2026A00038/asmade/2026-04-08/text/original/pdf",
+      "status": "200",
+      "ok": true
+    },
+    {
+      "n": 2,
+      "id": "constitution",
+      "url": "https://www.legislation.gov.au/C2004Q00685/latest/text",
+      "status": "200",
+      "ok": true
+    },
+    {
+      "n": 3,
+      "id": "aph",
+      "url": "https://www.aph.gov.au/Parliamentary_Business/Bills_Legislation/Bills_Search_Results/Result?bId=r7411",
+      "status": "200",
+      "ok": true
+    },
+    {
+      "n": 4,
+      "id": "treasury",
+      "url": "https://ministers.treasury.gov.au/ministers/jim-chalmers-2022/media-releases/new-digital-asset-laws-unlock-innovation-and-safeguard",
+      "status": "200",
+      "ok": true
+    },
+    {
+      "n": 5,
+      "id": "roadmap",
+      "url": "https://www.asic.gov.au/about-asic/news-centre/news-items/asics-roadmap-for-digital-assets-law-reform-implementation",
+      "status": "200",
+      "ok": true
+    },
+    {
+      "n": 6,
+      "id": "asicmay",
+      "url": "https://asic.gov.au/about-asic/news-centre/news-items/deadline-looms-for-digital-asset-businesses-to-apply-for-a-licence",
+      "status": "200",
+      "ok": true
+    },
+    {
+      "n": 7,
+      "id": "asicext",
+      "url": "https://www.asic.gov.au/about-asic/news-centre/news-items/asic-extends-no-action-position-for-digital-asset-businesses-to-30-september-2026",
+      "status": "200",
+      "ok": true
+    },
+    {
+      "n": 8,
+      "id": "mr245",
+      "url": "https://www.asic.gov.au/about-asic/news-centre/find-a-media-release/2026-releases/26-245mr-asic-consults-on-implementation-of-new-digital-asset-laws",
+      "status": "200",
+      "ok": true
+    },
+    {
+      "n": 9,
+      "id": "cp392",
+      "url": "https://download.asic.gov.au/media/0pqj5lgc/cp392-published-15-october-2026.pdf",
+      "status": "200",
+      "ok": true
+    },
+    {
+      "n": 9,
+      "id": "cp392",
+      "url": "https://www.asic.gov.au/regulatory-resources/find-a-document/consultations/cp-392-digital-asset-law-reform-implementation-proposed-standards-and-guidance",
+      "status": "200",
+      "ok": true
+    },
+    {
+      "n": 10,
+      "id": "rg000",
+      "url": "https://download.asic.gov.au/media/a3cpo5ds/attachment-1-to-cp392-published-15-october-2026.pdf",
+      "status": "200",
+      "ok": true
+    },
+    {
+      "n": 11,
+      "id": "tokhome",
+      "url": "https://tokeniser.com",
+      "status": "200",
+      "ok": true
+    },
+    {
+      "n": 12,
+      "id": "toktech",
+      "url": "https://tokeniser.com/technology",
+      "status": "200",
+      "ok": true
+    },
+    {
+      "n": 13,
+      "id": "tokpf",
+      "url": "https://tokeniser.com/protocol-finance",
+      "status": "200",
+      "ok": true
+    },
+    {
+      "n": 14,
+      "id": "tokcomp",
+      "url": "https://tokeniser.com/resources/knowledge-hub/australia/how-tokeniser-handles-investor-compliance",
+      "status": "200",
+      "ok": true
+    },
+    {
+      "n": 15,
+      "id": "tokcust",
+      "url": "https://tokeniser.com/resources/knowledge-hub/platform/what-is-self-custodial-asset-administration",
+      "status": "200",
+      "ok": true
+    },
+    {
+      "n": 16,
+      "id": "tokabout",
+      "url": "https://tokeniser.com/about",
+      "status": "200",
+      "ok": true
+    },
+    {
+      "n": 17,
+      "id": "rbtok",
+      "url": "https://redbelly.network/asset-tokenisation",
+      "status": "200",
+      "ok": true
+    },
+    {
+      "n": 18,
+      "id": "rbreceptor",
+      "url": "https://docs.redbelly.network/pages/receptor/",
+      "status": "200",
+      "ok": true
+    },
+    {
+      "n": 19,
+      "id": "rbelig",
+      "url": "https://docs.redbelly.network/pages/eligibility-sdk/overview/",
+      "status": "200",
+      "ok": true
+    },
+    {
+      "n": 20,
+      "id": "rbcriteria",
+      "url": "https://docs.redbelly.network/pages/eligibility-sdk/configure-eligibility-criteria/",
+      "status": "200",
+      "ok": true
+    },
+    {
+      "n": 21,
+      "id": "rbindiv",
+      "url": "https://docs.redbelly.network/pages/eligibility-sdk/onboarding/individual/overview/",
+      "status": "200",
+      "ok": true
+    },
+    {
+      "n": 22,
+      "id": "rbbiz",
+      "url": "https://docs.redbelly.network/pages/eligibility-sdk/onboarding/business/overview/",
+      "status": "200",
+      "ok": true
+    },
+    {
+      "n": 23,
+      "id": "rbnodes",
+      "url": "https://vine.redbelly.network/nodes/",
+      "status": "200",
+      "ok": true
+    },
+    {
+      "n": 24,
+      "id": "rbreconfig",
+      "url": "https://vine.redbelly.network/nodes/reconfiguration/",
+      "status": "200",
+      "ok": true
+    },
+    {
+      "n": 25,
+      "id": "rbrewards",
+      "url": "https://vine.redbelly.network/nodes/rewards-and-incentives/",
+      "status": "200",
+      "ok": true
+    }
+  ]
+}

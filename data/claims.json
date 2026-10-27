@@ -1,0 +1,410 @@
+{
+  "note": "Each entry is a factual claim made in the explainer or summary, the source that supports it, the pinpoint, and the supporting wording as it appears in the source. Checked 27 October 2026.",
+  "claims": [
+    {
+      "topic": "Status",
+      "claim": "The Act is No. 38 of 2026 and received Royal Assent on 8 April 2026.",
+      "src": "act",
+      "pin": "Title page",
+      "quote": "No. 38, 2026 ... [Assented to 8 April 2026]"
+    },
+    {
+      "topic": "Status",
+      "claim": "The Bill was introduced into the House on 26 November 2025.",
+      "src": "aph",
+      "pin": "Progress: House of Representatives",
+      "quote": "Introduced and read a first time 26 Nov 2025"
+    },
+    {
+      "topic": "Status",
+      "claim": "The Bill passed the House on 4 February 2026.",
+      "src": "aph",
+      "pin": "Progress: House of Representatives",
+      "quote": "Third reading agreed to 04 Feb 2026"
+    },
+    {
+      "topic": "Status",
+      "claim": "The Bill was introduced in the Senate and referred to the Senate Economics Legislation Committee on 5 February 2026; the committee reported on 16 March 2026.",
+      "src": "aph",
+      "pin": "Progress: Senate; Notes",
+      "quote": "Introduced and read a first time 05 Feb 2026 ... Referred to Committee (05/02/2026): Senate Economics Legislation Committee; Committee report (16/03/2026)"
+    },
+    {
+      "topic": "Status",
+      "claim": "The Bill passed both Houses on 1 April 2026.",
+      "src": "aph",
+      "pin": "Progress",
+      "quote": "Finally passed both Houses 01 Apr 2026"
+    },
+    {
+      "topic": "Why",
+      "claim": "The Government said businesses could hold unlimited client digital assets without financial law safeguards.",
+      "src": "treasury",
+      "pin": "Media release",
+      "quote": "Currently, businesses can hold unlimited client digital assets without financial law safeguards. Recent collapses overseas have shown the consequences of inadequate oversight."
+    },
+    {
+      "topic": "Why",
+      "claim": "Operators will be subject to core AFSL obligations such as acting efficiently, honestly and fairly.",
+      "src": "treasury",
+      "pin": "Media release",
+      "quote": "These platforms will now need to hold an Australian Financial Services Licence, ensuring they are subject to core obligations including: The requirement to act efficiently, honestly and fairly ..."
+    },
+    {
+      "topic": "Why",
+      "claim": "ASIC describes the Act as addressing regulatory gaps and uncertainty, aiming to foster innovation, competition and growth.",
+      "src": "cp392",
+      "pin": "Para 3",
+      "quote": "The DAF Act addresses regulatory gaps and consequent uncertainty regarding digital assets ... It aims to foster innovation, enhance competition and growth"
+    },
+    {
+      "topic": "Why",
+      "claim": "ASIC's approach follows \"same activity, same risk, same regulatory outcome\".",
+      "src": "mr245",
+      "pin": "Commissioner quote",
+      "quote": "Our approach is based on the principle of \"same activity, same risk, same regulatory outcome\""
+    },
+    {
+      "topic": "Dates",
+      "claim": "The Act commences on the day after the end of the 12-month period beginning on the day of Royal Assent.",
+      "src": "act",
+      "pin": "s 2(1), table item 1",
+      "quote": "The day after the end of the period of 12 months beginning on the day this Act receives the Royal Assent."
+    },
+    {
+      "topic": "Dates",
+      "claim": "The Federal Register's commencement column records 8 April 2027, and that column is not part of the Act.",
+      "src": "act",
+      "pin": "s 2(1) column 3; s 2(2)",
+      "quote": "8 April 2027 ... (2) Any information in column 3 of the table is not part of this Act."
+    },
+    {
+      "topic": "Dates",
+      "claim": "ASIC's latest statement is that the new laws commence on 8 April 2027.",
+      "src": "mr245",
+      "pin": "First paragraph",
+      "quote": "new laws for digital asset platforms and tokenised custody platforms commencing on 8 April 2027"
+    },
+    {
+      "topic": "Dates",
+      "claim": "ASIC's April 2026 roadmap gave 9 April 2027.",
+      "src": "roadmap",
+      "pin": "Second paragraph",
+      "quote": "received Royal Assent on 8 April 2026, and will commence on 9 April 2027"
+    },
+    {
+      "topic": "Dates",
+      "claim": "ASIC's May 2026 news item also gave 9 April 2027.",
+      "src": "asicmay",
+      "pin": "Digital Assets law reform",
+      "quote": "received Royal Assent on 8 April 2026, and will commence on 9 April 2027"
+    },
+    {
+      "topic": "Dates",
+      "claim": "The transition period is the six-month period starting on commencement.",
+      "src": "act",
+      "pin": "s 1730 (inserted by Sch 1 item 98)",
+      "quote": "transition period means the 6-month period starting on commencement."
+    },
+    {
+      "topic": "Dates",
+      "claim": "If a business applies during transition, the new rules do not apply to it until the day after ASIC decides.",
+      "src": "act",
+      "pin": "s 1732(3)",
+      "quote": "the DAP/TCP amendments do not apply in relation to the provision of the service until the day after the day ASIC makes a decision"
+    },
+    {
+      "topic": "Dates",
+      "claim": "Existing operators must apply by 7 October 2027 and can keep operating while ASIC assesses the application.",
+      "src": "cp392",
+      "pin": "Key points, p 6; para 45",
+      "quote": "you must apply for an Australian financial services (AFS) licence or variation by 7 October 2027. You can continue operating while we assess your application."
+    },
+    {
+      "topic": "Dates",
+      "claim": "From 8 October 2027 DAP and TCP operators need a DAP or TCP authorisation unless exempt.",
+      "src": "cp392",
+      "pin": "Para 39",
+      "quote": "from 8 October 2027, DAP and TCP operators (and certain other financial services providers) will require an appropriate DAP or TCP-related licence authorisation ... unless covered by a licensing exemption"
+    },
+    {
+      "topic": "Dates",
+      "claim": "CP 392 submissions close at 5pm AEDT on 27 November 2026.",
+      "src": "mr245",
+      "pin": "Body",
+      "quote": "ASIC's consultation is open until 5pm AEDT 27 November 2026."
+    },
+    {
+      "topic": "Dates",
+      "claim": "ASIC plans to publish final instruments and guidance in March 2027.",
+      "src": "cp392",
+      "pin": "What will happen next, Stage 4",
+      "quote": "Stage 4 March 2027 Publication of instruments and guidance"
+    },
+    {
+      "topic": "Dates",
+      "claim": "ASIC's INFO 225 no-action deadline was extended from 30 June 2026 to 30 September 2026.",
+      "src": "asicext",
+      "pin": "Headline and first paragraph",
+      "quote": "following ASIC's extension of its sector-wide no-action position to 30 September 2026"
+    },
+    {
+      "topic": "Dates",
+      "claim": "ASIC published its implementation roadmap on 20 April 2026.",
+      "src": "roadmap",
+      "pin": "Page date",
+      "quote": "Display date: 20 April 2026"
+    },
+    {
+      "topic": "Definitions",
+      "claim": "A digital token is an electronic record that a person can factually control: transfer it, exclude others from transferring it, and demonstrate both.",
+      "src": "act",
+      "pin": "s 761GB(1), (2)",
+      "quote": "(a) transfer the electronic record; and (b) exclude one or more other persons from transferring the electronic record; and (c) demonstrate that the person can do the things in paragraphs (a) and (b)."
+    },
+    {
+      "topic": "Definitions",
+      "claim": "A DAP is a facility under which an operator possesses digital tokens for or on behalf of a client.",
+      "src": "act",
+      "pin": "s 761GC(1), (2)",
+      "quote": "a person (the operator) possesses one or more digital tokens ... for or on behalf of another person"
+    },
+    {
+      "topic": "Definitions",
+      "claim": "A TCP is a facility under which the operator holds a non-money asset and creates a single redeemable token for each asset; a TCP cannot be a DAP.",
+      "src": "act",
+      "pin": "s 761GD(1); s 761GC(4)",
+      "quote": "identifies one or more assets other than money ... the operator creates a single digital token ... confers a right to redeem, or direct the delivery of, the underlying asset"
+    },
+    {
+      "topic": "Definitions",
+      "claim": "Public digital token infrastructure must meet three protocol tests, and regulations can switch the test off or prescribe infrastructure.",
+      "src": "act",
+      "pin": "s 9E(2), (3)",
+      "quote": "(a) ... open source and publicly accessible standards ... in a non-discretionary manner; (b) ... permit any person to contribute ...; (c) ... not reliant on any participant having a role so critical ...; (d) no regulations are made ..."
+    },
+    {
+      "topic": "Definitions",
+      "claim": "For a wrapped token, the redemption right is disregarded when deciding whether it is a financial product.",
+      "src": "act",
+      "pin": "s 765E(2)",
+      "quote": "Disregard the redemption right when working out whether the wrapped token is ... a financial product."
+    },
+    {
+      "topic": "Licensing",
+      "claim": "DAP and TCP services must be provided by a constitutionally-covered corporation.",
+      "src": "act",
+      "pin": "s 766M; s 9 definition",
+      "quote": "the person is not a constitutionally-covered corporation ... This section is a civil penalty provision"
+    },
+    {
+      "topic": "Licensing",
+      "claim": "A constitutionally-covered corporation is broadly a trading, financial or foreign corporation.",
+      "src": "constitution",
+      "pin": "s 51(xx); Act s 9 definition",
+      "quote": "Foreign corporations, and trading or financial corporations formed within the limits of the Commonwealth"
+    },
+    {
+      "topic": "Licensing",
+      "claim": "The voting policy and DAP/TCP Guide are required before a platform is issued to a retail client; communications about underlying assets must be passed on when a client asks.",
+      "src": "act",
+      "pin": "ss 1020AN(1), 1020AP(1), 1020AR(1)",
+      "quote": "before issuing a digital asset platform or tokenised custody platform to a person as a retail client ... ensure that there is a policy (the voting policy) ... must, on request, ensure the client is given a copy of such communications"
+    },
+    {
+      "topic": "Licensing",
+      "claim": "Related services (dealing other than issuing, advice) also need licensing.",
+      "src": "cp392",
+      "pin": "Para 41",
+      "quote": "Related financial services will also require an AFS licence (e.g. to deal in other than issue, or provide advice about DAPs and TCPs)."
+    },
+    {
+      "topic": "Licensing",
+      "claim": "Licensees must comply with asset-holding and transactional and settlement standards and have compliant platform rules.",
+      "src": "act",
+      "pin": "ss 912BB, 912BC",
+      "quote": "The licensee must comply with the following standards ... The licensee must have platform rules for the platform that comply with subsection 912BG(1)."
+    },
+    {
+      "topic": "Licensing",
+      "claim": "Platform rules must include transparent and non-discriminatory eligibility criteria.",
+      "src": "act",
+      "pin": "s 912BG(1)(a)",
+      "quote": "transparent and non-discriminatory eligibility criteria for identifying who can become a client under the platform"
+    },
+    {
+      "topic": "Licensing",
+      "claim": "A DAP/TCP Guide must be given before issuing a platform to a retail client.",
+      "src": "act",
+      "pin": "s 1020AN(1)",
+      "quote": "The licensee must, before issuing a digital asset platform or tokenised custody platform to a person as a retail client under the platform, give the person a DAP/TCP Guide"
+    },
+    {
+      "topic": "Licensing",
+      "claim": "An issuer that must prepare a DAP/TCP Guide must also prepare a target market determination.",
+      "src": "rg000",
+      "pin": "Section D table, design and distribution obligations",
+      "quote": "An issuer must prepare a TMD for a DAP or TCP if it is required to prepare a DAP/TCP Guide."
+    },
+    {
+      "topic": "Exemptions",
+      "claim": "Low-value DAP exemption: no financial products held, transactions not over $10 million in 12 months, client entry values not over $5,000, and a notice lodged with ASIC.",
+      "src": "act",
+      "pin": "s 911A(2)(ja)",
+      "quote": "(ii) the total value of transactions in the last 12 months through all relevant platforms does not exceed $10 million; and (iii) ... does not exceed $5,000; and (iv) the person has lodged with ASIC, in the prescribed form, notice"
+    },
+    {
+      "topic": "Exemptions",
+      "claim": "Regulations can raise the exemption amounts; ASIC says the tests rise with inflation.",
+      "src": "rg000",
+      "pin": "Table 3; Act s 911A(4B)",
+      "quote": "The client value and transaction value tests increase over time with the rate of inflation."
+    },
+    {
+      "topic": "Exemptions",
+      "claim": "Incidental advice about, or arranging use of, a platform is exempt where it is not a significant part of the business.",
+      "src": "act",
+      "pin": "s 911A(2)(jb)",
+      "quote": "advising another person about the existence of ... arranging for another person to use ... such services are not a significant part of the person's business"
+    },
+    {
+      "topic": "Exemptions",
+      "claim": "Public digital token infrastructure is not a managed investment scheme or financial product; consensus activity is not a financial service or a clearing and settlement facility.",
+      "src": "act",
+      "pin": "s 9 (mf); s 765A(1)(xa), (xb); s 766A(3)(b); s 768A(2)(ha)",
+      "quote": "(mf) public digital token infrastructure; ... (xa) public digital token infrastructure; ... None of the following is the provision of a financial service: ... (b) conducting activities described in paragraph 9E(2)(b)"
+    },
+    {
+      "topic": "Exemptions",
+      "claim": "A pure technology provider that does not possess tokens for clients may not be a DAP.",
+      "src": "rg000",
+      "pin": "RG 000.41(b)",
+      "quote": "only provides technology or infrastructure to a DAP or TCP operator and does not possess digital tokens for or on behalf of the operator's clients"
+    },
+    {
+      "topic": "Other regimes",
+      "claim": "Where a facility is a financial market, that definition prevails over the DAP definition.",
+      "src": "rg000",
+      "pin": "RG 000.60",
+      "quote": "If a facility could meet the definition of both a DAP and a financial market or CS facility, the financial market definition prevails."
+    },
+    {
+      "topic": "Issuers",
+      "claim": "Not every tokenisation arrangement is a TCP.",
+      "src": "rg000",
+      "pin": "Note to RG 000.33",
+      "quote": "A TCP is one way assets may be tokenised. Not every tokenisation arrangement is a TCP."
+    },
+    {
+      "topic": "Issuers",
+      "claim": "Native tokenised units in a unit trust would generally be a managed investment scheme rather than a TCP.",
+      "src": "rg000",
+      "pin": "Note to RG 000.35",
+      "quote": "a 'direct' or 'native' tokenisation arrangement (where each token represents a unit in a unit trust using the blockchain as the primary unit-holder register) would generally be a managed investment scheme rather than a TCP."
+    },
+    {
+      "topic": "Issuers",
+      "claim": "An issuer offering securities through a platform must notify the operator and custodians of key disclosure events.",
+      "src": "act",
+      "pin": "s 741A(1)",
+      "quote": "must promptly notify the operator of the platform, and each custodian for the platform, if any of the following events happens"
+    },
+    {
+      "topic": "Issuers",
+      "claim": "Platform operators and promoters are exempt from Parts 6D.2 and 6D.3 for equitable interests arising from holding securities through the platform.",
+      "src": "act",
+      "pin": "s 741B",
+      "quote": "is exempt from Parts 6D.2 and 6D.3 in relation to an offer to issue equitable rights or interests in securities arising because of an offer to hold ... the securities through the platform."
+    },
+    {
+      "topic": "Watch next",
+      "claim": "ASIC intends to update INFO 225 before finalising its guide in early 2027.",
+      "src": "rg000",
+      "pin": "Note to RG 000.22",
+      "quote": "ASIC intends to update INFO 225 in the lead up to the finalisation of draft RG 000 in early 2027."
+    },
+    {
+      "topic": "Watch next",
+      "claim": "Certain stablecoins will be regulated separately as tokenised stored value facilities.",
+      "src": "cp392",
+      "pin": "Para 7",
+      "quote": "There will be separate regulation of certain stablecoins as tokenised stored value facilities (tokenised SVFs)."
+    },
+    {
+      "topic": "Company statement",
+      "claim": "Tokeniser says products issued through it operate under the asset issuer's existing licensing.",
+      "src": "tokhome",
+      "pin": "FAQ: Is Tokeniser regulated?",
+      "quote": "Products issued through Tokeniser operate under an Asset Issuer's existing licensing."
+    },
+    {
+      "topic": "Company statement",
+      "claim": "Tokeniser says Redbelly is designed to meet the three statutory tests for public digital token infrastructure.",
+      "src": "toktech",
+      "pin": "FAQ: Is Redbelly a private network?",
+      "quote": "Redbelly is a public network designed to meet the three statutory tests for public digital token infrastructure under Australian law"
+    },
+    {
+      "topic": "Company statement",
+      "claim": "Tokeniser says the fund manager remains the AML/CTF reporting entity.",
+      "src": "tokcomp",
+      "pin": "FAQ",
+      "quote": "the fund manager remains the reporting entity under the AML/CTF Act and retains regulatory responsibility for their compliance programme."
+    },
+    {
+      "topic": "Company statement",
+      "claim": "Tokeniser says it does not hold the private key.",
+      "src": "tokcust",
+      "pin": "How self-custody works",
+      "quote": "Tokeniser does not hold the private key; the investor or their designated key manager does."
+    },
+    {
+      "topic": "Company statement",
+      "claim": "Receptor facilitates network access, and Redbelly accredits issuers who provide network access.",
+      "src": "rbreceptor",
+      "pin": "Overview; Issuer Accreditation",
+      "quote": "It facilitates network access ... Redbelly ensures that all issuers who provide network access are accredited."
+    },
+    {
+      "topic": "Company statement",
+      "claim": "Individual onboarding includes KYC verification and on-chain permission set-up.",
+      "src": "rbindiv",
+      "pin": "Overview",
+      "quote": "It includes wallet authentication, KYC verification, and Redbelly on-chain permission setup."
+    },
+    {
+      "topic": "Company statement",
+      "claim": "Supported credential types include an AML/CTF credential and an Australian sophisticated or wholesale investor credential.",
+      "src": "rbcriteria",
+      "pin": "Available Schemas",
+      "quote": "AMLCTFCredential ... AUSophisticatedWholesaleInvestorCredential"
+    },
+    {
+      "topic": "Company statement",
+      "claim": "Node operators are described as successful applicants who receive an invitation.",
+      "src": "rbnodes",
+      "pin": "Node operators",
+      "quote": "If you are a successful applicant and have received an invitation to run a node"
+    },
+    {
+      "topic": "Company statement",
+      "claim": "Node operators must stake RBNT, and Redbelly may slash misbehaving participants.",
+      "src": "rbrewards",
+      "pin": "Rewards and incentives",
+      "quote": "each Node Operator ... will need to stake ... RBNT to be eligible to participate in Mainnet ... Redbelly will reserve the right to slash partially, or fully, the stake of misbehaving participants"
+    },
+    {
+      "topic": "Company statement",
+      "claim": "Governors must notify Redbelly of planned downtime.",
+      "src": "rbreconfig",
+      "pin": "Additional Governor Node Requirements",
+      "quote": "Operators must inform Redbelly at least three days in advance of any planned maintenance or downtime"
+    }
+  ],
+  "not_verified": [
+    "The Explanatory Memorandum paragraphs cited on Tokeniser's website (for example EM 1.338, 1.369 and Example 1.26) were not relied on. The EM is linked from the Parliament bill page for readers who want to check them.",
+    "Whether Redbelly's protocol software is fully open-source and publicly accessible (one element of s 9E(2)(a)) was not independently verified.",
+    "No search of ASIC's professional registers was made. The explainer makes no statement about whether any company holds an AFSL.",
+    "Company performance figures on the Tokeniser and Redbelly websites were not used and were not verified."
+  ]
+}

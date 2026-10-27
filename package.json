@@ -1,0 +1,17 @@
+{
+  "name": "australia-daf-act",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Plain-language explainer of Australia's Digital Assets Framework Act 2026 and what it means for issuers using Tokeniser on Redbelly Network.",
+  "type": "module",
+  "scripts": {
+    "render": "node scripts/build.mjs",
+    "render:pages": "node scripts/build.mjs --pages",
+    "check": "node scripts/check.mjs",
+    "check:links": "node scripts/check-links.mjs",
+    "preview": "npx --yes serve public"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
