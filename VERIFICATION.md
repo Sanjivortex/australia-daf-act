@@ -1,11 +1,11 @@
 # Verification record
 
-Every factual claim in the explainer and the community summary, with its source and the supporting wording. Sources checked 27 October 2026.
+Every factual claim in the guide and the share kit, with its source and the supporting wording. Sources checked 27 October 2026.
 
 How to re-run the checks:
 
 ```sh
-npm run check        # offline: citations, sources, disclaimer, dates, X post lengths, banned phrasing
+npm run check        # offline: citations, notes, sources, disclaimer, dates, X post length, brand voice, banned phrasing
 npm run check:links  # online: HTTP status of every source link
 ```
 

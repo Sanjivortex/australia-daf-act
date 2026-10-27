@@ -1,491 +1,642 @@
 <!doctype html>
-<html lang="en-AU">
+<html lang="en-AU" data-theme="dark">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>DAF Act Explainer</title>
-<meta name="description" content="A plain-language explainer of Australia's Corporations Amendment (Digital Assets Framework) Act 2026: who needs a licence, key dates, what changes for issuers using Tokeniser, and where Redbelly's compliance design fits. General information, not legal advice.">
+<title>DAF Act Field Guide</title>
+<meta name="description" content="An annotated field guide to Australia's Corporations Amendment (Digital Assets Framework) Act 2026: where the licensing line falls, the calendar to October 2027, what changes for issuers using Tokeniser, and where Redbelly's compliance design fits. General information, not legal advice.">
 <meta name="robots" content="noindex, nofollow">
-<meta name="theme-color" content="#142530">
+<meta name="theme-color" content="#0c1317">
 <meta property="og:title" content="Australia's Digital Assets Framework Act: What It Means for Tokeniser">
-<meta property="og:description" content="Plain-language explainer of the DAF Act for issuers and the Redbelly community. General information, not legal advice.">
+<meta property="og:description" content="An annotated field guide for issuers and holders. General information, not legal advice.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://australia-daf-act.vercel.app/">
 <meta property="og:image" content="https://australia-daf-act.vercel.app/assets/og-card.png">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="assets/brand/redbelly-isotype-red.svg" type="image/svg+xml">
+<link rel="icon" href="assets/brand/icon.png" type="image/png">
+<script>(function(){var d=document.documentElement;d.classList.add('js');try{var t=localStorage.getItem('theme');if(t!=='light'&&t!=='dark'){t=window.matchMedia&&window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';}d.setAttribute('data-theme',t);}catch(e){}})();</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="assets/css/dao-tokens.css">
 <link rel="stylesheet" href="assets/css/site.css">
-<script>try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
 </head>
 <body>
-<a class="skip-link" href="#main">Skip to content</a>
+<a class="skip" href="#main">Skip to content</a>
 
-<header class="site-header">
-  <div class="inner">
-    <a class="brand" href="./" aria-label="DAF Act explainer home">
-      <img class="logo-light" src="assets/brand/redbelly-horizontal-colour.svg" alt="Redbelly" width="108" height="30">
-      <img class="logo-dark" src="assets/brand/redbelly-horizontal-negative.svg" alt="Redbelly" width="108" height="30">
-      <span class="tag">Community explainer<br>DAF Act 2026</span>
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="./" aria-label="DAF Act field guide, home">
+      <img class="on-dark" src="assets/brand/dao-logo-on-dark-256.png" alt="Redbelly DAO" width="56" height="40">
+      <img class="on-light" src="assets/brand/dao-logo-on-light-256.png" alt="Redbelly DAO" width="56" height="40">
+      <span class="name"><b>DAF Act field guide</b><span>Community explainer</span></span>
     </a>
-    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
-    <nav class="site-nav" id="site-nav" aria-label="Main">
-      <a href="./" aria-current="page">Explainer</a>
-      <a href="summary">Community summary</a>
-      <a href="sources">Sources &amp; checks</a>
+    <button class="iconbtn menubtn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="./" aria-current="page">Guide</a>
+      <a href="summary">Share kit</a>
+      <a href="sources">Evidence</a>
       <a href="downloads/australia-daf-act-explainer.pdf">PDF</a>
     </nav>
-    <button class="theme-toggle" type="button" aria-label="Switch colour theme" title="Switch colour theme">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+    <button class="iconbtn theme" type="button" aria-label="Switch light or dark theme" title="Switch theme">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5"/></svg>
     </button>
   </div>
+  <div class="progress" aria-hidden="true"></div>
 </header>
 
-<div class="hero">
-  <div class="inner">
-    <div class="eyebrow">Plain-language explainer</div>
-    <h1>Australia's Digital Assets Framework Act: <span class="accent">What It Means for Tokeniser</span></h1>
-    <p class="lede">A guide to the new licensing rules for digital asset platforms and tokenised custody platforms: who is affected, when, what changes for issuers who tokenise through Tokeniser, and where Redbelly's compliance design fits.</p>
-    <div class="meta">
-      <span>Law covered: Act No. 38, 2026 (as made)</span>
-      <span>Sources checked: 27 October 2026</span>
-      <span>Reading time: about 20 minutes</span>
-    </div>
-    <div class="actions">
-      <a class="btn btn-primary" href="downloads/australia-daf-act-explainer.pdf">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0 5-5m-5 5-5-5M5 21h14"/></svg>
-        Download PDF</a>
-      <a class="btn btn-ghost" href="downloads/australia-daf-act-explainer.docx">Word (.docx)</a>
-      <a class="btn btn-ghost" href="summary">Community summary</a>
-    </div>
-  </div>
-</div>
-
-<div class="disclaimer" id="not-legal-advice">
-  <div class="box" role="note" aria-labelledby="disclaimer-title">
-    <div class="icon" aria-hidden="true">!</div>
+<section class="notice" id="not-legal-advice" aria-labelledby="notice-title">
+  <div class="wrap">
+    <div class="mark" aria-hidden="true">!</div>
     <div>
-      <h2 id="disclaimer-title">General information only. This is not legal advice.</h2>
-      <p>This explainer summarises public sources in plain language. It is not legal, financial, tax or investment advice, and it is not a recommendation to acquire, sell or hold any digital asset or financial product. It does not say, and should not be read as saying, that Redbelly Network, Tokeniser or any issuer is licensed, exempt or compliant. Much of the detail is still being settled through ASIC standards, guidance and regulations. Get advice from a qualified Australian lawyer before acting on anything here.</p>
-      <p class="small muted">Independent community explainer prepared for the Redbelly DAO. It is not an official publication of Redbelly Network, Tokeniser, ASIC or the Australian Government. Redbelly logos and colours are taken from Redbelly's published brand kit.</p>
+      <h2 id="notice-title">General information only. This is not legal advice.</h2>
+      <p>This guide explains public sources in plain language. It is not legal, financial, tax or investment advice, and it does not recommend acquiring, selling or holding any digital asset or financial product. It does not say that Redbelly Network, Tokeniser or any issuer is licensed, exempt or compliant, and no source used here says so. Several ASIC documents relied on are drafts for consultation. Get advice from a qualified Australian lawyer before acting on anything here.</p>
+      <p class="muted">Independent community explainer prepared for the Redbelly DAO. Not an official publication of Redbelly Network, Tokeniser, ASIC or the Australian Government.</p>
     </div>
   </div>
-</div>
+</section>
 
-<div class="layout">
-  <aside class="toc" aria-label="On this page">
-    <h2>On this page</h2>
-    <ol>
-      <li><a href="#how-to-read">How to read this</a></li>
-      <li><a href="#short-version">The short version</a></li>
-      <li><a href="#what-and-why">1. What the Act is and why</a></li>
-      <li><a href="#who-needs-a-licence">2. Who needs a licence</a></li>
-      <li><a href="#timeline">3. Timeline</a></li>
-      <li><a href="#issuers">4. What changes for issuers</a></li>
-      <li><a href="#redbelly-fit">5. Where Redbelly fits</a></li>
-      <li><a href="#watch-next">6. What to watch next</a></li>
-      <li><a href="#glossary">Glossary</a></li>
-      <li><a href="#sources">Sources</a></li>
-    </ol>
-    <div class="downloads">
-      <a class="btn btn-outline" href="downloads/australia-daf-act-explainer.pdf">PDF edition</a>
-      <a class="btn btn-outline" href="sources">Claim-by-claim checks</a>
+<section class="hero" aria-labelledby="title">
+  <div class="wrap hero-grid">
+    <div>
+      <img class="print-only" src="assets/brand/dao-logo-on-dark-256.png" alt="Redbelly DAO" width="78" height="56" style="height:56px;width:auto;margin-bottom:14px">
+      <div class="tagline"><span class="caps">Annotated field guide</span><span class="caps">Act No. 38 of 2026</span><span class="caps">For issuers and holders</span></div>
+      <h1 id="title">Australia's Digital Assets Framework Act: <em>What It Means for Tokeniser</em></h1>
+      <p class="lede">The Act starts on 8 April 2027. A business that holds digital tokens for customers, or holds an asset and issues one redeemable token for it, will then generally need an Australian financial services licence, and existing platforms have until 7 October 2027 to apply.<a class="cite" href="#src-act" data-pin="ss 761GC, 761GD" title="DAF Act, ss 761GC, 761GD">[1]</a><a class="cite" href="#src-cp392" data-pin="p 6 key points" title="ASIC CP 392, p 6 key points">[9]</a> This guide shows where that line falls, when each step happens, what changes for issuers who tokenise through Tokeniser, and where Redbelly's compliance design fits and where it is still open.</p>
+      <div class="actions">
+        <a class="btn primary" href="downloads/australia-daf-act-explainer.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0 5-5m-5 5-5-5M5 21h14"/></svg>Download PDF</a>
+        <a class="btn" href="downloads/australia-daf-act-explainer.docx">Word file</a>
+        <a class="btn" href="summary">Share kit</a>
+      </div>
+      <p class="stamp mono">Last verified 27 Oct 2026</p>
     </div>
-  </aside>
 
-  <main class="content" id="main">
-
-    <section id="how-to-read">
-      <h2>How to read this</h2>
-      <p>Every factual statement has a numbered source. The text is labelled so you can tell what the law says from what companies say about themselves, and from the writer's own reading.</p>
-      <div class="legend">
-        <div class="item"><span class="label label-law">The law says</span><p class="small" style="margin:.5em 0 0">What the Act, Parliament, Treasury or ASIC says. Each point has a source.</p></div>
-        <div class="item"><span class="label label-claim">Company statement</span><p class="small" style="margin:.5em 0 0">What Redbelly or Tokeniser say about their own products. These are their claims, not findings.</p></div>
-        <div class="item"><span class="label label-analysis">Analysis</span><p class="small" style="margin:.5em 0 0">The writer's interpretation. It could be wrong, and it is labelled so you can tell it apart.</p></div>
-      </div>
-
-      <div class="keydates" aria-label="Key dates at a glance">
-        <div class="keydate"><div class="d"><small>Law made</small>8 Apr 2026</div><p>Royal Assent. The Act becomes law but does not yet apply.<a class="cite" href="#src-act" title="Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made">[1]</a></p></div>
-        <div class="keydate"><div class="d"><small>Have your say</small>27 Nov 2026</div><p>ASIC's consultation on draft standards and guidance (CP 392) closes.<a class="cite" href="#src-mr245" title="26-245MR ASIC consults on implementation of new digital asset laws">[8]</a></p></div>
-        <div class="keydate hot"><div class="d"><small>Start date</small>8 Apr 2027</div><p>The Act commences and licence applications open. See the <a href="#date-note">date note</a>.<a class="cite" href="#src-cp392" title="Consultation Paper 392 Digital asset law reform implementation: Proposed standards and guidance">[9]</a></p></div>
-        <div class="keydate"><div class="d"><small>Apply by</small>7 Oct 2027</div><p>Last day for existing platforms to apply and keep operating while ASIC decides.<a class="cite" href="#src-cp392" title="Consultation Paper 392 Digital asset law reform implementation: Proposed standards and guidance">[9]</a></p></div>
-      </div>
-    </section>
-
-    <section id="short-version">
-      <h2>The short version</h2>
-      <ol class="tldr">
-        <li><span>The Act adds two new financial products to Australian law: a <strong>digital asset platform (DAP)</strong>, where a business holds digital tokens for customers, and a <strong>tokenised custody platform (TCP)</strong>, where a business holds an asset for customers and issues one redeemable token for it.<a class="cite" href="#src-act" title="Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made">[1]</a></span></li>
-        <li><span>Businesses that operate these platforms will generally need an <strong>Australian financial services licence (AFSL)</strong> from ASIC, with extra rules written for platforms: ASIC standards, platform rules and a plain-English guide for retail clients.<a class="cite" href="#src-treasury" title="New digital asset laws to unlock innovation and safeguard investment (joint media release)">[4]</a><a class="cite" href="#src-act" title="Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made">[1]</a></span></li>
-        <li><span>Some things sit outside the licensing net, including <strong>small DAPs</strong> (no more than $10 million a year in transactions and $5,000 per customer, with a notice to ASIC) and <strong>public blockchains</strong> that pass a three-part test. Validating such a network is not a financial service.<a class="cite" href="#src-act" title="Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made">[1]</a></span></li>
-        <li><span>The Act <strong>commences on 8 April 2027</strong>. Existing platforms have until <strong>7 October 2027</strong> to apply, and can keep operating while ASIC decides.<a class="cite" href="#src-cp392" title="Consultation Paper 392 Digital asset law reform implementation: Proposed standards and guidance">[9]</a></span></li>
-        <li><span><span class="label label-analysis">Analysis</span> For issuers using Tokeniser, the deciding questions are practical: who controls the tokens or keys, whether a separate asset sits behind each token, and whether the product is already regulated, for example as a managed investment scheme.</span></li>
-      </ol>
-    </section>
-
-    <section id="what-and-why">
-      <span class="section-num">SECTION 1</span>
-      <h2>What the Act is and why it was introduced</h2>
-
-      <h3>What it is</h3>
-      <div class="block block-law">
-        <span class="label label-law">The law says</span>
-        <p>The <em>Corporations Amendment (Digital Assets Framework) Act 2026</em> is Act No. 38 of 2026. It amends the <em>Corporations Act 2001</em> and the <em>Australian Securities and Investments Commission Act 2001</em>.<a class="cite" href="#src-act" title="Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made">[1]</a></p>
-        <p>It was introduced into Parliament on 26 November 2025, passed both Houses on 1 April 2026 and received Royal Assent on 8 April 2026.<a class="cite" href="#src-aph" title="Corporations Amendment (Digital Assets Framework) Bill 2025: bill homepage and progress">[3]</a><a class="cite" href="#src-act" title="Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made">[1]</a></p>
-        <p>It does not create a stand-alone "crypto law". It brings two new types of platform into the existing financial services system, so their operators need an AFSL and take on the core duties that apply across that system, such as acting efficiently, honestly and fairly, not engaging in misleading conduct, giving clear information about how assets are held, and offering dispute resolution.<a class="cite" href="#src-treasury" title="New digital asset laws to unlock innovation and safeguard investment (joint media release)">[4]</a></p>
-      </div>
-
-      <h3>Why it was introduced</h3>
-      <div class="block block-law">
-        <span class="label label-law">The law says</span>
-        <p>When the Bill was introduced, the Government said: "Currently, businesses can hold unlimited client digital assets without financial law safeguards. Recent collapses overseas have shown the consequences of inadequate oversight."<a class="cite" href="#src-treasury" title="New digital asset laws to unlock innovation and safeguard investment (joint media release)">[4]</a></p>
-        <p>ASIC describes the Act as addressing "regulatory gaps and consequent uncertainty" for digital assets and some of the infrastructure that supports them, with the aim of fostering innovation, competition and growth.<a class="cite" href="#src-cp392" title="Consultation Paper 392 Digital asset law reform implementation: Proposed standards and guidance">[9]</a> ASIC says its approach to implementing it follows the principle of "same activity, same risk, same regulatory outcome".<a class="cite" href="#src-mr245" title="26-245MR ASIC consults on implementation of new digital asset laws">[8]</a></p>
-      </div>
-
-      <h3>Five terms you need</h3>
-      <div class="table-wrap">
-        <table class="terms">
-          <thead><tr><th scope="col">Term</th><th scope="col">Plain meaning</th><th scope="col">Where</th></tr></thead>
-          <tbody>
-            <tr><td>Digital token</td><td>An electronic record that someone can control in fact. They can transfer it, stop others from transferring it, and show that they can do both. What matters is practical control, not legal title.<a class="cite" href="#src-act" title="Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made">[1]</a></td><td class="pin">s 761GB</td></tr>
-            <tr><td>Digital asset platform (DAP)</td><td>An arrangement where a business (the "operator") possesses digital tokens for, or on behalf of, a client. A crypto exchange or custodian that holds customers' tokens is the obvious example.<a class="cite" href="#src-act" title="Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made">[1]</a></td><td class="pin">s 761GC</td></tr>
-            <tr><td>Tokenised custody platform (TCP)</td><td>An arrangement where the operator holds an asset other than money (for example gold, or a share), creates a single digital token for each asset, and the token gives its holder the right to redeem the asset or direct its delivery. If something fits both definitions, it is a TCP.<a class="cite" href="#src-act" title="Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made">[1]</a></td><td class="pin">s 761GD, 761GC(4)</td></tr>
-            <tr><td>Public digital token infrastructure</td><td>Software or hardware that transmits, processes or records digital tokens, whose protocols are (a) open-source, publicly accessible standards applied in a non-discretionary way, (b) open for any person to contribute to the network's integrity, functionality and reliability, and (c) not reliant on any participant whose role is so critical that the network cannot work without it. Regulations can switch the test off for particular protocols, or name infrastructure that counts.<a class="cite" href="#src-act" title="Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made">[1]</a></td><td class="pin">s 9E</td></tr>
-            <tr><td>Wrapped token</td><td>A token that gives a right to redeem an underlying asset, such as an asset held in a TCP. When deciding whether the token is a financial product, that redemption right is ignored, so broadly the token takes on the character of the asset behind it.<a class="cite" href="#src-act" title="Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made">[1]</a><a class="cite" href="#src-rg000" title="Draft Regulatory Guide 000 Digital asset platforms and tokenised custody platforms (Attachment 1 to CP 392)">[10]</a></td><td class="pin">s 765E; draft RG 000.48</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="block block-law">
-        <span class="label label-law">The law says</span>
-        <p>A DAP or TCP is a financial product separate from any asset held through it. Obligations can therefore apply both to the platform and, separately, to a token or asset on it that is itself a financial product, such as a tokenised share.<a class="cite" href="#src-rg000" title="Draft Regulatory Guide 000 Digital asset platforms and tokenised custody platforms (Attachment 1 to CP 392)">[10]</a></p>
-      </div>
-    </section>
-
-    <section id="who-needs-a-licence">
-      <span class="section-num">SECTION 2</span>
-      <h2>Who needs a licence, and who does not</h2>
-
-      <h3>Who needs a licence</h3>
-      <div class="block block-law">
-        <span class="label label-law">The law says</span>
+    <figure class="perimeter" aria-labelledby="pm-title">
+      <figcaption id="pm-title"><b>Where the licensing line falls</b><span>A simplified map. Each item links to the detail and its source.</span></figcaption>
+      <div class="zone in">
+        <div class="head caps">Needs a licence</div>
         <ul>
-          <li><strong>Platform operators.</strong> From 8 October 2027, DAP and TCP operators, and some other providers of related financial services, will need an AFSL with the right DAP or TCP authorisation unless an exemption applies.<a class="cite" href="#src-cp392" title="Consultation Paper 392 Digital asset law reform implementation: Proposed standards and guidance">[9]</a></li>
-          <li><strong>People who deal in or advise on platforms.</strong> Related services, for example dealing other than by issuing, or giving advice about DAPs and TCPs, also need a licence.<a class="cite" href="#src-cp392" title="Consultation Paper 392 Digital asset law reform implementation: Proposed standards and guidance">[9]</a></li>
-          <li><strong>Generally a corporation, not an individual.</strong> These services must be provided by a "constitutionally-covered corporation", broadly a trading, financial or foreign corporation. An individual or partnership that provides them using phone, internet or similar services contravenes a civil penalty provision.<a class="cite" href="#src-act" title="Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made">[1]</a><a class="cite" href="#src-constitution" title="Commonwealth of Australia Constitution Act (The Constitution), section 51(xx)">[2]</a> <span class="pin">(ss 766M, 9; Constitution s 51(xx))</span></li>
-          <li><strong>Extra duties for licensed operators.</strong> On top of the general AFSL duties, operators must comply with ASIC's asset-holding standards and transactional and settlement standards; have platform rules with set contents, including transparent and non-discriminatory eligibility criteria; before issuing a platform to a retail client, give them a "DAP/TCP Guide" and have a voting policy covering any voting or governance rights attached to the assets; and pass on communications about underlying assets when a client asks.<a class="cite" href="#src-act" title="Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made">[1]</a> <span class="pin">(ss 912BB, 912BC, 912BG, 1020AN to 1020AR)</span></li>
-          <li><strong>Product design rules.</strong> An issuer that must prepare a DAP/TCP Guide must also make a target market determination for the platform.<a class="cite" href="#src-act" title="Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made">[1]</a><a class="cite" href="#src-rg000" title="Draft Regulatory Guide 000 Digital asset platforms and tokenised custody platforms (Attachment 1 to CP 392)">[10]</a> <span class="pin">(s 994B as amended)</span></li>
+          <li><a href="#who-needs">Operating a digital asset platform</a></li>
+          <li><a href="#who-needs">Operating a tokenised custody platform</a></li>
+          <li><a href="#who-needs">Dealing in or advising on platforms</a></li>
         </ul>
       </div>
-
-      <h3>Who does not need a licence: the main carve-outs</h3>
-      <div class="table-wrap">
-        <table>
-          <thead><tr><th scope="col">Carve-out</th><th scope="col">What it requires</th><th scope="col">Where</th></tr></thead>
-          <tbody>
-            <tr>
-              <td><strong>Low-value DAP</strong><br><span class="small muted">DAPs only, not TCPs</span></td>
-              <td>
-                <p>All of these must be met: no financial products are held on any DAP issued by the operator's closely-related group; total transactions through those platforms in the last 12 months do not exceed <strong>$10 million</strong>; whenever a token becomes an asset of a client on those platforms, the total entry value of that client's assets does not exceed <strong>$5,000</strong>; and the operator has lodged a notice with ASIC in the prescribed form.<a class="cite" href="#src-act" title="Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made">[1]</a></p>
-                <p>Regulations can raise the dollar amounts. ASIC's draft guide says the client-value and transaction-value tests will rise over time with inflation. The platform is still a DAP and other rules may still apply.<a class="cite" href="#src-act" title="Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made">[1]</a><a class="cite" href="#src-rg000" title="Draft Regulatory Guide 000 Digital asset platforms and tokenised custody platforms (Attachment 1 to CP 392)">[10]</a></p>
-              </td>
-              <td class="pin">s 911A(2)(ja), (4B), (6); draft RG 000 Table 3</td>
-            </tr>
-            <tr>
-              <td><strong>Incidental advice and arranging</strong></td>
-              <td>Only telling someone that a DAP or TCP exists, or arranging for them to use one, in the ordinary course of business, where those services are not a significant part of the business.<a class="cite" href="#src-act" title="Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made">[1]</a></td>
-              <td class="pin">s 911A(2)(jb)</td>
-            </tr>
-            <tr>
-              <td><strong>Public digital token infrastructure</strong></td>
-              <td>It is not a managed investment scheme and not a financial product. Taking part in consensus (for example validating) is not a financial service, and is not a clearing and settlement facility.<a class="cite" href="#src-act" title="Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made">[1]</a></td>
-              <td class="pin">s 9 (mf); 765A(1)(xa), (xb); 766A(3)(b); 768A(2)(ha)</td>
-            </tr>
-            <tr>
-              <td><strong>Custodial staking through a licensed platform</strong></td>
-              <td>Where the platform issuer holds an AFSL authorising it to issue the platform, the staking part is not a separate managed investment scheme or financial product.<a class="cite" href="#src-act" title="Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made">[1]</a><a class="cite" href="#src-rg000" title="Draft Regulatory Guide 000 Digital asset platforms and tokenised custody platforms (Attachment 1 to CP 392)">[10]</a></td>
-              <td class="pin">s 9 (me); 765A(1)(pa), (pb)</td>
-            </tr>
-            <tr>
-              <td><strong>Technology only</strong></td>
-              <td>ASIC's draft guide says an arrangement may not be a DAP where it only provides technology or infrastructure to an operator and does not possess tokens for the operator's clients. This includes some multi-party computation (MPC) key set-ups under regulations that are still anticipated.<a class="cite" href="#src-rg000" title="Draft Regulatory Guide 000 Digital asset platforms and tokenised custody platforms (Attachment 1 to CP 392)">[10]</a></td>
-              <td class="pin">draft RG 000.41(b)</td>
-            </tr>
-            <tr>
-              <td><strong>Proposed further exemptions</strong></td>
-              <td>Sub-custodian, overseas issuer and client, overseas related body corporate or joint venture, and nominee company exemptions are proposed in regulations that remain "subject to Government processes".<a class="cite" href="#src-rg000" title="Draft Regulatory Guide 000 Digital asset platforms and tokenised custody platforms (Attachment 1 to CP 392)">[10]</a><a class="cite" href="#src-cp392" title="Consultation Paper 392 Digital asset law reform implementation: Proposed standards and guidance">[9]</a></td>
-              <td class="pin">draft RG 000 Table 3; CP 392 para 38</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <h3>When another regime applies instead</h3>
-      <div class="block block-law">
-        <span class="label label-law">The law says</span>
+      <div class="zone out">
+        <div class="head caps">Outside the licence</div>
         <ul>
-          <li><strong>Managed investment schemes.</strong> A DAP or TCP that is also a managed investment scheme is regulated as a scheme, unless carve-outs apply: clients can redeem the assets, the operator acts only on client instructions, and the operator cannot materially set clients' rights. For a TCP, the assets must also be of one class, and tokens can only be as divisible as the asset can be physically delivered.<a class="cite" href="#src-act" title="Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made">[1]</a><a class="cite" href="#src-rg000" title="Draft Regulatory Guide 000 Digital asset platforms and tokenised custody platforms (Attachment 1 to CP 392)">[10]</a> <span class="pin">(ss 764A(1)(la), (lb); 9 (mc), (md))</span></li>
-          <li><strong>Markets and clearing.</strong> If a facility meets the definition of a financial market or clearing and settlement facility for assets that are financial products, those regimes apply rather than the DAP rules.<a class="cite" href="#src-rg000" title="Draft Regulatory Guide 000 Digital asset platforms and tokenised custody platforms (Attachment 1 to CP 392)">[10]</a></li>
-          <li><strong>Ministerial powers.</strong> The Minister can declare a DAP to be a financial market or clearing and settlement facility, exempt it from those regimes, or ban specified financial products from going through specified platforms.<a class="cite" href="#src-act" title="Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made">[1]</a> <span class="pin">(ss 767B, 767C, 768B, 768C, 912BH)</span></li>
+          <li><a href="#carve-outs">Small digital asset platforms that pass 4 tests</a></li>
+          <li><a href="#carve-outs">Incidental mentions and arranging</a></li>
+          <li><a href="#carve-outs">Public blockchains that pass 3 tests</a></li>
+          <li><a href="#carve-outs">Validating those blockchains</a></li>
+          <li><a href="#carve-outs">Technology-only providers</a></li>
         </ul>
       </div>
-
-      <h3>A quick self-check</h3>
-      <div class="block block-analysis">
-        <span class="label label-analysis">Analysis</span>
-        <p>A simplified way to orient yourself. It is not a substitute for advice, and each step depends on the facts.</p>
-      </div>
-      <ol class="steps">
-        <li><div><p class="q">Does anyone other than the client have practical control of the client's tokens (can move them, can block others, and can show it)?</p><p class="a">If yes, and they hold them for the client, the arrangement may be a DAP.<a class="cite" href="#src-act" title="Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made">[1]</a></p></div></li>
-        <li><div><p class="q">Is a non-money asset held for the client, with one token per asset that can be redeemed?</p><p class="a">If yes, it may be a TCP, and TCP takes priority over DAP.<a class="cite" href="#src-act" title="Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made">[1]</a></p></div></li>
-        <li><div><p class="q">Is it already something else, such as a managed investment scheme, a financial market or a clearing and settlement facility?</p><p class="a">If yes, that regime may apply instead of, or as well as, the platform rules.<a class="cite" href="#src-rg000" title="Draft Regulatory Guide 000 Digital asset platforms and tokenised custody platforms (Attachment 1 to CP 392)">[10]</a></p></div></li>
-        <li><div><p class="q">Does an exemption fit, such as the low-value DAP exemption or incidental arranging?</p><p class="a">Check every condition. The low-value exemption also needs a notice lodged with ASIC.<a class="cite" href="#src-act" title="Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made">[1]</a></p></div></li>
-      </ol>
-    </section>
-
-    <section id="timeline">
-      <span class="section-num">SECTION 3</span>
-      <h2>Timeline: before and after commencement</h2>
-
-      <div class="callout" id="date-note">
-        <h3>Date note: 8 or 9 April 2027?</h3>
-        <p>The Act says it commences on "the day after the end of the period of 12 months beginning on the day this Act receives the Royal Assent".<a class="cite" href="#src-act" title="Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made">[1]</a> The Federal Register's commencement table records that day as 8 April 2027, although that column is expressly not part of the Act.<a class="cite" href="#src-act" title="Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made">[1]</a> <span class="pin">(s 2(2))</span></p>
-        <p>ASIC's April and May 2026 publications said 9 April 2027.<a class="cite" href="#src-roadmap" title="ASIC's roadmap for digital assets law reform implementation">[5]</a><a class="cite" href="#src-asicmay" title="Deadline looms for digital asset businesses to apply for a licence">[6]</a> ASIC's October 2026 consultation paper and media release say 8 April 2027, with 7 October 2027 as the last day to apply during transition.<a class="cite" href="#src-cp392" title="Consultation Paper 392 Digital asset law reform implementation: Proposed standards and guidance">[9]</a><a class="cite" href="#src-mr245" title="26-245MR ASIC consults on implementation of new digital asset laws">[8]</a> This explainer uses ASIC's latest dates. If an exact day matters to you, confirm it with ASIC.</p>
-      </div>
-
-      <p class="phase">Before commencement</p>
-      <ol class="timeline">
-        <li class="done"><span class="when">26 November 2025</span><span class="what">Bill introduced into the House of Representatives; the Government announces the reforms.<a class="cite" href="#src-aph" title="Corporations Amendment (Digital Assets Framework) Bill 2025: bill homepage and progress">[3]</a><a class="cite" href="#src-treasury" title="New digital asset laws to unlock innovation and safeguard investment (joint media release)">[4]</a></span></li>
-        <li class="done"><span class="when">4 February 2026</span><span class="what">Bill passes the House.<a class="cite" href="#src-aph" title="Corporations Amendment (Digital Assets Framework) Bill 2025: bill homepage and progress">[3]</a></span></li>
-        <li class="done"><span class="when">5 February 2026</span><span class="what">Introduced in the Senate and referred to the Senate Economics Legislation Committee, which reported on 16 March 2026.<a class="cite" href="#src-aph" title="Corporations Amendment (Digital Assets Framework) Bill 2025: bill homepage and progress">[3]</a></span></li>
-        <li class="done"><span class="when">1 April 2026</span><span class="what">Bill passes both Houses.<a class="cite" href="#src-aph" title="Corporations Amendment (Digital Assets Framework) Bill 2025: bill homepage and progress">[3]</a></span></li>
-        <li class="done key"><span class="when">8 April 2026</span><span class="what">Royal Assent. The Act is law, but its rules do not yet apply.<a class="cite" href="#src-act" title="Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made">[1]</a></span></li>
-        <li class="done"><span class="when">20 April 2026</span><span class="what">ASIC publishes its 18-month implementation roadmap.<a class="cite" href="#src-roadmap" title="ASIC's roadmap for digital assets law reform implementation">[5]</a></span></li>
-        <li class="done"><span class="when">30 September 2026</span><span class="what">Deadline under ASIC's sector-wide INFO 225 "no-action" position, extended from 30 June 2026. This concerned licensing under the <em>existing</em> law for digital assets that are already financial products, not the new DAP and TCP regime.<a class="cite" href="#src-asicext" title="ASIC extends no-action position for digital asset businesses to 30 September 2026">[7]</a><a class="cite" href="#src-asicmay" title="Deadline looms for digital asset businesses to apply for a licence">[6]</a></span></li>
-        <li class="done"><span class="when">15 October 2026</span><span class="what">ASIC releases Consultation Paper 392 with a draft regulatory guide, draft asset-holding and transactional and settlement standards, and draft financial requirements.<a class="cite" href="#src-mr245" title="26-245MR ASIC consults on implementation of new digital asset laws">[8]</a></span></li>
-        <li><span class="when">27 November 2026, 5pm AEDT</span><span class="what">CP 392 submissions close.<a class="cite" href="#src-mr245" title="26-245MR ASIC consults on implementation of new digital asset laws">[8]</a></span></li>
-        <li><span class="when">November 2026 to March 2027</span><span class="what">ASIC reviews feedback, with final instruments and guidance planned for March 2027.<a class="cite" href="#src-cp392" title="Consultation Paper 392 Digital asset law reform implementation: Proposed standards and guidance">[9]</a></span></li>
-      </ol>
-
-      <p class="phase">Commencement</p>
-      <ol class="timeline">
-        <li class="key"><span class="when">8 April 2027</span><span class="what">The Act commences and DAP and TCP licence applications open.<a class="cite" href="#src-cp392" title="Consultation Paper 392 Digital asset law reform implementation: Proposed standards and guidance">[9]</a></span></li>
-      </ol>
-
-      <p class="phase">After commencement</p>
-      <ol class="timeline">
-        <li><span class="when">8 April to 7 October 2027: transition</span><span class="what">The Act gives a six-month transition period starting on commencement. A business without the relevant authorisation can keep providing the service during it. If it applies within the period, the new rules do not apply to it until the day after ASIC decides the application.<a class="cite" href="#src-act" title="Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made">[1]</a><a class="cite" href="#src-cp392" title="Consultation Paper 392 Digital asset law reform implementation: Proposed standards and guidance">[9]</a> <span class="pin">(ss 1730, 1732)</span></span></li>
-        <li class="key"><span class="when">7 October 2027</span><span class="what">Transition window closes for licence applications and variations.<a class="cite" href="#src-cp392" title="Consultation Paper 392 Digital asset law reform implementation: Proposed standards and guidance">[9]</a></span></li>
-        <li><span class="when">From 8 October 2027</span><span class="what">DAP and TCP operators need the relevant authorisation unless exempt. A business that did not apply during transition is subject to the new rules as soon as the period ends.<a class="cite" href="#src-cp392" title="Consultation Paper 392 Digital asset law reform implementation: Proposed standards and guidance">[9]</a><a class="cite" href="#src-act" title="Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made">[1]</a></span></li>
-        <li><span class="when">Ongoing</span><span class="what">ASIC licenses, supervises and enforces the regime; regulations, ASIC standards and ministerial declarations can change the detail over time.<a class="cite" href="#src-roadmap" title="ASIC's roadmap for digital assets law reform implementation">[5]</a><a class="cite" href="#src-act" title="Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made">[1]</a></span></li>
-      </ol>
-    </section>
-
-    <section id="issuers">
-      <span class="section-num">SECTION 4</span>
-      <h2>What changes for issuers who tokenise through Tokeniser</h2>
-
-      <h3>Starting point: what Tokeniser says it does</h3>
-      <div class="block block-claim">
-        <span class="label label-claim">Company statement</span>
+      <div class="zone dep">
+        <div class="head caps">Depends on the facts</div>
         <ul>
-          <li>Tokeniser describes itself as software for fund administration and investor portals that runs on Redbelly Network, and as "a Redbelly Network project".<a class="cite" href="#src-tokhome" title="Tokeniser: home page and FAQ">[11]</a><a class="cite" href="#src-tokabout" title="Tokeniser: About us">[16]</a></li>
-          <li>It says: "Products issued through Tokeniser operate under an Asset Issuer's existing licensing", and that it programs eligibility checks (identity, KYC, AML, CTF, wholesale and sophisticated investor tests, and target market determinations) into each asset.<a class="cite" href="#src-tokhome" title="Tokeniser: home page and FAQ">[11]</a></li>
-          <li>It says it does not hold investors' private keys (the investor or a designated key manager does), and that it offers key management and recovery options.<a class="cite" href="#src-tokcust" title="What is self-custodial asset administration? (Knowledge Hub)">[15]</a></li>
-          <li>It lists IQ-EQ as providing trust, registry and fund administration services, and "licence and service".<a class="cite" href="#src-tokabout" title="Tokeniser: About us">[16]</a></li>
+          <li><a href="#custody">Who holds the keys</a></li>
+          <li><a href="#issuer-law">Native tokenised fund units</a></li>
+          <li><a href="#fit">Pools and lending for tokenised products</a></li>
+          <li><a href="#fit">Whether Redbelly is public infrastructure</a></li>
         </ul>
       </div>
+      <p class="note">Sources: the Act<a class="cite" href="#src-act" data-pin="ss 9E, 761GC, 761GD, 911A(2)" title="DAF Act, ss 9E, 761GC, 761GD, 911A(2)">[1]</a>, ASIC CP 392<a class="cite" href="#src-cp392" data-pin="paras 39, 41" title="ASIC CP 392, paras 39, 41">[9]</a> and ASIC's draft guide<a class="cite" href="#src-rg000" data-pin="RG 000.35, 000.41, 000.60" title="ASIC draft RG 000, RG 000.35, 000.41, 000.60">[10]</a>.</p>
+    </figure>
+  </div>
+</section>
 
-      <h3>What the law and ASIC say that matters for issuers</h3>
-      <div class="block block-law">
-        <span class="label label-law">The law says</span>
-        <ul>
-          <li><strong>Tokenising is not, by itself, what gets licensed.</strong> ASIC's draft guide: "A TCP is one way assets may be tokenised. Not every tokenisation arrangement is a TCP."<a class="cite" href="#src-rg000" title="Draft Regulatory Guide 000 Digital asset platforms and tokenised custody platforms (Attachment 1 to CP 392)">[10]</a></li>
-          <li><strong>Native tokenised fund units.</strong> ASIC's draft guide says a "direct" or "native" tokenisation arrangement, where each token represents a unit in a unit trust and the blockchain is the primary unit-holder register, "would generally be a managed investment scheme rather than a TCP".<a class="cite" href="#src-rg000" title="Draft Regulatory Guide 000 Digital asset platforms and tokenised custody platforms (Attachment 1 to CP 392)">[10]</a></li>
-          <li><strong>Tokens over financial products.</strong> A token created by a TCP over an asset that is a financial product will generally be the same type of financial product as that asset.<a class="cite" href="#src-rg000" title="Draft Regulatory Guide 000 Digital asset platforms and tokenised custody platforms (Attachment 1 to CP 392)">[10]</a><a class="cite" href="#src-act" title="Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made">[1]</a></li>
-          <li><strong>Raising money through a platform.</strong> A person offering securities through a DAP or TCP under a disclosure document lodged with ASIC must promptly tell the platform operator and each custodian if a supplementary or replacement document is lodged, if the person becomes prohibited from making offers under it, or if the document is withdrawn. The disclosure document does not need to describe the platform itself.<a class="cite" href="#src-act" title="Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made">[1]</a> <span class="pin">(s 741A)</span></li>
-          <li><strong>Platform-created interests.</strong> Platform operators and promoters are exempt from the fundraising rules for the equitable interests in securities that arise from holding them through the platform.<a class="cite" href="#src-act" title="Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made">[1]</a> <span class="pin">(s 741B)</span></li>
-          <li><strong>Secondary trading venues.</strong> A business may run a financial market for tokenised securities alongside a DAP for tokens that are not financial products, and each part is assessed separately.<a class="cite" href="#src-rg000" title="Draft Regulatory Guide 000 Digital asset platforms and tokenised custody platforms (Attachment 1 to CP 392)">[10]</a></li>
-        </ul>
+<section class="ribbon-band" aria-labelledby="ribbon-title">
+  <div class="wrap">
+    <div class="top"><span class="caps" id="ribbon-title">The calendar at a glance</span><span class="mono">Nov 2025 to Dec 2027</span></div>
+    <div class="ribbon" aria-hidden="true">
+      <div class="bar">
+        <span class="seg made" style="--a:20%;--b:66.2%"></span>
+        <span class="seg consult" style="--a:44.1%;--b:49.5%"></span>
+        <span class="seg trans" style="--a:66.2%;--b:89.2%"></span>
+        <span class="seg live" style="--a:89.2%;--b:100%"></span>
       </div>
+      <span class="yr" style="--x:7.7%">2026</span>
+      <span class="yr" style="--x:53.9%">2027</span>
+      <span class="ms top l" style="--x:3.2%"><span class="d">26 Nov 2025</span>Bill introduced</span>
+      <span class="ms top" style="--x:66.2%"><span class="d">8 Apr 2027</span>Act commences</span>
+      <span class="ms bot" style="--x:20%"><span class="d">8 Apr 2026</span>Royal Assent</span>
+      <span class="ms bot wide" style="--x:46.8%"><span class="d">15 Oct to 27 Nov 2026</span>ASIC consults (CP 392)</span>
+      <span class="ms bot" style="--x:89.2%"><span class="d">7 Oct 2027</span>Last day to apply</span>
+      <span class="now" style="--x:45.6%" data-start="2025-11-01" data-end="2027-12-31"><span>Today</span></span>
+    </div>
+    <div class="ribbon-key"><span><i style="background:#4a5c68"></i>Law made, not yet in force</span><span><i style="background:#8fa1ad"></i>ASIC consultation</span><span><i style="background:repeating-linear-gradient(135deg,#EF5350 0 4px,#b8403e 4px 8px)"></i>Six-month transition</span><span><i style="background:#EF5350"></i>Licence needed unless exempt</span></div>
+    <ol class="ribbon-list">
+      <li><span class="d">26 Nov 2025</span><span>Bill introduced</span></li>
+      <li><span class="d">8 Apr 2026</span><span>Royal Assent</span></li>
+      <li><span class="d">15 Oct 2026</span><span>ASIC consultation (CP 392) opens</span></li>
+      <li><span class="d">27 Nov 2026</span><span>Submissions close</span></li>
+      <li><span class="d">8 Apr 2027</span><span>Act commences, applications open</span></li>
+      <li><span class="d">7 Oct 2027</span><span>Last day for existing platforms to apply</span></li>
+    </ol>
+  </div>
+</section>
 
-      <h3>What that is likely to mean in practice</h3>
-      <div class="block block-analysis">
-        <span class="label label-analysis">Analysis</span>
-        <p>The cards below apply the rules above to common set-ups. They are the writer's reading, not ASIC's, and real structures will vary.</p>
+<nav class="chapters" aria-label="Chapters">
+  <ol class="wrap">
+    <li><a href="#ch1"><span class="n">01</span>The Act on one page</a></li>
+    <li><a href="#ch2"><span class="n">02</span>The licensing line</a></li>
+    <li><a href="#ch3"><span class="n">03</span>The calendar</a></li>
+    <li><a href="#ch4"><span class="n">04</span>Issuers on Tokeniser</a></li>
+    <li><a href="#ch5"><span class="n">05</span>Redbelly and the rules</a></li>
+    <li><a href="#ch6"><span class="n">06</span>What comes next</a></li>
+    <li><a href="#appendix"><span class="n">A</span>Act map, terms, sources</a></li>
+  </ol>
+</nav>
+
+<main id="main">
+<div class="wrap">
+
+  <div class="readkey" aria-label="How to read this guide">
+    <div><b class="caps">The law says</b>The Act, Parliament, Treasury or ASIC. Every point carries a source.</div>
+    <div><b class="caps" style="color:var(--outline)">Company says</b>What Redbelly or Tokeniser say about their own products. Claims, not findings.</div>
+    <div><b class="caps" style="color:var(--primary)">Analysis</b>The writer's reading. Labelled because it can be wrong.</div>
+    <div><b class="caps">Margin notes</b>The source and section for each passage, beside the text. Numbers match the Evidence page.</div>
+  </div>
+
+  <!-- 01 -->
+  <section class="chapter" id="ch1" aria-labelledby="ch1-title">
+    <div class="ch-head"><span class="n">01</span><div><h2 id="ch1-title">The Act on one page</h2><p>It adds two new financial products to the Corporations Act and puts the businesses that run them under ASIC licensing.</p></div></div>
+
+    <div class="an" data-k="law"><span class="k">The law says</span>
+      <div class="an-body">
+        <p>The <em>Corporations Amendment (Digital Assets Framework) Act 2026</em> is Act No. 38 of 2026. It amends the <em>Corporations Act 2001</em> and the <em>Australian Securities and Investments Commission Act 2001</em>.<a class="cite" href="#src-act" data-pin="title page; s 3" title="DAF Act, title page; s 3">[1]</a></p>
+        <p>The Bill was introduced on 26 November 2025, passed both Houses on 1 April 2026 and received Royal Assent on 8 April 2026.<a class="cite" href="#src-aph" data-pin="progress of bill" title="Parliament bill page, progress of bill">[3]</a><a class="cite" href="#src-act" data-pin="assent date" title="DAF Act, assent date">[1]</a></p>
+        <p>It is not a stand-alone crypto law. The two new platforms are regulated under the existing Australian financial services licence framework, with core duties such as acting efficiently, honestly and fairly, not misleading customers, explaining how assets are held, and offering dispute resolution.<a class="cite" href="#src-treasury" data-pin="media release" title="Treasury release, media release">[4]</a></p>
       </div>
-      <div class="cards">
-        <div class="card">
-          <div class="tagline">Set-up A</div>
-          <h4>Fund units or shares issued natively; investors hold their own keys</h4>
-          <p>No one holds tokens for investors and there is no separate asset held behind each token. On ASIC's draft view of native tokenisation, the main rules are likely to be the ones that already apply to the fund or company (scheme, AFSL, disclosure, target market and AML/CTF rules), not the DAP or TCP rules.<a class="cite" href="#src-rg000" title="Draft Regulatory Guide 000 Digital asset platforms and tokenised custody platforms (Attachment 1 to CP 392)">[10]</a></p>
-        </div>
-        <div class="card">
-          <div class="tagline">Set-up B</div>
-          <h4>Someone can move investors' tokens for them</h4>
-          <p>If the issuer, an administrator, Tokeniser or a key manager can transfer investors' tokens, block others and show it, that party may "possess" the tokens and could be operating a DAP. Who holds which keys, and whether control is shared, is the central fact. The Act has a rule for joint control, and regulations are expected on MPC.<a class="cite" href="#src-act" title="Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made">[1]</a><a class="cite" href="#src-rg000" title="Draft Regulatory Guide 000 Digital asset platforms and tokenised custody platforms (Attachment 1 to CP 392)">[10]</a> <span class="pin">(ss 761GB(2), 86(3); draft RG 000.41(b))</span></p>
-        </div>
-        <div class="card">
-          <div class="tagline">Set-up C</div>
-          <h4>An existing asset is held, and one redeemable token is issued for it</h4>
-          <p>For example a bond, gold or existing shares held by a custodian. This looks like a TCP. The operator would need a TCP authorisation, platform rules, a DAP/TCP Guide for retail clients and compliance with ASIC's asset-holding standards.<a class="cite" href="#src-act" title="Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made">[1]</a><a class="cite" href="#src-cp392" title="Consultation Paper 392 Digital asset law reform implementation: Proposed standards and guidance">[9]</a></p>
-        </div>
-        <div class="card">
-          <div class="tagline">Set-up D</div>
-          <h4>Secondary trading through liquidity pools, or lending</h4>
-          <p>This is the least settled area. Whether trading tokenised financial products this way is operating a financial market, or falls within the public infrastructure carve-out, depends on facts and on guidance still to come.<a class="cite" href="#src-rg000" title="Draft Regulatory Guide 000 Digital asset platforms and tokenised custody platforms (Attachment 1 to CP 392)">[10]</a> See <a href="#redbelly-fit">Section 5</a>.</p>
+      <aside class="an-notes" aria-label="Sources for this passage"><p class="mn"><a href="#src-act">[1]</a><span class="t">DAF Act</span><span class="p">title page; s 3; assent date</span></p><p class="mn"><a href="#src-aph">[3]</a><span class="t">Parliament bill page</span><span class="p">progress of bill</span></p><p class="mn"><a href="#src-treasury">[4]</a><span class="t">Treasury release</span><span class="p">media release</span></p></aside>
+    </div>
+
+    <div class="an" data-k="law" id="why"><span class="k">Why it exists</span>
+      <div class="an-body">
+        <p>The Government said when it introduced the Bill: "Currently, businesses can hold unlimited client digital assets without financial law safeguards. Recent collapses overseas have shown the consequences of inadequate oversight."<a class="cite" href="#src-treasury" data-pin="media release" title="Treasury release, media release">[4]</a></p>
+        <p>ASIC says the Act addresses "regulatory gaps and consequent uncertainty" for digital assets and some of the infrastructure behind them, and aims to foster innovation, competition and growth.<a class="cite" href="#src-cp392" data-pin="para 3" title="ASIC CP 392, para 3">[9]</a> ASIC's stated principle for putting it into practice is "same activity, same risk, same regulatory outcome".<a class="cite" href="#src-mr245" data-pin="Commissioner quote" title="ASIC 26-245MR, Commissioner quote">[8]</a></p>
+      </div>
+      <aside class="an-notes" aria-label="Sources for this passage"><p class="mn"><a href="#src-treasury">[4]</a><span class="t">Treasury release</span><span class="p">media release</span></p><p class="mn"><a href="#src-cp392">[9]</a><span class="t">ASIC CP 392</span><span class="p">para 3</span></p><p class="mn"><a href="#src-mr245">[8]</a><span class="t">ASIC 26-245MR</span><span class="p">Commissioner quote</span></p></aside>
+    </div>
+
+    <div class="sub"><h3>Five terms that carry the Act</h3></div>
+    <div class="an wide" data-k="law"><span class="k">The law says</span>
+      <div class="an-body">
+        <div class="grid3">
+          <article class="card term"><header><h4>Digital token</h4><span class="sec">s 761GB</span></header><div class="body"><p>An electronic record someone can control in fact: they can transfer it, stop others transferring it, and show they can do both. Practical control matters, not legal title.<a class="cite" href="#src-act" data-pin="s 761GB" title="DAF Act, s 761GB">[1]</a></p></div></article>
+          <article class="card term"><header><h4>Digital asset platform</h4><span class="sec">s 761GC</span></header><div class="body"><p>An arrangement where an operator possesses digital tokens for, or on behalf of, a client. An exchange or custodian holding customers' tokens is the plain example.<a class="cite" href="#src-act" data-pin="s 761GC" title="DAF Act, s 761GC">[1]</a></p></div></article>
+          <article class="card term"><header><h4>Tokenised custody platform</h4><span class="sec">s 761GD</span></header><div class="body"><p>The operator holds an asset other than money, creates one token for each asset, and the token gives a right to redeem it or direct its delivery. Something that fits both definitions is a TCP.<a class="cite" href="#src-act" data-pin="ss 761GD, 761GC(4)" title="DAF Act, ss 761GD, 761GC(4)">[1]</a></p></div></article>
+          <article class="card term"><header><h4>Public digital token infrastructure</h4><span class="sec">s 9E</span></header><div class="body"><p>Software or hardware for digital tokens whose protocols are open and non-discretionary, let any person contribute to the network, and do not rely on any one critical participant. Regulations can switch the test off or name infrastructure that counts.<a class="cite" href="#src-act" data-pin="s 9E" title="DAF Act, s 9E">[1]</a></p></div></article>
+          <article class="card term"><header><h4>Wrapped token</h4><span class="sec">s 765E</span></header><div class="body"><p>A token that gives a right to redeem an underlying asset. That redemption right is ignored when deciding if the token is a financial product, so it broadly takes the character of the asset behind it.<a class="cite" href="#src-act" data-pin="s 765E" title="DAF Act, s 765E">[1]</a><a class="cite" href="#src-rg000" data-pin="RG 000.48" title="ASIC draft RG 000, RG 000.48">[10]</a></p></div></article>
+          <article class="card term"><header><h4>Two products, not one</h4><span class="sec">RG 000.20</span></header><div class="body"><p>A platform is a financial product separate from anything held through it. Duties can apply to the platform and, separately, to a token on it that is itself a financial product, such as a tokenised share.<a class="cite" href="#src-rg000" data-pin="RG 000.20 to 000.21" title="ASIC draft RG 000, RG 000.20 to 000.21">[10]</a></p></div></article>
         </div>
       </div>
+      <aside class="an-notes" aria-label="Sources for this passage"><p class="mn"><a href="#src-act">[1]</a><span class="t">DAF Act</span><span class="p">s 761GB; s 761GC; ss 761GD, 761GC(4); s 9E; s 765E</span></p><p class="mn"><a href="#src-rg000">[10]</a><span class="t">ASIC draft RG 000</span><span class="p">RG 000.48; RG 000.20 to 000.21</span></p></aside>
+    </div>
+  </section>
 
-      <h3>A practical checklist for issuers</h3>
-      <div class="block block-analysis">
-        <span class="label label-analysis">Analysis</span>
-        <ul class="checklist">
-          <li>Map control: list every party that holds keys or can move investors' tokens, including recovery and back-up arrangements.</li>
-          <li>Classify each product and service in writing (DAP, TCP, managed investment scheme, market, or none) with reasons.</li>
-          <li>Compare your AFSL authorisations with ASIC's proposed DAP and TCP authorisations once they are final.</li>
-          <li>Record who configures eligibility rules and who signs them off. Tokeniser itself says the fund manager remains responsible for configuring them and remains the AML/CTF reporting entity.<a class="cite" href="#src-tokcomp" title="How does Tokeniser handle investor compliance? (Knowledge Hub)">[14]</a></li>
-          <li>Read CP 392 and consider making a submission by 27 November 2026.<a class="cite" href="#src-mr245" title="26-245MR ASIC consults on implementation of new digital asset laws">[8]</a></li>
-          <li>Watch for ASIC's final guidance and standards, planned for March 2027.<a class="cite" href="#src-cp392" title="Consultation Paper 392 Digital asset law reform implementation: Proposed standards and guidance">[9]</a></li>
-          <li>Get advice from an Australian financial services lawyer before you rely on any classification.</li>
+  <!-- 02 -->
+  <section class="chapter" id="ch2" aria-labelledby="ch2-title">
+    <div class="ch-head"><span class="n">02</span><div><h2 id="ch2-title">The licensing line</h2><p>Running a platform needs a licence. Some small, incidental or infrastructure activity does not.</p></div></div>
+
+    <div class="an" data-k="law" id="who-needs"><span class="k">Who needs a licence</span>
+      <div class="an-body">
+        <ul class="marks">
+          <li><strong>Platform operators.</strong> From 8 October 2027, operators of digital asset platforms (DAPs) and tokenised custody platforms (TCPs), and some other providers of related services, need an AFS licence with the right authorisation unless an exemption applies.<a class="cite" href="#src-cp392" data-pin="para 39" title="ASIC CP 392, para 39">[9]</a></li>
+          <li><strong>People around the platform.</strong> Dealing in a platform other than by issuing it, or giving advice about one, also needs a licence.<a class="cite" href="#src-cp392" data-pin="para 41" title="ASIC CP 392, para 41">[9]</a></li>
+          <li><strong>A corporation, not a person.</strong> These services must be provided by a "constitutionally-covered corporation", which broadly means a trading, financial or foreign corporation. An individual or partnership providing them by phone, internet or similar means breaches a civil penalty provision.<a class="cite" href="#src-act" data-pin="ss 766M, 9" title="DAF Act, ss 766M, 9">[1]</a><a class="cite" href="#src-constitution" data-pin="s 51(xx)" title="Constitution, s 51(xx)">[2]</a></li>
+          <li><strong>Platform duties on top of the usual ones.</strong> Licensed operators must follow ASIC's asset-holding standards and transactional and settlement standards, and keep platform rules with set contents, including transparent and non-discriminatory eligibility criteria. Before issuing a platform to a retail client they must give a DAP/TCP Guide and have a voting policy, and they must pass on communications about underlying assets when a client asks.<a class="cite" href="#src-act" data-pin="ss 912BB, 912BC, 912BG, 1020AN to 1020AR" title="DAF Act, ss 912BB, 912BC, 912BG, 1020AN to 1020AR">[1]</a></li>
+          <li><strong>Product design.</strong> An issuer that must prepare a DAP/TCP Guide must also make a target market determination for the platform.<a class="cite" href="#src-act" data-pin="s 994B as amended" title="DAF Act, s 994B as amended">[1]</a><a class="cite" href="#src-rg000" data-pin="Section D table" title="ASIC draft RG 000, Section D table">[10]</a></li>
         </ul>
       </div>
-    </section>
+      <aside class="an-notes" aria-label="Sources for this passage"><p class="mn"><a href="#src-cp392">[9]</a><span class="t">ASIC CP 392</span><span class="p">para 39; para 41</span></p><p class="mn"><a href="#src-act">[1]</a><span class="t">DAF Act</span><span class="p">ss 766M, 9; ss 912BB, 912BC, 912BG, 1020AN to 1020AR; s 994B as amended</span></p><p class="mn"><a href="#src-constitution">[2]</a><span class="t">Constitution</span><span class="p">s 51(xx)</span></p><p class="mn"><a href="#src-rg000">[10]</a><span class="t">ASIC draft RG 000</span><span class="p">Section D table</span></p></aside>
+    </div>
 
-    <section id="redbelly-fit">
-      <span class="section-num">SECTION 5</span>
-      <h2>Where Redbelly's compliance design lines up, and where it is unclear</h2>
-
-      <div class="block block-claim">
-        <span class="label label-claim">Company statement</span>
-        <ul>
-          <li>Redbelly's documentation describes <strong>Receptor</strong> as its "native digital identity and verifiable credential protocol", which "facilitates network access" and helps use cases surface eligibility criteria and users prove they meet them. It is built on the W3C verifiable credential data model.<a class="cite" href="#src-rbreceptor" title="Receptor (ID protocol), Redbelly Network technical documentation">[18]</a></li>
-          <li>The <strong>Eligibility Kit</strong> lets asset issuers verify investor eligibility using zero-knowledge proofs, without the investor revealing the underlying personal data.<a class="cite" href="#src-rbelig" title="Eligibility Kit overview, Redbelly Network technical documentation">[19]</a> Supported credential types include an AML/CTF credential and an Australian sophisticated or wholesale investor credential.<a class="cite" href="#src-rbcriteria" title="Configure eligibility criteria, Redbelly Network technical documentation">[20]</a></li>
-          <li>Individual onboarding includes wallet authentication, KYC verification and on-chain permission set-up.<a class="cite" href="#src-rbindiv" title="Individual onboarding overview, Redbelly Network technical documentation">[21]</a> Business onboarding (KYB) is provided by Averer.<a class="cite" href="#src-rbbiz" title="Business onboarding overview, Redbelly Network technical documentation">[22]</a></li>
-          <li>Redbelly says AML, CTF and Travel Rule requirements "can be applied as needed".<a class="cite" href="#src-rbtok" title="Asset tokenisation on Redbelly Network">[17]</a></li>
+    <div class="sub" id="carve-outs"><h3>Outside the licence</h3></div>
+    <div class="an" data-k="law"><span class="k">The law says</span>
+      <div class="an-body">
+        <ul class="carve">
+          <li><h4>Small DAPs<small>DAPs only, not TCPs</small></h4><div><p>All four must hold: no financial products on any DAP run by the operator's closely-related group; no more than <strong>$10 million</strong> in transactions through those platforms in the last 12 months; whenever a token becomes a client's asset, that client's total entry value is no more than <strong>$5,000</strong>; and a notice has been lodged with ASIC.<a class="cite" href="#src-act" data-pin="s 911A(2)(ja), (6)" title="DAF Act, s 911A(2)(ja), (6)">[1]</a></p><p>Regulations can raise the amounts, and ASIC's draft guide says the value tests will rise with inflation. The platform is still a DAP.<a class="cite" href="#src-act" data-pin="s 911A(4B)" title="DAF Act, s 911A(4B)">[1]</a><a class="cite" href="#src-rg000" data-pin="Table 3" title="ASIC draft RG 000, Table 3">[10]</a></p></div></li>
+          <li><h4>Incidental mentions and arranging</h4><div><p>Only telling someone a platform exists, or arranging for them to use one, in the ordinary course of business, where that is not a significant part of the business.<a class="cite" href="#src-act" data-pin="s 911A(2)(jb)" title="DAF Act, s 911A(2)(jb)">[1]</a></p></div></li>
+          <li><h4>Public digital token infrastructure</h4><div><p>Not a managed investment scheme and not a financial product. Taking part in consensus on it, such as validating, is not a financial service and is not a clearing and settlement facility.<a class="cite" href="#src-act" data-pin="s 9 (mf); ss 765A(1)(xa), (xb), 766A(3)(b), 768A(2)(ha)" title="DAF Act, s 9 (mf); ss 765A(1)(xa), (xb), 766A(3)(b), 768A(2)(ha)">[1]</a></p></div></li>
+          <li><h4>Custodial staking on a licensed platform</h4><div><p>Where the platform issuer holds an AFS licence to issue the platform, the staking part is not a separate scheme or financial product.<a class="cite" href="#src-act" data-pin="s 9 (me); s 765A(1)(pa), (pb)" title="DAF Act, s 9 (me); s 765A(1)(pa), (pb)">[1]</a><a class="cite" href="#src-rg000" data-pin="RG 000.58 to 000.59" title="ASIC draft RG 000, RG 000.58 to 000.59">[10]</a></p></div></li>
+          <li><h4>Technology only</h4><div><p>ASIC's draft guide says an arrangement may not be a DAP where it only provides technology or infrastructure to an operator and does not possess tokens for the operator's clients, including some multi-party computation (MPC) key set-ups under expected regulations.<a class="cite" href="#src-rg000" data-pin="RG 000.41(b)" title="ASIC draft RG 000, RG 000.41(b)">[10]</a></p></div></li>
+          <li><h4>Proposed in regulations</h4><div><p>Sub-custodian, overseas issuer and client, overseas related body corporate or joint venture, and nominee company exemptions, all "subject to Government processes". An exemption does not stop a facility being a DAP or TCP.<a class="cite" href="#src-rg000" data-pin="Table 3; RG 000.76" title="ASIC draft RG 000, Table 3; RG 000.76">[10]</a><a class="cite" href="#src-cp392" data-pin="para 38" title="ASIC CP 392, para 38">[9]</a></p></div></li>
         </ul>
       </div>
+      <aside class="an-notes" aria-label="Sources for this passage"><p class="mn"><a href="#src-act">[1]</a><span class="t">DAF Act</span><span class="p">s 911A(2)(ja), (6); s 911A(4B); s 911A(2)(jb); s 9 (mf); ss 765A(1)(xa), (xb), 766A(3)(b), 768A(2)(ha); s 9 (me); s 765A(1)(pa), (pb)</span></p><p class="mn"><a href="#src-rg000">[10]</a><span class="t">ASIC draft RG 000</span><span class="p">Table 3; RG 000.58 to 000.59; RG 000.41(b); RG 000.76</span></p><p class="mn"><a href="#src-cp392">[9]</a><span class="t">ASIC CP 392</span><span class="p">para 38</span></p></aside>
+    </div>
 
-      <p>The table compares what the law asks for with what Redbelly and Tokeniser describe. The first column is law, the second is company statements, and the third is the writer's analysis.</p>
-
-      <div class="table-wrap">
-        <table class="align">
-          <thead><tr><th scope="col">What the law asks for</th><th scope="col">What Redbelly or Tokeniser describe</th><th scope="col">How it lines up (analysis)</th></tr></thead>
-          <tbody>
-            <tr>
-              <td data-th="What the law asks for">Platform rules must include "transparent and non-discriminatory eligibility criteria for identifying who can become a client".<a class="cite" href="#src-act" title="Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made">[1]</a> <span class="pin">s 912BG(1)(a)</span></td>
-              <td data-th="Redbelly or Tokeniser describe">Eligibility criteria written as credential queries and checked before access; Tokeniser says every transfer is checked against the asset's rules.<a class="cite" href="#src-rbcriteria" title="Configure eligibility criteria, Redbelly Network technical documentation">[20]</a><a class="cite" href="#src-tokhome" title="Tokeniser: home page and FAQ">[11]</a></td>
-              <td data-th="How it lines up"><span class="fit fit-yes">Lines up as a mechanism</span><p>Criteria can be encoded and applied the same way every time. Writing criteria that are transparent and non-discriminatory remains the licensed operator's job.</p></td>
-            </tr>
-            <tr>
-              <td data-th="What the law asks for">ASIC can set asset-holding standards on record-keeping, reconciliation and reporting.<a class="cite" href="#src-act" title="Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made">[1]</a> <span class="pin">s 912BE(1)(a)(ii)</span></td>
-              <td data-th="Redbelly or Tokeniser describe">Tokeniser says every compliance check, transfer and rejection is recorded on-chain and in a compliance log.<a class="cite" href="#src-tokcomp" title="How does Tokeniser handle investor compliance? (Knowledge Hub)">[14]</a></td>
-              <td data-th="How it lines up"><span class="fit fit-partly">Partly; depends on final standards</span><p>A shared ledger may make reconciliation easier. Whether it meets the standards cannot be known until ASIC finalises them.</p></td>
-            </tr>
-            <tr>
-              <td data-th="What the law asks for">Asset-holding standards are expected to cover holding on trust, segregation and withdrawal rights. The Act says the standards must not ban holding clients' tokens in one wallet if internal records identify each client's tokens.<a class="cite" href="#src-roadmap" title="ASIC's roadmap for digital assets law reform implementation">[5]</a><a class="cite" href="#src-act" title="Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made">[1]</a> <span class="pin">s 912BE(2)(e)</span></td>
-              <td data-th="Redbelly or Tokeniser describe">Tokeniser says investors hold tokens in their own wallets, or through a designated key manager.<a class="cite" href="#src-tokcust" title="What is self-custodial asset administration? (Knowledge Hub)">[15]</a></td>
-              <td data-th="How it lines up"><span class="fit fit-partly">Depends on the custody model</span><p>True self-custody may mean the DAP rules are not engaged at all. Where a key manager can move tokens for investors, the standards may apply to that party.</p></td>
-            </tr>
-            <tr>
-              <td data-th="What the law asks for">Retail clients must get a DAP/TCP Guide before a platform is issued to them; a target market determination is needed where a Guide is required.<a class="cite" href="#src-act" title="Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made">[1]</a><a class="cite" href="#src-rg000" title="Draft Regulatory Guide 000 Digital asset platforms and tokenised custody platforms (Attachment 1 to CP 392)">[10]</a> <span class="pin">ss 1020AN, 994B</span></td>
-              <td data-th="Redbelly or Tokeniser describe">An Australian sophisticated or wholesale investor credential exists; Tokeniser says target market determinations are enforced at transfer.<a class="cite" href="#src-rbcriteria" title="Configure eligibility criteria, Redbelly Network technical documentation">[20]</a><a class="cite" href="#src-toktech" title="Tokeniser: Our technology">[12]</a></td>
-              <td data-th="How it lines up"><span class="fit fit-yes">Lines up for enforcement</span><p>Gating who can hold an asset supports distribution rules. It does not write the DAP/TCP Guide or the target market determination; those documents are still required.</p></td>
-            </tr>
-            <tr>
-              <td data-th="What the law asks for">Platform rules must set out the settlement method, who bears counterparty and operational risk, and how acquisitions are recorded in any legal or technical register.<a class="cite" href="#src-act" title="Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made">[1]</a> <span class="pin">s 912BG(1)(c), (d)</span></td>
-              <td data-th="Redbelly or Tokeniser describe">Deterministic finality, described as final "the moment it completes".<a class="cite" href="#src-toktech" title="Tokeniser: Our technology">[12]</a></td>
-              <td data-th="How it lines up"><span class="fit fit-partly">Partly</span><p>Clear finality may make the settlement method easier to describe. The disclosures still have to be written and kept accurate.</p></td>
-            </tr>
-            <tr>
-              <td data-th="What the law asks for">The DAF Act itself contains no anti-money laundering rules. Its eligibility, conduct and disclosure duties fall on the licensed operator.<a class="cite" href="#src-act" title="Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made">[1]</a> <span class="pin">ss 912BA to 912BG, 1020AM</span></td>
-              <td data-th="Redbelly or Tokeniser describe">KYC in onboarding; Tokeniser says the fund manager remains the reporting entity under the AML/CTF Act.<a class="cite" href="#src-rbindiv" title="Individual onboarding overview, Redbelly Network technical documentation">[21]</a><a class="cite" href="#src-tokcomp" title="How does Tokeniser handle investor compliance? (Knowledge Hub)">[14]</a></td>
-              <td data-th="How it lines up"><span class="fit fit-yes">Supporting tool, not a substitute</span><p>Tools can help the responsible entity meet its duties; they do not move those duties onto the network.</p></td>
-            </tr>
-            <tr>
-              <td data-th="What the law asks for">A voting policy: vote only on client instructions where clients can instruct, and pass on communications about underlying assets on request.<a class="cite" href="#src-act" title="Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made">[1]</a> <span class="pin">ss 1020AP to 1020AR</span></td>
-              <td data-th="Redbelly or Tokeniser describe">No specific feature found in the sources reviewed.</td>
-              <td data-th="How it lines up"><span class="fit fit-none">Not addressed in sources reviewed</span><p>A gap to ask about rather than assume either way.</p></td>
-            </tr>
-            <tr>
-              <td data-th="What the law asks for">Public digital token infrastructure must meet three tests: open, non-discretionary protocols; any person may contribute; no critical participant. Regulations can exclude or prescribe infrastructure.<a class="cite" href="#src-act" title="Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made">[1]</a> <span class="pin">s 9E</span></td>
-              <td data-th="Redbelly or Tokeniser describe">Tokeniser says Redbelly is "designed to meet the three statutory tests".<a class="cite" href="#src-toktech" title="Tokeniser: Our technology">[12]</a> Redbelly's docs say issuers who provide network access are accredited by Redbelly<a class="cite" href="#src-rbreceptor" title="Receptor (ID protocol), Redbelly Network technical documentation">[18]</a>; node operators are "successful applicants" who receive an invitation<a class="cite" href="#src-rbnodes" title="Network nodes, Redbelly Vine developer portal">[23]</a>; operators must stake RBNT and Redbelly may slash misbehaving participants<a class="cite" href="#src-rbrewards" title="Rewards and incentives, Redbelly Vine developer portal">[25]</a>; governors must notify Redbelly of planned downtime.<a class="cite" href="#src-rbreconfig" title="Network reconfiguration, Redbelly Vine developer portal">[24]</a></td>
-              <td data-th="How it lines up"><span class="fit fit-unclear">Unclear</span><p>No ASIC guidance, court decision or regulation was found that decides whether Redbelly is public digital token infrastructure. Invitation-based node operation and Redbelly's role in accrediting network-access issuers raise questions under test (b), "any person" may contribute, and test (c), no critical participant. Tokeniser's own page flags test (c) as needing evidence for protocols with a privileged role.<a class="cite" href="#src-tokpf" title="Tokeniser: Protocol finance">[13]</a></p></td>
-            </tr>
-            <tr>
-              <td data-th="What the law asks for">The Act takes public digital token infrastructure out of the scheme and financial product definitions, and takes consensus out of financial services and clearing and settlement.<a class="cite" href="#src-act" title="Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made">[1]</a> ASIC's draft guide says the market regime applies where a facility meets the market definition for financial products.<a class="cite" href="#src-rg000" title="Draft Regulatory Guide 000 Digital asset platforms and tokenised custody platforms (Attachment 1 to CP 392)">[10]</a></td>
-              <td data-th="Redbelly or Tokeniser describe">Tokeniser says automated market maker liquidity and lending sit in an "exempt protocol layer", citing the Explanatory Memorandum.<a class="cite" href="#src-tokpf" title="Tokeniser: Protocol finance">[13]</a></td>
-              <td data-th="How it lines up"><span class="fit fit-unclear">Unclear</span><p>The writer found no express carve-out of this infrastructure from the "financial market" definition in the Act's text. Whether a given pool or lending protocol is itself public infrastructure, and whether trading tokenised financial products through it is operating a market, are fact-specific. ASIC intends to update INFO 225, which covers how the Act treats public digital token infrastructure, before finalising its guide in early 2027.<a class="cite" href="#src-rg000" title="Draft Regulatory Guide 000 Digital asset platforms and tokenised custody platforms (Attachment 1 to CP 392)">[10]</a> The Explanatory Memorandum passages Tokeniser cites were not independently checked for this explainer.</p></td>
-            </tr>
-          </tbody>
-        </table>
+    <div class="an" data-k="tool" id="small-dap"><span class="k">Try it</span>
+      <div class="an-body">
+        <div class="tool" data-tool="lowvalue">
+          <h4>Small DAP test: do all four conditions hold?</h4>
+          <p class="hint">Checks the four conditions in s 911A(2)(ja) using the amounts in the Act as made. It is a reading aid, not advice, and it does not apply to tokenised custody platforms.<a class="cite" href="#src-act" data-pin="s 911A(2)(ja)" title="DAF Act, s 911A(2)(ja)">[1]</a></p>
+          <div class="fields">
+            <div class="field"><label for="lv-volume">Transactions through the group's DAPs in the last 12 months (A$)</label><input id="lv-volume" type="number" min="0" step="1000" inputmode="numeric" value="4000000"><p class="help">Limit in the Act: $10,000,000</p></div>
+            <div class="field"><label for="lv-client">Largest total entry value for one client (A$)</label><input id="lv-client" type="number" min="0" step="100" inputmode="numeric" value="3000"><p class="help">Limit in the Act: $5,000</p></div>
+            <div class="field"><label for="lv-fp">Are any financial products held on the group's DAPs?</label><select id="lv-fp"><option value="no">No</option><option value="yes">Yes</option></select></div>
+            <div class="field"><label for="lv-notice">Has the notice been lodged with ASIC?</label><select id="lv-notice"><option value="no">Not yet</option><option value="yes">Yes</option></select></div>
+          </div>
+          <div class="verdict" aria-live="polite">
+            <ul>
+              <li data-c="fp">No financial products held on the group's DAPs</li>
+              <li data-c="volume">Transactions in the last 12 months do not exceed $10 million</li>
+              <li data-c="client">No client's total entry value exceeds $5,000</li>
+              <li data-c="notice">Notice lodged with ASIC in the prescribed form</li>
+            </ul>
+            <p class="out">Fill in the fields to check the four conditions.</p>
+          </div>
+        </div>
       </div>
+      <aside class="an-notes" aria-label="Sources for this passage"><p class="mn"><a href="#src-act">[1]</a><span class="t">DAF Act</span><span class="p">s 911A(2)(ja)</span></p></aside>
+    </div>
 
-      <div class="block block-analysis">
-        <span class="label label-analysis">Analysis</span>
-        <h4 style="margin-top:0">Bottom line</h4>
-        <ul>
-          <li>Redbelly's identity and eligibility tools line up most clearly with the parts of the law about <strong>who may access a product</strong> and <strong>keeping records</strong>.</li>
-          <li>The law puts duties on people and companies (licensees, issuers and AML/CTF reporting entities), not on software. Tools can help them meet those duties. They do not take them over.</li>
-          <li>The biggest open questions are about classification: whether Redbelly is public digital token infrastructure, who "possesses" tokens under a given key set-up, and when secondary trading needs a market licence. ASIC guidance, regulations or legal advice will need to settle them.</li>
-          <li>Nothing here should be read as saying that Redbelly, Tokeniser or any issuer is licensed, exempt or compliant. Most of the regime has not started yet.</li>
+    <div class="sub"><h3>When another regime takes over</h3></div>
+    <div class="an" data-k="law"><span class="k">The law says</span>
+      <div class="an-body">
+        <ul class="marks">
+          <li><strong>Managed investment schemes.</strong> A platform that is also a scheme is regulated as a scheme unless carve-outs apply: clients can redeem the assets, the operator acts only on client instructions, and the operator cannot materially set clients' rights. A TCP must also hold one class of asset, and its tokens can only be as divisible as the asset can be physically delivered.<a class="cite" href="#src-act" data-pin="s 764A(1)(la), (lb); s 9 (mc), (md)" title="DAF Act, s 764A(1)(la), (lb); s 9 (mc), (md)">[1]</a><a class="cite" href="#src-rg000" data-pin="RG 000.49 to 000.53" title="ASIC draft RG 000, RG 000.49 to 000.53">[10]</a></li>
+          <li><strong>Markets and clearing.</strong> Where a facility meets the financial market or clearing and settlement facility definition for assets that are financial products, that regime applies rather than the DAP rules.<a class="cite" href="#src-rg000" data-pin="RG 000.60 to 000.62" title="ASIC draft RG 000, RG 000.60 to 000.62">[10]</a></li>
+          <li><strong>The Minister.</strong> The Minister can declare a DAP to be a market or clearing facility, exempt one from those regimes, or ban specified financial products from going through specified platforms.<a class="cite" href="#src-act" data-pin="ss 767B, 767C, 768B, 768C, 912BH" title="DAF Act, ss 767B, 767C, 768B, 768C, 912BH">[1]</a></li>
         </ul>
       </div>
-    </section>
+      <aside class="an-notes" aria-label="Sources for this passage"><p class="mn"><a href="#src-act">[1]</a><span class="t">DAF Act</span><span class="p">s 764A(1)(la), (lb); s 9 (mc), (md); ss 767B, 767C, 768B, 768C, 912BH</span></p><p class="mn"><a href="#src-rg000">[10]</a><span class="t">ASIC draft RG 000</span><span class="p">RG 000.49 to 000.53; RG 000.60 to 000.62</span></p></aside>
+    </div>
 
-    <section id="watch-next">
-      <span class="section-num">SECTION 6</span>
-      <h2>What to watch next</h2>
-      <div class="block block-law">
-        <span class="label label-law">The law says</span>
-        <ul>
-          <li><strong>27 November 2026:</strong> CP 392 submissions close.<a class="cite" href="#src-mr245" title="26-245MR ASIC consults on implementation of new digital asset laws">[8]</a></li>
-          <li><strong>March 2027:</strong> planned publication of ASIC's final standards and guidance.<a class="cite" href="#src-cp392" title="Consultation Paper 392 Digital asset law reform implementation: Proposed standards and guidance">[9]</a></li>
-          <li><strong>Regulations:</strong> several exemptions, and how MPC key arrangements are treated, depend on regulations that are still "subject to Government processes".<a class="cite" href="#src-rg000" title="Draft Regulatory Guide 000 Digital asset platforms and tokenised custody platforms (Attachment 1 to CP 392)">[10]</a></li>
-          <li><strong>INFO 225 update:</strong> ASIC intends to update INFO 225, the guidance that explains how the Act treats public digital token infrastructure, wrapped tokens and custodial staking, in the lead-up to finalising its guide in early 2027.<a class="cite" href="#src-rg000" title="Draft Regulatory Guide 000 Digital asset platforms and tokenised custody platforms (Attachment 1 to CP 392)">[10]</a></li>
-          <li><strong>Payments reforms:</strong> some stablecoins will be regulated separately, as tokenised stored value facilities.<a class="cite" href="#src-cp392" title="Consultation Paper 392 Digital asset law reform implementation: Proposed standards and guidance">[9]</a></li>
-          <li><strong>Ministerial declarations:</strong> the Minister can move platforms into or out of the market and clearing regimes, and ban certain products from platforms.<a class="cite" href="#src-act" title="Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made">[1]</a></li>
+    <div class="sub" id="holders"><h3>If you hold tokens on a licensed platform</h3></div>
+    <div class="an wide" data-k="law"><span class="k">The law says</span>
+      <div class="an-body">
+        <div class="grid3 holders">
+          <article class="card"><header><h4>A guide before you join</h4></header><div class="body">Retail clients get a DAP/TCP Guide first. It must cover the platform's risks, who the custodians are, all fees, how your rights differ from holding the asset directly, and how to complain.<a class="cite" href="#src-act" data-pin="ss 1020AN, 1020AO" title="DAF Act, ss 1020AN, 1020AO">[1]</a></div></article>
+          <article class="card"><header><h4>Your votes, your call</h4></header><div class="body">The platform needs a voting policy. Where you can instruct, it votes only as you instruct; where you cannot, it does not vote.<a class="cite" href="#src-act" data-pin="ss 1020AP, 1020AQ" title="DAF Act, ss 1020AP, 1020AQ">[1]</a></div></article>
+          <article class="card"><header><h4>Papers on request</h4></header><div class="body">Communications sent to holders of an underlying asset must be passed on to you when you ask, including through a standing request.<a class="cite" href="#src-act" data-pin="s 1020AR" title="DAF Act, s 1020AR">[1]</a></div></article>
+          <article class="card"><header><h4>Rules that bind the operator</h4></header><div class="body">Platform rules have effect as a contract between the operator and each client.<a class="cite" href="#src-act" data-pin="s 912BG(2)" title="DAF Act, s 912BG(2)">[1]</a></div></article>
+          <article class="card"><header><h4>Client money in trust</h4></header><div class="body">ASIC's asset-holding standards must require money held under a platform, other than underlying assets, to be held in trust for clients.<a class="cite" href="#src-act" data-pin="s 912BE(2)(b)" title="DAF Act, s 912BE(2)(b)">[1]</a></div></article>
+          <article class="card"><header><h4>Somewhere to complain</h4></header><div class="body">The Government says licensed platforms must provide accessible dispute resolution and compensation if things go wrong.<a class="cite" href="#src-treasury" data-pin="media release" title="Treasury release, media release">[4]</a></div></article>
+        </div>
+      </div>
+      <aside class="an-notes" aria-label="Sources for this passage"><p class="mn"><a href="#src-act">[1]</a><span class="t">DAF Act</span><span class="p">ss 1020AN, 1020AO; ss 1020AP, 1020AQ; s 1020AR; s 912BG(2); s 912BE(2)(b)</span></p><p class="mn"><a href="#src-treasury">[4]</a><span class="t">Treasury release</span><span class="p">media release</span></p></aside>
+    </div>
+  </section>
+
+  <!-- 03 -->
+  <section class="chapter" id="ch3" aria-labelledby="ch3-title">
+    <div class="ch-head"><span class="n">03</span><div><h2 id="ch3-title">The calendar</h2><p>The Act is law now and starts on 8 April 2027. Existing platforms then have six months to apply, and can keep operating while ASIC decides.</p></div></div>
+
+    <!-- DATENOTE:START -->
+    <div class="an" data-k="law" id="date-note"><span class="k">Date check</span>
+      <div class="an-body">
+        <div class="datenote">
+          <h4>8 April or 9 April 2027?</h4>
+          <div class="compare">
+            <div><b>8 April 2027</b>Federal Register commencement column; ASIC CP 392 and 26-245MR (15 October 2026)</div>
+            <div><b>9 April 2027</b>ASIC's roadmap (20 April 2026) and news item (4 May 2026)</div>
+          </div>
+          <p>The Act starts on "the day after the end of the period of 12 months beginning on the day this Act receives the Royal Assent".<a class="cite" href="#src-act" data-pin="s 2(1)" title="DAF Act, s 2(1)">[1]</a> The Register records that day as 8 April 2027, in a column that is expressly not part of the Act.<a class="cite" href="#src-act" data-pin="s 2(2)" title="DAF Act, s 2(2)">[1]</a> ASIC's April and May 2026 material said 9 April 2027.<a class="cite" href="#src-roadmap" data-pin="second paragraph" title="ASIC roadmap, second paragraph">[5]</a><a class="cite" href="#src-asicmay" data-pin="Digital Assets law reform" title="ASIC news, 4 May 2026, Digital Assets law reform">[6]</a> Its October 2026 consultation says 8 April 2027, with 7 October 2027 as the last day to apply.<a class="cite" href="#src-cp392" data-pin="p 5; para 45" title="ASIC CP 392, p 5; para 45">[9]</a><a class="cite" href="#src-mr245" data-pin="first paragraph" title="ASIC 26-245MR, first paragraph">[8]</a> This guide uses ASIC's latest dates. If an exact day matters to you, confirm it with ASIC.</p>
+        </div>
+      </div>
+      <aside class="an-notes" aria-label="Sources for this passage"><p class="mn"><a href="#src-act">[1]</a><span class="t">DAF Act</span><span class="p">s 2(1); s 2(2)</span></p><p class="mn"><a href="#src-roadmap">[5]</a><span class="t">ASIC roadmap</span><span class="p">second paragraph</span></p><p class="mn"><a href="#src-asicmay">[6]</a><span class="t">ASIC news, 4 May 2026</span><span class="p">Digital Assets law reform</span></p><p class="mn"><a href="#src-cp392">[9]</a><span class="t">ASIC CP 392</span><span class="p">p 5; para 45</span></p><p class="mn"><a href="#src-mr245">[8]</a><span class="t">ASIC 26-245MR</span><span class="p">first paragraph</span></p></aside>
+    </div>
+    <!-- DATENOTE:END -->
+
+    <div class="an wide" data-k="law" id="dates"><span class="k">The law says</span>
+      <div class="an-body">
+        <div class="tablebox">
+          <table class="when">
+            <thead><tr><th scope="col">Date</th><th scope="col">What happens</th><th scope="col">Status</th></tr></thead>
+            <tbody>
+              <tr class="phase"><td colspan="3">Before commencement</td></tr>
+              <tr><td class="d">26 Nov 2025</td><td>Bill introduced into the House of Representatives; the Government announces the reforms.<a class="cite" href="#src-aph" data-pin="progress" title="Parliament bill page, progress">[3]</a><a class="cite" href="#src-treasury" data-pin="media release" title="Treasury release, media release">[4]</a></td><td><span class="status">Done</span></td></tr>
+              <tr><td class="d">4 Feb 2026</td><td>Bill passes the House.<a class="cite" href="#src-aph" data-pin="progress" title="Parliament bill page, progress">[3]</a></td><td><span class="status">Done</span></td></tr>
+              <tr><td class="d">5 Feb 2026</td><td>Introduced in the Senate and referred to the Senate Economics Legislation Committee, which reported on 16 March 2026.<a class="cite" href="#src-aph" data-pin="progress; notes" title="Parliament bill page, progress; notes">[3]</a></td><td><span class="status">Done</span></td></tr>
+              <tr><td class="d">1 Apr 2026</td><td>Bill passes both Houses.<a class="cite" href="#src-aph" data-pin="progress" title="Parliament bill page, progress">[3]</a></td><td><span class="status">Done</span></td></tr>
+              <tr class="key"><td class="d">8 Apr 2026</td><td>Royal Assent. The Act is law but its rules do not apply yet.<a class="cite" href="#src-act" data-pin="assent; s 2" title="DAF Act, assent; s 2">[1]</a></td><td><span class="status">Done</span></td></tr>
+              <tr><td class="d">20 Apr 2026</td><td>ASIC publishes its 18-month implementation roadmap.<a class="cite" href="#src-roadmap" data-pin="page date" title="ASIC roadmap, page date">[5]</a></td><td><span class="status">Done</span></td></tr>
+              <tr><td class="d">30 Sep 2026</td><td>End of ASIC's sector-wide INFO 225 no-action position, extended from 30 June 2026. This concerned licensing under the existing law for digital assets that are already financial products, not the new platform regime.<a class="cite" href="#src-asicext" data-pin="first paragraph" title="ASIC no-action extension, first paragraph">[7]</a><a class="cite" href="#src-asicmay" data-pin="first paragraph" title="ASIC news, 4 May 2026, first paragraph">[6]</a></td><td><span class="status">Done</span></td></tr>
+              <tr><td class="d">15 Oct 2026</td><td>ASIC releases CP 392: a draft regulatory guide, draft asset-holding and transactional and settlement standards, and draft financial requirements.<a class="cite" href="#src-mr245" data-pin="body" title="ASIC 26-245MR, body">[8]</a></td><td><span class="status">Done</span></td></tr>
+              <tr class="key"><td class="d">27 Nov 2026</td><td>CP 392 submissions close at 5pm AEDT.<a class="cite" href="#src-mr245" data-pin="body" title="ASIC 26-245MR, body">[8]</a></td><td><span class="status open">Next</span></td></tr>
+              <tr><td class="d">Nov 2026 to Mar 2027</td><td>ASIC reviews feedback; final instruments and guidance planned for March 2027.<a class="cite" href="#src-cp392" data-pin="p 5, stages 3 and 4" title="ASIC CP 392, p 5, stages 3 and 4">[9]</a></td><td><span class="status none">Later</span></td></tr>
+              <tr class="phase"><td colspan="3">Commencement</td></tr>
+              <tr class="key"><td class="d">8 Apr 2027</td><td>The Act commences and DAP and TCP licence applications open.<a class="cite" href="#src-cp392" data-pin="p 5, stage 5" title="ASIC CP 392, p 5, stage 5">[9]</a></td><td><span class="status none">Later</span></td></tr>
+              <tr class="phase"><td colspan="3">After commencement</td></tr>
+              <tr><td class="d">8 Apr to 7 Oct 2027</td><td>Six-month transition. A business without the relevant authorisation can keep providing the service. If it applies in this window, the new rules do not apply to it until the day after ASIC decides.<a class="cite" href="#src-act" data-pin="ss 1730, 1732" title="DAF Act, ss 1730, 1732">[1]</a><a class="cite" href="#src-cp392" data-pin="para 45" title="ASIC CP 392, para 45">[9]</a></td><td><span class="status none">Later</span></td></tr>
+              <tr class="key"><td class="d">7 Oct 2027</td><td>The transition window closes for applications and variations.<a class="cite" href="#src-cp392" data-pin="p 5, stage 6" title="ASIC CP 392, p 5, stage 6">[9]</a></td><td><span class="status none">Later</span></td></tr>
+              <tr><td class="d">From 8 Oct 2027</td><td>DAP and TCP operators need the relevant authorisation unless exempt. A business that did not apply is subject to the new rules as soon as the transition ends.<a class="cite" href="#src-cp392" data-pin="para 39" title="ASIC CP 392, para 39">[9]</a><a class="cite" href="#src-act" data-pin="s 1732 note" title="DAF Act, s 1732 note">[1]</a></td><td><span class="status none">Later</span></td></tr>
+              <tr><td class="d">Ongoing</td><td>ASIC licenses, supervises and enforces the regime; regulations, ASIC standards and ministerial declarations can change the detail.<a class="cite" href="#src-roadmap" data-pin="body" title="ASIC roadmap, body">[5]</a><a class="cite" href="#src-act" data-pin="ss 912BE, 912BF, 912BH, 1735" title="DAF Act, ss 912BE, 912BF, 912BH, 1735">[1]</a></td><td><span class="status none">Later</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="muted" style="font-size:14px;margin-top:10px">Status as at 27 October 2026.</p>
+      </div>
+      <aside class="an-notes" aria-label="Sources for this passage"><p class="mn"><a href="#src-aph">[3]</a><span class="t">Parliament bill page</span><span class="p">progress; notes</span></p><p class="mn"><a href="#src-treasury">[4]</a><span class="t">Treasury release</span><span class="p">media release</span></p><p class="mn"><a href="#src-act">[1]</a><span class="t">DAF Act</span><span class="p">assent; s 2; ss 1730, 1732; s 1732 note; ss 912BE, 912BF, 912BH, 1735</span></p><p class="mn"><a href="#src-roadmap">[5]</a><span class="t">ASIC roadmap</span><span class="p">page date; body</span></p><p class="mn"><a href="#src-asicext">[7]</a><span class="t">ASIC no-action extension</span><span class="p">first paragraph</span></p><p class="mn"><a href="#src-asicmay">[6]</a><span class="t">ASIC news, 4 May 2026</span><span class="p">first paragraph</span></p><p class="mn"><a href="#src-mr245">[8]</a><span class="t">ASIC 26-245MR</span><span class="p">body</span></p><p class="mn"><a href="#src-cp392">[9]</a><span class="t">ASIC CP 392</span><span class="p">p 5, stages 3 and 4; p 5, stage 5; para 45; p 5, stage 6; para 39</span></p></aside>
+    </div>
+  </section>
+
+  <!-- 04 -->
+  <section class="chapter" id="ch4" aria-labelledby="ch4-title">
+    <div class="ch-head"><span class="n">04</span><div><h2 id="ch4-title">Issuers on Tokeniser</h2><p>For most issuers the deciding question is custody: who can move the tokens, and whether an asset is held behind each one.</p></div></div>
+
+    <div class="an" data-k="claim"><span class="k">Company says</span>
+      <div class="an-body">
+        <ul class="marks">
+          <li>Tokeniser describes itself as software for fund administration and investor portals that runs on Redbelly Network, and as "a Redbelly Network project".<a class="cite" href="#src-tokhome" data-pin="home page" title="Tokeniser home, home page">[11]</a><a class="cite" href="#src-tokabout" data-pin="about page" title="Tokeniser about, about page">[16]</a></li>
+          <li>It says: "Products issued through Tokeniser operate under an Asset Issuer's existing licensing", and that eligibility checks (identity, KYC, AML, CTF, wholesale and sophisticated investor tests, and target market determinations) are programmed into each asset.<a class="cite" href="#src-tokhome" data-pin="FAQ" title="Tokeniser home, FAQ">[11]</a></li>
+          <li>It says it does not hold investors' private keys; the investor or a designated key manager does, and it offers key management and recovery options.<a class="cite" href="#src-tokcust" data-pin="custody answer" title="Tokeniser custody FAQ, custody answer">[15]</a></li>
+          <li>It lists IQ-EQ as providing trust, registry and fund administration services, and "licence and service".<a class="cite" href="#src-tokabout" data-pin="division of responsibility" title="Tokeniser about, division of responsibility">[16]</a></li>
         </ul>
       </div>
-    </section>
+      <aside class="an-notes" aria-label="Sources for this passage"><p class="mn"><a href="#src-tokhome">[11]</a><span class="t">Tokeniser home</span><span class="p">home page; FAQ</span></p><p class="mn"><a href="#src-tokabout">[16]</a><span class="t">Tokeniser about</span><span class="p">about page; division of responsibility</span></p><p class="mn"><a href="#src-tokcust">[15]</a><span class="t">Tokeniser custody FAQ</span><span class="p">custody answer</span></p></aside>
+    </div>
 
-    <section id="glossary">
-      <h2>Glossary</h2>
-      <div class="table-wrap">
-        <table class="terms">
-          <tbody>
-            <tr><td>AFSL</td><td>Australian financial services licence, issued by ASIC under the Corporations Act. DAP and TCP operators will need one with the right authorisation unless exempt.<a class="cite" href="#src-cp392" title="Consultation Paper 392 Digital asset law reform implementation: Proposed standards and guidance">[9]</a></td></tr>
-            <tr><td>ASIC</td><td>Australian Securities and Investments Commission, which licenses and supervises these platforms and enforces the law.<a class="cite" href="#src-roadmap" title="ASIC's roadmap for digital assets law reform implementation">[5]</a></td></tr>
-            <tr><td>Royal Assent</td><td>The step that makes a passed Bill an Act. For this Act it was 8 April 2026.<a class="cite" href="#src-act" title="Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made">[1]</a></td></tr>
-            <tr><td>Commencement</td><td>The day the Act's rules start to operate: 8 April 2027 on ASIC's latest statement.<a class="cite" href="#src-mr245" title="26-245MR ASIC consults on implementation of new digital asset laws">[8]</a></td></tr>
-            <tr><td>Transition period</td><td>The six-month period starting on commencement.<a class="cite" href="#src-act" title="Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made">[1]</a> <span class="pin">s 1730</span></td></tr>
-            <tr><td>Platform rules</td><td>The operator's rules for a DAP or TCP. They have effect as a contract between the operator and each client.<a class="cite" href="#src-act" title="Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made">[1]</a> <span class="pin">s 912BG(2)</span></td></tr>
-            <tr><td>DAP/TCP Guide</td><td>The disclosure document a licensee must give a retail client before issuing a DAP or TCP.<a class="cite" href="#src-act" title="Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made">[1]</a> <span class="pin">s 1020AN</span></td></tr>
-            <tr><td>Constitutionally-covered corporation</td><td>A corporation covered by section 51(xx) of the Constitution (foreign corporations, and trading or financial corporations formed in Australia), or a body that is a corporation under the Corporations Act as originally enacted.<a class="cite" href="#src-act" title="Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made">[1]</a><a class="cite" href="#src-constitution" title="Commonwealth of Australia Constitution Act (The Constitution), section 51(xx)">[2]</a> <span class="pin">s 9</span></td></tr>
-            <tr><td>Managed investment scheme</td><td>A pooled investment arrangement regulated under Chapter 5C of the Corporations Act. Some platforms are carved out of this definition.<a class="cite" href="#src-rg000" title="Draft Regulatory Guide 000 Digital asset platforms and tokenised custody platforms (Attachment 1 to CP 392)">[10]</a></td></tr>
-            <tr><td>Verifiable credential</td><td>A credential (for example, proof of passing KYC) that an issuer gives to a holder and a verifier can check. Receptor uses the W3C verifiable credential data model, with issuer, holder and verifier modules.<a class="cite" href="#src-rbreceptor" title="Receptor (ID protocol), Redbelly Network technical documentation">[18]</a></td></tr>
-            <tr><td>Zero-knowledge proof</td><td>A way to prove a statement is true (for example "is a wholesale investor") without revealing the underlying data.<a class="cite" href="#src-rbelig" title="Eligibility Kit overview, Redbelly Network technical documentation">[19]</a></td></tr>
-            <tr><td>TMD</td><td>Target market determination, required under the design and distribution obligations.<a class="cite" href="#src-rg000" title="Draft Regulatory Guide 000 Digital asset platforms and tokenised custody platforms (Attachment 1 to CP 392)">[10]</a></td></tr>
-          </tbody>
-        </table>
+    <div class="an" data-k="law" id="issuer-law"><span class="k">The law says</span>
+      <div class="an-body">
+        <ul class="marks">
+          <li><strong>Tokenising is not, by itself, what gets licensed.</strong> ASIC's draft guide: "A TCP is one way assets may be tokenised. Not every tokenisation arrangement is a TCP."<a class="cite" href="#src-rg000" data-pin="note to RG 000.33" title="ASIC draft RG 000, note to RG 000.33">[10]</a></li>
+          <li><strong>Native fund units.</strong> Where each token represents a unit in a unit trust and the blockchain is the primary unit-holder register, ASIC's draft guide says the arrangement "would generally be a managed investment scheme rather than a TCP".<a class="cite" href="#src-rg000" data-pin="note to RG 000.35" title="ASIC draft RG 000, note to RG 000.35">[10]</a></li>
+          <li><strong>Tokens over financial products.</strong> A token a TCP creates over an asset that is a financial product will generally be the same type of financial product as that asset.<a class="cite" href="#src-rg000" data-pin="RG 000.48" title="ASIC draft RG 000, RG 000.48">[10]</a><a class="cite" href="#src-act" data-pin="s 765E" title="DAF Act, s 765E">[1]</a></li>
+          <li><strong>Raising money through a platform.</strong> A person offering securities through a DAP or TCP under a disclosure document lodged with ASIC must promptly tell the operator and each custodian if a supplementary or replacement document is lodged, if the person becomes prohibited from making offers under it, or if it is withdrawn. The document does not need to describe the platform.<a class="cite" href="#src-act" data-pin="s 741A" title="DAF Act, s 741A">[1]</a></li>
+          <li><strong>Interests created by the platform.</strong> Operators and promoters are exempt from the fundraising rules for equitable interests in securities that arise from holding them through the platform.<a class="cite" href="#src-act" data-pin="s 741B" title="DAF Act, s 741B">[1]</a></li>
+          <li><strong>Trading venues.</strong> A business may run a financial market for tokenised securities alongside a DAP for tokens that are not financial products, and each part is assessed on its own.<a class="cite" href="#src-rg000" data-pin="RG 000.62" title="ASIC draft RG 000, RG 000.62">[10]</a></li>
+        </ul>
       </div>
-    </section>
+      <aside class="an-notes" aria-label="Sources for this passage"><p class="mn"><a href="#src-rg000">[10]</a><span class="t">ASIC draft RG 000</span><span class="p">note to RG 000.33; note to RG 000.35; RG 000.48; RG 000.62</span></p><p class="mn"><a href="#src-act">[1]</a><span class="t">DAF Act</span><span class="p">s 765E; s 741A; s 741B</span></p></aside>
+    </div>
 
-    <section id="sources">
-      <h2>Sources</h2>
-      <p>Primary sources (the Act, Parliament and ASIC) are used for every statement about the law. Company websites are used only for what the companies say about themselves. All links were checked on 27 October 2026. A claim-by-claim table is on the <a href="sources">Sources &amp; checks</a> page.</p>
-      <!-- SOURCES:START -->
+    <div class="sub" id="custody"><h3>Who holds the keys? Four set-ups</h3></div>
+    <div class="an" data-k="tool"><span class="k">Analysis</span>
+      <div class="an-body">
+        <div class="tool" data-tool="custody">
+          <p class="hint">Pick the set-up closest to yours. Each card applies the rules above. It is the writer's reading, not ASIC's, and real structures vary.</p>
+          <div class="tabs" role="tablist" aria-label="Custody set-ups">
+            <button type="button" role="tab" id="tab-a" aria-controls="case-a" aria-selected="true">A. Investor holds keys</button>
+            <button type="button" role="tab" id="tab-b" aria-controls="case-b" aria-selected="false">B. Someone else holds keys</button>
+            <button type="button" role="tab" id="tab-c" aria-controls="case-c" aria-selected="false">C. Keys are split</button>
+            <button type="button" role="tab" id="tab-d" aria-controls="case-d" aria-selected="false">D. Asset held, token issued</button>
+          </div>
+
+          <section class="case" id="case-a" role="tabpanel" aria-labelledby="tab-a">
+            <h5>A. Native units or shares; the investor holds the keys</h5>
+            <div class="flow"><div class="node"><b>Issuer</b>Issues units on-chain</div><span class="arrow">to</span><div class="node key"><b>Investor wallet</b>Investor controls the key</div><span class="arrow">on</span><div class="node"><b>Network</b>Records transfers</div></div>
+            <dl>
+              <dt>Who "possesses" the token</dt><dd>The investor, who can transfer it, block others and show it.<a class="cite" href="#src-act" data-pin="s 761GB(2)" title="DAF Act, s 761GB(2)">[1]</a></dd>
+              <dt>Platform rules engaged?</dt><dd>Probably not: no operator holds tokens for the investor and no separate asset sits behind each token.<a class="cite" href="#src-act" data-pin="ss 761GC, 761GD" title="DAF Act, ss 761GC, 761GD">[1]</a></dd>
+              <dt>What still applies</dt><dd>The rules already covering the fund or company: scheme, AFSL, disclosure, target market and AML/CTF rules. ASIC's draft view is that native fund units are generally a scheme.<a class="cite" href="#src-rg000" data-pin="note to RG 000.35" title="ASIC draft RG 000, note to RG 000.35">[10]</a></dd>
+            </dl>
+          </section>
+
+          <section class="case" id="case-b" role="tabpanel" aria-labelledby="tab-b" hidden>
+            <h5>B. An issuer, administrator, Tokeniser or key manager can move the tokens</h5>
+            <div class="flow"><div class="node"><b>Investor</b>Beneficial owner</div><span class="arrow">via</span><div class="node key"><b>Key holder</b>Can transfer and block</div><span class="arrow">on</span><div class="node"><b>Network</b>Records transfers</div></div>
+            <dl>
+              <dt>Who "possesses" the token</dt><dd>The party that can transfer it, exclude others and show it.<a class="cite" href="#src-act" data-pin="ss 761GB(2), 86" title="DAF Act, ss 761GB(2), 86">[1]</a></dd>
+              <dt>Platform rules engaged?</dt><dd>Possibly. If that party possesses tokens for investors, the arrangement may be a DAP, and the operator would need a DAP authorisation and to meet the asset-holding standards.<a class="cite" href="#src-act" data-pin="ss 761GC, 912BB" title="DAF Act, ss 761GC, 912BB">[1]</a><a class="cite" href="#src-rg000" data-pin="RG 000.36 to 000.38" title="ASIC draft RG 000, RG 000.36 to 000.38">[10]</a></dd>
+              <dt>Watch for</dt><dd>Recovery keys and admin powers. Appointing an agent does not move responsibility away from the operator.<a class="cite" href="#src-act" data-pin="s 761GE" title="DAF Act, s 761GE">[1]</a><a class="cite" href="#src-rg000" data-pin="RG 000.43" title="ASIC draft RG 000, RG 000.43">[10]</a></dd>
+            </dl>
+          </section>
+
+          <section class="case" id="case-c" role="tabpanel" aria-labelledby="tab-c" hidden>
+            <h5>C. Control is split, for example multi-party computation</h5>
+            <div class="flow"><div class="node"><b>Party 1</b>Holds a key share</div><span class="arrow">and</span><div class="node key"><b>Party 2</b>Holds a key share</div><span class="arrow">sign</span><div class="node"><b>Network</b>Records transfers</div></div>
+            <dl>
+              <dt>The joint-control rule</dt><dd>A person does not jointly possess a token if they need another person's express cooperation and that other person can act alone.<a class="cite" href="#src-act" data-pin="s 86(3)" title="DAF Act, s 86(3)">[1]</a></dd>
+              <dt>Technology providers</dt><dd>ASIC expects regulations under which an MPC technology provider is not taken to possess the tokens.<a class="cite" href="#src-rg000" data-pin="RG 000.41(b)" title="ASIC draft RG 000, RG 000.41(b)">[10]</a></dd>
+              <dt>What decides it</dt><dd>The exact signing design, and the final regulations.</dd>
+            </dl>
+          </section>
+
+          <section class="case" id="case-d" role="tabpanel" aria-labelledby="tab-d" hidden>
+            <h5>D. A custodian holds an existing asset and one redeemable token is issued for it</h5>
+            <div class="flow"><div class="node"><b>Custodian</b>Holds the bond, gold or shares</div><span class="arrow">mints</span><div class="node key"><b>One token per asset</b>Redeemable</div><span class="arrow">to</span><div class="node"><b>Holder</b>Can redeem or direct delivery</div></div>
+            <dl>
+              <dt>What it looks like</dt><dd>A tokenised custody platform.<a class="cite" href="#src-act" data-pin="s 761GD" title="DAF Act, s 761GD">[1]</a></dd>
+              <dt>What the operator needs</dt><dd>A TCP authorisation, platform rules, a DAP/TCP Guide for retail clients and compliance with the asset-holding standards.<a class="cite" href="#src-act" data-pin="ss 912BB, 912BG, 1020AN" title="DAF Act, ss 912BB, 912BG, 1020AN">[1]</a><a class="cite" href="#src-cp392" data-pin="para 39" title="ASIC CP 392, para 39">[9]</a></dd>
+              <dt>The token itself</dt><dd>If the asset is a financial product, the token is generally the same type of product.<a class="cite" href="#src-rg000" data-pin="RG 000.48" title="ASIC draft RG 000, RG 000.48">[10]</a></dd>
+            </dl>
+          </section>
+        </div>
+      </div>
+      <aside class="an-notes" aria-label="Sources for this passage"><p class="mn"><a href="#src-act">[1]</a><span class="t">DAF Act</span><span class="p">s 761GB(2); ss 761GC, 761GD; ss 761GB(2), 86; ss 761GC, 912BB; s 761GE; s 86(3); s 761GD; ss 912BB, 912BG, 1020AN</span></p><p class="mn"><a href="#src-rg000">[10]</a><span class="t">ASIC draft RG 000</span><span class="p">note to RG 000.35; RG 000.36 to 000.38; RG 000.43; RG 000.41(b); RG 000.48</span></p><p class="mn"><a href="#src-cp392">[9]</a><span class="t">ASIC CP 392</span><span class="p">para 39</span></p></aside>
+    </div>
+
+    <div class="an" data-k="view"><span class="k">Analysis</span>
+      <div class="an-body">
+        <h4 style="margin-top:0">Six things to settle before 8 April 2027</h4>
+        <ol>
+          <li>List every party that holds keys or can move investors' tokens, including recovery and back-up arrangements.</li>
+          <li>Write down, with reasons, whether each product and service is a DAP, a TCP, a scheme, a market, or none of these.</li>
+          <li>Compare your AFS licence authorisations with ASIC's DAP and TCP authorisations once they are final.</li>
+          <li>Record who configures eligibility rules and who signs them off. Tokeniser says the fund manager stays responsible for that and remains the AML/CTF reporting entity.<a class="cite" href="#src-tokcomp" data-pin="FAQ" title="Tokeniser compliance FAQ, FAQ">[14]</a></li>
+          <li>Read CP 392 and consider a submission by 27 November 2026.<a class="cite" href="#src-mr245" data-pin="body" title="ASIC 26-245MR, body">[8]</a></li>
+          <li>Get advice from an Australian financial services lawyer before relying on any classification.</li>
+        </ol>
+      </div>
+      <aside class="an-notes" aria-label="Sources for this passage"><p class="mn"><a href="#src-tokcomp">[14]</a><span class="t">Tokeniser compliance FAQ</span><span class="p">FAQ</span></p><p class="mn"><a href="#src-mr245">[8]</a><span class="t">ASIC 26-245MR</span><span class="p">body</span></p></aside>
+    </div>
+  </section>
+
+  <!-- 05 -->
+  <section class="chapter" id="ch5" aria-labelledby="ch5-title">
+    <div class="ch-head"><span class="n">05</span><div><h2 id="ch5-title">Redbelly and the rules</h2><p>Redbelly's identity and eligibility tools line up with the parts of the law about access and records. Whether Redbelly counts as public digital token infrastructure is still open.</p></div></div>
+
+    <div class="an" data-k="claim"><span class="k">Company says</span>
+      <div class="an-body">
+        <ul class="marks">
+          <li>Redbelly's documentation calls <strong>Receptor</strong> its "native digital identity and verifiable credential protocol", which "facilitates network access" and helps use cases set eligibility criteria and users prove they meet them. It uses the W3C verifiable credential data model.<a class="cite" href="#src-rbreceptor" data-pin="overview" title="Redbelly Receptor docs, overview">[18]</a></li>
+          <li>The <strong>Eligibility Kit</strong> lets asset issuers check investor eligibility with zero-knowledge proofs, without the investor revealing the underlying personal data.<a class="cite" href="#src-rbelig" data-pin="overview" title="Redbelly Eligibility Kit, overview">[19]</a> Its credential types include an AML/CTF credential and an Australian sophisticated or wholesale investor credential.<a class="cite" href="#src-rbcriteria" data-pin="available schemas" title="Redbelly eligibility criteria, available schemas">[20]</a></li>
+          <li>Individual onboarding includes wallet authentication, KYC verification and on-chain permission set-up.<a class="cite" href="#src-rbindiv" data-pin="overview" title="Redbelly individual onboarding, overview">[21]</a> Business onboarding (KYB) is provided by Averer.<a class="cite" href="#src-rbbiz" data-pin="overview" title="Redbelly business onboarding, overview">[22]</a></li>
+          <li>Redbelly says AML, CTF and Travel Rule requirements "can be applied as needed".<a class="cite" href="#src-rbtok" data-pin="asset issuers section" title="Redbelly tokenisation, asset issuers section">[17]</a></li>
+        </ul>
+      </div>
+      <aside class="an-notes" aria-label="Sources for this passage"><p class="mn"><a href="#src-rbreceptor">[18]</a><span class="t">Redbelly Receptor docs</span><span class="p">overview</span></p><p class="mn"><a href="#src-rbelig">[19]</a><span class="t">Redbelly Eligibility Kit</span><span class="p">overview</span></p><p class="mn"><a href="#src-rbcriteria">[20]</a><span class="t">Redbelly eligibility criteria</span><span class="p">available schemas</span></p><p class="mn"><a href="#src-rbindiv">[21]</a><span class="t">Redbelly individual onboarding</span><span class="p">overview</span></p><p class="mn"><a href="#src-rbbiz">[22]</a><span class="t">Redbelly business onboarding</span><span class="p">overview</span></p><p class="mn"><a href="#src-rbtok">[17]</a><span class="t">Redbelly tokenisation</span><span class="p">asset issuers section</span></p></aside>
+    </div>
+
+    <div class="sub" id="fit"><h3>Rule by rule</h3></div>
+    <div class="an wide" data-k="view"><span class="k">Side by side</span>
+      <div class="an-body">
+        <div class="grid2">
+          <article class="card fit"><header><h4>Eligibility rules</h4><span class="status ok">Lines up</span></header><div class="body">
+            <div class="row r-law"><b>Law</b><p>Platform rules must include "transparent and non-discriminatory eligibility criteria for identifying who can become a client".<a class="cite" href="#src-act" data-pin="s 912BG(1)(a)" title="DAF Act, s 912BG(1)(a)">[1]</a></p></div>
+            <div class="row r-claim"><b>Described</b><p>Criteria written as credential queries; Tokeniser says every transfer is checked against the asset's rules.<a class="cite" href="#src-rbcriteria" data-pin="query construction" title="Redbelly eligibility criteria, query construction">[20]</a><a class="cite" href="#src-tokhome" data-pin="FAQ" title="Tokeniser home, FAQ">[11]</a></p></div>
+            <div class="row r-view"><b>Analysis</b><p>A good mechanism for applying criteria the same way every time. Writing criteria that are transparent and non-discriminatory stays the operator's job.</p></div>
+          </div></article>
+          <article class="card fit"><header><h4>Records and reconciliation</h4><span class="status warn">Partly</span></header><div class="body">
+            <div class="row r-law"><b>Law</b><p>ASIC can set asset-holding standards on record-keeping, reconciliation and reporting.<a class="cite" href="#src-act" data-pin="s 912BE(1)(a)(ii)" title="DAF Act, s 912BE(1)(a)(ii)">[1]</a></p></div>
+            <div class="row r-claim"><b>Described</b><p>Tokeniser says every check, transfer and rejection is recorded on-chain and in a compliance log.<a class="cite" href="#src-tokcomp" data-pin="records" title="Tokeniser compliance FAQ, records">[14]</a></p></div>
+            <div class="row r-view"><b>Analysis</b><p>A shared ledger should help with reconciliation. Whether it meets the standards depends on the final text, planned for March 2027.</p></div>
+          </div></article>
+          <article class="card fit"><header><h4>Holding client assets</h4><span class="status warn">Depends</span></header><div class="body">
+            <div class="row r-law"><b>Law</b><p>Standards are expected to cover holding on trust, segregation and withdrawal rights, and must not ban one-wallet holding where internal records identify each client's tokens.<a class="cite" href="#src-roadmap" data-pin="table 1" title="ASIC roadmap, table 1">[5]</a><a class="cite" href="#src-act" data-pin="s 912BE(2)(e)" title="DAF Act, s 912BE(2)(e)">[1]</a></p></div>
+            <div class="row r-claim"><b>Described</b><p>Tokeniser says investors hold tokens in their own wallets or through a designated key manager.<a class="cite" href="#src-tokcust" data-pin="custody answer" title="Tokeniser custody FAQ, custody answer">[15]</a></p></div>
+            <div class="row r-view"><b>Analysis</b><p>True self-custody may keep the DAP rules out entirely. Where a key manager can move tokens, the standards may apply to that party. See set-ups A to C.</p></div>
+          </div></article>
+          <article class="card fit"><header><h4>Retail guide and target market</h4><span class="status ok">Lines up</span></header><div class="body">
+            <div class="row r-law"><b>Law</b><p>A DAP/TCP Guide before issuing to a retail client, and a target market determination where a Guide is required.<a class="cite" href="#src-act" data-pin="ss 1020AN, 994B" title="DAF Act, ss 1020AN, 994B">[1]</a><a class="cite" href="#src-rg000" data-pin="Section D table" title="ASIC draft RG 000, Section D table">[10]</a></p></div>
+            <div class="row r-claim"><b>Described</b><p>An Australian sophisticated or wholesale investor credential; Tokeniser says target market determinations are enforced at transfer.<a class="cite" href="#src-rbcriteria" data-pin="available schemas" title="Redbelly eligibility criteria, available schemas">[20]</a><a class="cite" href="#src-toktech" data-pin="compliant by design" title="Tokeniser technology, compliant by design">[12]</a></p></div>
+            <div class="row r-view"><b>Analysis</b><p>Supports gating who can hold an asset. It does not write the Guide or the determination; those are still needed.</p></div>
+          </div></article>
+          <article class="card fit"><header><h4>Settlement disclosure</h4><span class="status warn">Partly</span></header><div class="body">
+            <div class="row r-law"><b>Law</b><p>Platform rules must set out the settlement method, who bears counterparty and operational risk, and how acquisitions are recorded in any legal or technical register.<a class="cite" href="#src-act" data-pin="s 912BG(1)(c), (d)" title="DAF Act, s 912BG(1)(c), (d)">[1]</a></p></div>
+            <div class="row r-claim"><b>Described</b><p>Deterministic finality, described as final "the moment it completes".<a class="cite" href="#src-toktech" data-pin="settlement" title="Tokeniser technology, settlement">[12]</a></p></div>
+            <div class="row r-view"><b>Analysis</b><p>Clear finality should make the method easier to describe. The disclosure still has to be written and kept accurate.</p></div>
+          </div></article>
+          <article class="card fit"><header><h4>AML/CTF</h4><span class="status ok">Supports</span></header><div class="body">
+            <div class="row r-law"><b>Law</b><p>The DAF Act itself contains no anti-money laundering rules. Its eligibility, conduct and disclosure duties fall on the licensed operator.<a class="cite" href="#src-act" data-pin="ss 912BA to 912BG, 1020AM" title="DAF Act, ss 912BA to 912BG, 1020AM">[1]</a></p></div>
+            <div class="row r-claim"><b>Described</b><p>KYC in onboarding; Tokeniser says the fund manager remains the AML/CTF reporting entity.<a class="cite" href="#src-rbindiv" data-pin="overview" title="Redbelly individual onboarding, overview">[21]</a><a class="cite" href="#src-tokcomp" data-pin="FAQ" title="Tokeniser compliance FAQ, FAQ">[14]</a></p></div>
+            <div class="row r-view"><b>Analysis</b><p>Tools help the responsible entity meet its duties. They do not move those duties onto the network.</p></div>
+          </div></article>
+          <article class="card fit"><header><h4>Voting and communications</h4><span class="status none">Not addressed</span></header><div class="body">
+            <div class="row r-law"><b>Law</b><p>A voting policy that votes only on client instructions where clients can instruct, and communications about underlying assets passed on request.<a class="cite" href="#src-act" data-pin="ss 1020AP to 1020AR" title="DAF Act, ss 1020AP to 1020AR">[1]</a></p></div>
+            <div class="row r-claim"><b>Described</b><p>No specific feature found in the sources reviewed.</p></div>
+            <div class="row r-view"><b>Analysis</b><p>A gap to ask about, not to assume either way.</p></div>
+          </div></article>
+          <article class="card fit"><header><h4>Pools and lending</h4><span class="status open">Open</span></header><div class="body">
+            <div class="row r-law"><b>Law</b><p>Public infrastructure is outside the scheme and financial product definitions, and consensus is outside financial services and clearing.<a class="cite" href="#src-act" data-pin="s 9 (mf); ss 765A(1)(xa), 766A(3)(b), 768A(2)(ha)" title="DAF Act, s 9 (mf); ss 765A(1)(xa), 766A(3)(b), 768A(2)(ha)">[1]</a> The market regime applies where a facility meets the market definition for financial products.<a class="cite" href="#src-rg000" data-pin="RG 000.60" title="ASIC draft RG 000, RG 000.60">[10]</a></p></div>
+            <div class="row r-claim"><b>Described</b><p>Tokeniser says automated market maker liquidity and lending sit in an "exempt protocol layer", citing the Explanatory Memorandum.<a class="cite" href="#src-tokpf" data-pin="what the exemption covers" title="Tokeniser protocol finance, what the exemption covers">[13]</a></p></div>
+            <div class="row r-view"><b>Analysis</b><p>The writer found no express carve-out of this infrastructure from the "financial market" definition in the Act. Whether a given pool is itself public infrastructure, and whether trading tokenised financial products through it is operating a market, depends on facts. ASIC intends to update INFO 225, which covers how the Act treats public digital token infrastructure, before finalising its guide in early 2027.<a class="cite" href="#src-rg000" data-pin="note to RG 000.22" title="ASIC draft RG 000, note to RG 000.22">[10]</a> The Explanatory Memorandum passages Tokeniser cites were not checked for this guide.</p></div>
+          </div></article>
+          <article class="card fit wide"><header><h4>Is Redbelly public digital token infrastructure?</h4><span class="status open">Open</span></header><div class="body">
+            <div class="row r-law"><b>Law</b><p>Three tests: open, non-discretionary protocols; any person may contribute; no critical participant. Regulations can exclude a protocol or name infrastructure that counts.<a class="cite" href="#src-act" data-pin="s 9E(2), (3)" title="DAF Act, s 9E(2), (3)">[1]</a></p></div>
+            <div class="row r-claim"><b>Described</b><p>Tokeniser says Redbelly is "designed to meet the three statutory tests".<a class="cite" href="#src-toktech" data-pin="FAQ" title="Tokeniser technology, FAQ">[12]</a> Redbelly's own docs say the issuers who provide network access are accredited by Redbelly<a class="cite" href="#src-rbreceptor" data-pin="issuer accreditation" title="Redbelly Receptor docs, issuer accreditation">[18]</a>, node operators are "successful applicants" who receive an invitation<a class="cite" href="#src-rbnodes" data-pin="node operators" title="Redbelly network nodes, node operators">[23]</a>, operators must stake RBNT and Redbelly may slash misbehaving participants<a class="cite" href="#src-rbrewards" data-pin="rewards" title="Redbelly node rewards, rewards">[25]</a>, and governors must give Redbelly notice of planned downtime.<a class="cite" href="#src-rbreconfig" data-pin="governor requirements" title="Redbelly reconfiguration, governor requirements">[24]</a></p></div>
+            <div class="row r-view"><b>Analysis</b><p>No ASIC guidance, court decision or regulation was found that decides this. Invitation-based node operation and Redbelly's role in accrediting network-access issuers raise questions under test (b), "any person" may contribute, and test (c), no critical participant. Tokeniser's own page says a protocol with a privileged role needs to evidence its design against test (c).<a class="cite" href="#src-tokpf" data-pin="guardrails" title="Tokeniser protocol finance, guardrails">[13]</a></p></div>
+          </div></article>
+        </div>
+      </div>
+      <aside class="an-notes" aria-label="Sources for this passage"><p class="mn"><a href="#src-act">[1]</a><span class="t">DAF Act</span><span class="p">s 912BG(1)(a); s 912BE(1)(a)(ii); s 912BE(2)(e); ss 1020AN, 994B; s 912BG(1)(c), (d); ss 912BA to 912BG, 1020AM; ss 1020AP to 1020AR; s 9 (mf); ss 765A(1)(xa), 766A(3)(b), 768A(2)(ha); s 9E(2), (3)</span></p><p class="mn"><a href="#src-rbcriteria">[20]</a><span class="t">Redbelly eligibility criteria</span><span class="p">query construction; available schemas</span></p><p class="mn"><a href="#src-tokhome">[11]</a><span class="t">Tokeniser home</span><span class="p">FAQ</span></p><p class="mn"><a href="#src-tokcomp">[14]</a><span class="t">Tokeniser compliance FAQ</span><span class="p">records; FAQ</span></p><p class="mn"><a href="#src-roadmap">[5]</a><span class="t">ASIC roadmap</span><span class="p">table 1</span></p><p class="mn"><a href="#src-tokcust">[15]</a><span class="t">Tokeniser custody FAQ</span><span class="p">custody answer</span></p><p class="mn"><a href="#src-rg000">[10]</a><span class="t">ASIC draft RG 000</span><span class="p">Section D table; RG 000.60; note to RG 000.22</span></p><p class="mn"><a href="#src-toktech">[12]</a><span class="t">Tokeniser technology</span><span class="p">compliant by design; settlement; FAQ</span></p><p class="mn"><a href="#src-rbindiv">[21]</a><span class="t">Redbelly individual onboarding</span><span class="p">overview</span></p><p class="mn"><a href="#src-tokpf">[13]</a><span class="t">Tokeniser protocol finance</span><span class="p">what the exemption covers; guardrails</span></p><p class="mn"><a href="#src-rbreceptor">[18]</a><span class="t">Redbelly Receptor docs</span><span class="p">issuer accreditation</span></p><p class="mn"><a href="#src-rbnodes">[23]</a><span class="t">Redbelly network nodes</span><span class="p">node operators</span></p><p class="mn"><a href="#src-rbrewards">[25]</a><span class="t">Redbelly node rewards</span><span class="p">rewards</span></p><p class="mn"><a href="#src-rbreconfig">[24]</a><span class="t">Redbelly reconfiguration</span><span class="p">governor requirements</span></p></aside>
+    </div>
+
+    <div class="an" data-k="view"><span class="k">Bottom line</span>
+      <div class="an-body">
+        <ul class="marks">
+          <li>The closest match is on <strong>who may access a product</strong> and <strong>keeping records</strong>.</li>
+          <li>The law puts duties on licensees, issuers and AML/CTF reporting entities, not on software. Tools help those people meet their duties. They do not take the duties over.</li>
+          <li>The biggest open questions are about classification: whether Redbelly is public digital token infrastructure, who possesses tokens under a given key set-up, and when secondary trading needs a market licence.</li>
+          <li>Nothing here says Redbelly, Tokeniser or any issuer is licensed, exempt or compliant. Most of the regime has not started.</li>
+        </ul>
+      </div>
+      <aside class="an-notes" aria-label="Sources for this passage"></aside>
+    </div>
+  </section>
+
+  <!-- 06 -->
+  <section class="chapter" id="ch6" aria-labelledby="ch6-title">
+    <div class="ch-head"><span class="n">06</span><div><h2 id="ch6-title">What comes next</h2><p>Five developments that will turn open questions into answers.</p></div></div>
+    <div class="an" data-k="law"><span class="k">The law says</span>
+      <div class="an-body">
+        <ul class="marks">
+          <li><strong>27 November 2026:</strong> CP 392 submissions close.<a class="cite" href="#src-mr245" data-pin="body" title="ASIC 26-245MR, body">[8]</a></li>
+          <li><strong>March 2027:</strong> planned publication of ASIC's final standards and guidance.<a class="cite" href="#src-cp392" data-pin="p 5, stage 4" title="ASIC CP 392, p 5, stage 4">[9]</a></li>
+          <li><strong>Regulations:</strong> several exemptions, and the treatment of MPC key set-ups, depend on regulations still "subject to Government processes".<a class="cite" href="#src-rg000" data-pin="RG 000.41, Table 3" title="ASIC draft RG 000, RG 000.41, Table 3">[10]</a></li>
+          <li><strong>INFO 225:</strong> ASIC intends to update it, including on public digital token infrastructure, wrapped tokens and custodial staking, before finalising its guide in early 2027.<a class="cite" href="#src-rg000" data-pin="RG 000.22 and note" title="ASIC draft RG 000, RG 000.22 and note">[10]</a></li>
+          <li><strong>Payments reforms:</strong> some stablecoins will be regulated separately, as tokenised stored value facilities.<a class="cite" href="#src-cp392" data-pin="paras 6, 7" title="ASIC CP 392, paras 6, 7">[9]</a></li>
+        </ul>
+      </div>
+      <aside class="an-notes" aria-label="Sources for this passage"><p class="mn"><a href="#src-mr245">[8]</a><span class="t">ASIC 26-245MR</span><span class="p">body</span></p><p class="mn"><a href="#src-cp392">[9]</a><span class="t">ASIC CP 392</span><span class="p">p 5, stage 4; paras 6, 7</span></p><p class="mn"><a href="#src-rg000">[10]</a><span class="t">ASIC draft RG 000</span><span class="p">RG 000.41, Table 3; RG 000.22 and note</span></p></aside>
+    </div>
+    <div class="an" data-k="view"><span class="k">Analysis</span>
+      <div class="an-body">
+        <p><strong>What would settle the Redbelly question.</strong> One of three things: ASIC guidance on how the three tests apply to permissioned networks; a regulation that names or excludes the protocol under s 9E; or a published, evidence-based assessment of Redbelly's protocol against each test that an adviser can rely on. The first two are for Government and ASIC. The third is something the community can ask for now.</p>
+      </div>
+      <aside class="an-notes" aria-label="Sources for this passage"></aside>
+    </div>
+  </section>
+
+  <!-- Appendix -->
+  <section class="chapter" id="appendix" aria-labelledby="app-title">
+    <div class="ch-head"><span class="n">A</span><div><h2 id="app-title">Act map, terms and sources</h2><p>The Act's main provisions in plain words, then the glossary and every source.</p></div></div>
+
+    <div class="sub" id="act-map"><h3>Act map</h3></div>
+    <div class="an wide" data-k="law"><span class="k">The law says</span>
+      <div class="an-body">
+        <p style="font-size:16px">Schedule 1 of the Act, part by part. <span class="cp">CP</span> marks a civil penalty provision.<a class="cite" href="#src-act" data-pin="Sch 1; s 1317E items" title="DAF Act, Sch 1; s 1317E items">[1]</a></p>
+        <div class="grid2">
+          <article class="card part"><header><h4>Core concepts</h4><span class="mono">Part 1</span></header><div class="body"><dl>
+            <dt>s 761GB</dt><dd>Digital token and factual control</dd>
+            <dt>s 761GC, 761GD</dt><dd>Digital asset platform; tokenised custody platform</dd>
+            <dt>s 761GE</dt><dd>Operators answer for their agents</dd>
+            <dt>s 764A(1)(la), (lb)</dt><dd>Both platforms become financial products unless they are schemes</dd>
+            <dt>s 765E</dt><dd>Redemption rights ignored for wrapped tokens</dd>
+            <dt>s 766M <span class="cp">CP</span></dt><dd>Services must come from a constitutionally-covered corporation</dd>
+            <dt>s 767B, 767C, 768B, 768C</dt><dd>Minister can move platforms into or out of market and clearing rules</dd>
+            <dt>s 86</dt><dd>Possession of a digital token, including joint control</dd>
+          </dl></div></article>
+          <article class="card part"><header><h4>Licensee duties</h4><span class="mono">Part 2</span></header><div class="body"><dl>
+            <dt>s 912BB <span class="cp">CP</span></dt><dd>Comply with asset-holding and transactional and settlement standards</dd>
+            <dt>s 912BC <span class="cp">CP</span></dt><dd>Have compliant platform rules</dd>
+            <dt>s 912BD <span class="cp">CP</span></dt><dd>Obey a ministerial prohibition</dd>
+            <dt>s 912BE</dt><dd>Asset-holding standards: client money in trust; options for holding money if a bank refuses service; one wallet allowed with proper records</dd>
+            <dt>s 912BF</dt><dd>Transactional and settlement standards: overseas liquidity not blocked; written, enforced agreements with market makers</dd>
+            <dt>s 912BG</dt><dd>Platform rules: contents, contract effect, standards prevail</dd>
+            <dt>s 912BH, 912BI</dt><dd>Minister can ban products from platforms</dd>
+          </dl></div></article>
+          <article class="card part"><header><h4>Disclosure and design</h4><span class="mono">Part 3</span></header><div class="body"><dl>
+            <dt>s 1010B(3)</dt><dd>No PDS for the platform itself; the Guide replaces it</dd>
+            <dt>s 1020AN <span class="cp">CP</span></dt><dd>DAP/TCP Guide before issuing to a retail client</dd>
+            <dt>s 1020AO</dt><dd>What the Guide must contain</dd>
+            <dt>s 1020AP <span class="cp">CP</span>, 1020AQ</dt><dd>Voting policy and its contents</dd>
+            <dt>s 1020AR <span class="cp">CP</span></dt><dd>Pass on communications about underlying assets</dd>
+            <dt>s 994B</dt><dd>Target market determination where a Guide is required</dd>
+            <dt>s 952E(4A)</dt><dd>Shared FSGs: no breach for defective parts another licensee says it is responsible for</dd>
+          </dl></div></article>
+          <article class="card part"><header><h4>Interventions and misconduct</h4><span class="mono">Parts 4, 5</span></header><div class="body"><dl>
+            <dt>s 1023B(2)</dt><dd>Product intervention powers reach platforms in set cases</dd>
+            <dt>s 1040C</dt><dd>Market misconduct rules reach platforms in set cases</dd>
+          </dl></div></article>
+          <article class="card part"><header><h4>Exemptions</h4><span class="mono">Part 6</span></header><div class="body"><dl>
+            <dt>s 9E</dt><dd>Public digital token infrastructure</dd>
+            <dt>s 9F</dt><dd>Custodial staking arrangement</dd>
+            <dt>s 765A(1)(pa) to (xb)</dt><dd>Infrastructure, staking and consensus rewards are not financial products</dd>
+            <dt>s 766A(3)(b)</dt><dd>Consensus is not a financial service</dd>
+            <dt>s 741A <span class="cp">CP</span>, 741B</dt><dd>Fundraising through platforms</dd>
+            <dt>s 911A(2)(ja), (jb)</dt><dd>Small DAP and incidental arranging exemptions</dd>
+          </dl></div></article>
+          <article class="card part"><header><h4>ASIC Act and transition</h4><span class="mono">Parts 7, 8</span></header><div class="body"><dl>
+            <dt>ASIC Act ss 12BAA, 12BAB</dt><dd>Consumer protection provisions extended to platforms</dd>
+            <dt>s 1730</dt><dd>Six-month transition period from commencement</dd>
+            <dt>s 1732</dt><dd>Keep operating during transition; apply and wait for ASIC's decision</dd>
+            <dt>s 1735</dt><dd>Regulations may make transitional provisions</dd>
+          </dl></div></article>
+        </div>
+      </div>
+      <aside class="an-notes" aria-label="Sources for this passage"><p class="mn"><a href="#src-act">[1]</a><span class="t">DAF Act</span><span class="p">Sch 1; s 1317E items</span></p></aside>
+    </div>
+
+    <div class="sub" id="glossary"><h3>Terms</h3></div>
+    <div class="an" data-k="law"><span class="k">Glossary</span>
+      <div class="an-body">
+        <dl class="gloss">
+          <dt>AFS licence (AFSL)</dt><dd>Australian financial services licence, issued by ASIC. DAP and TCP operators need one with the right authorisation unless exempt.<a class="cite" href="#src-cp392" data-pin="para 39" title="ASIC CP 392, para 39">[9]</a></dd>
+          <dt>ASIC</dt><dd>Australian Securities and Investments Commission, which licenses and supervises these platforms and enforces the law.<a class="cite" href="#src-roadmap" data-pin="body" title="ASIC roadmap, body">[5]</a></dd>
+          <dt>Royal Assent</dt><dd>The step that turns a passed Bill into an Act. For this Act, 8 April 2026.<a class="cite" href="#src-act" data-pin="assent" title="DAF Act, assent">[1]</a></dd>
+          <dt>Commencement</dt><dd>The day the rules start to operate: 8 April 2027 on ASIC's latest statement.<a class="cite" href="#src-mr245" data-pin="first paragraph" title="ASIC 26-245MR, first paragraph">[8]</a></dd>
+          <dt>Transition period</dt><dd>The six-month period starting on commencement.<a class="cite" href="#src-act" data-pin="s 1730" title="DAF Act, s 1730">[1]</a></dd>
+          <dt>Platform rules</dt><dd>The operator's rules for a DAP or TCP, which have effect as a contract with each client.<a class="cite" href="#src-act" data-pin="s 912BG(2)" title="DAF Act, s 912BG(2)">[1]</a></dd>
+          <dt>DAP/TCP Guide</dt><dd>The disclosure document given to a retail client before a platform is issued.<a class="cite" href="#src-act" data-pin="s 1020AN" title="DAF Act, s 1020AN">[1]</a></dd>
+          <dt>Constitutionally-covered corporation</dt><dd>A corporation within s 51(xx) of the Constitution (foreign corporations, and trading or financial corporations formed in Australia), or a body that is a corporation under the Corporations Act as originally enacted.<a class="cite" href="#src-act" data-pin="s 9" title="DAF Act, s 9">[1]</a><a class="cite" href="#src-constitution" data-pin="s 51(xx)" title="Constitution, s 51(xx)">[2]</a></dd>
+          <dt>Managed investment scheme</dt><dd>A pooled investment arrangement regulated under Chapter 5C of the Corporations Act. Some platforms are carved out of the definition.<a class="cite" href="#src-rg000" data-pin="RG 000.49 to 000.51" title="ASIC draft RG 000, RG 000.49 to 000.51">[10]</a></dd>
+          <dt>Verifiable credential</dt><dd>A credential, such as proof of passing KYC, that an issuer gives a holder and a verifier can check. Receptor has issuer, holder and verifier modules.<a class="cite" href="#src-rbreceptor" data-pin="modules" title="Redbelly Receptor docs, modules">[18]</a></dd>
+          <dt>Zero-knowledge proof</dt><dd>A way to prove a statement, such as "is a wholesale investor", without revealing the data behind it.<a class="cite" href="#src-rbelig" data-pin="how it works" title="Redbelly Eligibility Kit, how it works">[19]</a></dd>
+          <dt>TMD</dt><dd>Target market determination, required under the design and distribution obligations.<a class="cite" href="#src-rg000" data-pin="Section D table" title="ASIC draft RG 000, Section D table">[10]</a></dd>
+        </dl>
+      </div>
+      <aside class="an-notes" aria-label="Sources for this passage"><p class="mn"><a href="#src-cp392">[9]</a><span class="t">ASIC CP 392</span><span class="p">para 39</span></p><p class="mn"><a href="#src-roadmap">[5]</a><span class="t">ASIC roadmap</span><span class="p">body</span></p><p class="mn"><a href="#src-act">[1]</a><span class="t">DAF Act</span><span class="p">assent; s 1730; s 912BG(2); s 1020AN; s 9</span></p><p class="mn"><a href="#src-mr245">[8]</a><span class="t">ASIC 26-245MR</span><span class="p">first paragraph</span></p><p class="mn"><a href="#src-constitution">[2]</a><span class="t">Constitution</span><span class="p">s 51(xx)</span></p><p class="mn"><a href="#src-rg000">[10]</a><span class="t">ASIC draft RG 000</span><span class="p">RG 000.49 to 000.51; Section D table</span></p><p class="mn"><a href="#src-rbreceptor">[18]</a><span class="t">Redbelly Receptor docs</span><span class="p">modules</span></p><p class="mn"><a href="#src-rbelig">[19]</a><span class="t">Redbelly Eligibility Kit</span><span class="p">how it works</span></p></aside>
+    </div>
+
+    <div class="sub" id="sources"><h3>Sources</h3></div>
+    <div class="an wide" data-k="law"><span class="k">Evidence</span>
+      <div class="an-body">
+        <p style="font-size:16px">The law comes from primary sources: the Act, the Constitution, Parliament, Treasury and ASIC. Company websites are used only for what the companies say about themselves. Every link was opened on 27 October 2026. The <a href="sources">Evidence page</a> ties each claim to the exact wording behind it.</p>
+        <!-- SOURCES:START -->
 <ol class="sources">
 <li id="src-act"><span class="n">[1]</span><div>
   <div class="t">Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made</div>
-  <div class="m"><span class="kind kind-primary">Primary law</span>Federal Register of Legislation · Assented to 8 April 2026</div>
+  <div class="m"><span class="kind law">Primary law</span>Federal Register of Legislation · Assented to 8 April 2026</div>
   <div class="u"><a href="https://www.legislation.gov.au/C2026A00038/asmade/text">https://www.legislation.gov.au/C2026A00038/asmade/text</a> · PDF: <a href="https://www.legislation.gov.au/C2026A00038/asmade/2026-04-08/text/original/pdf">https://www.legislation.gov.au/C2026A00038/asmade/2026-04-08/text/original/pdf</a></div>
   <div class="s"><strong>Used for:</strong> Assent date; commencement rule (s 2) and the Register's commencement column; definitions of digital token, DAP, TCP, wrapped token and public digital token infrastructure (ss 761GB, 761GC, 761GD, 765E, 9E); constitutionally-covered corporation rule (s 766M); licensee obligations (ss 912BB to 912BH); DAP/TCP Guide, voting policy and communications (ss 1020AN to 1020AR); design and distribution trigger (s 994B); fundraising rules (ss 741A, 741B); exemptions (ss 9 (me), (mf), 765A(1), 766A(3), 768A(2)(ha), 911A(2)(ja), (jb), 911A(4B)); managed investment scheme carve-outs (s 9 (mc), (md)); ministerial powers (ss 767B, 767C, 768B, 768C, 912BH); transitional rules (ss 1730 to 1733).</div>
 </div></li>
 <li id="src-constitution"><span class="n">[2]</span><div>
   <div class="t">Commonwealth of Australia Constitution Act (The Constitution), section 51(xx)</div>
-  <div class="m"><span class="kind kind-primary">Primary law</span>Federal Register of Legislation · Latest compilation</div>
+  <div class="m"><span class="kind law">Primary law</span>Federal Register of Legislation · Latest compilation</div>
   <div class="u"><a href="https://www.legislation.gov.au/C2004Q00685/latest/text">https://www.legislation.gov.au/C2004Q00685/latest/text</a></div>
   <div class="s"><strong>Used for:</strong> Section 51(xx): &quot;Foreign corporations, and trading or financial corporations formed within the limits of the Commonwealth&quot;. Used to explain the Act's term &quot;constitutionally-covered corporation&quot;.</div>
 </div></li>
@@ -629,22 +780,25 @@
 </div></li>
 </ol>
 <!-- SOURCES:END -->
-    </section>
-
-  </main>
-</div>
-
-<footer class="site-footer">
-  <div class="inner">
-    <div>
-      <img class="logo-light" src="assets/brand/redbelly-horizontal-colour.svg" alt="Redbelly" width="86" height="24">
-      <img class="logo-dark" src="assets/brand/redbelly-horizontal-negative.svg" alt="Redbelly" width="86" height="24">
-      <p><strong>General information only, not legal advice.</strong> Independent community explainer prepared for the Redbelly DAO. Not an official publication of Redbelly Network, Tokeniser, ASIC or the Australian Government.</p>
-      <p>Sources checked 27 October 2026. Law and guidance may have changed since.</p>
+      </div>
+      <aside class="an-notes" aria-label="Sources for this passage"></aside>
     </div>
+  </section>
+
+</div>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
     <div>
-      <p><a href="./">Explainer</a> · <a href="summary">Community summary</a> · <a href="sources">Sources &amp; checks</a></p>
-      <p>Downloads: <a href="downloads/australia-daf-act-explainer.pdf">PDF</a> · <a href="downloads/australia-daf-act-explainer.docx">Word</a> · <a href="downloads/community-summary.md">Summary (.md)</a> · <a href="downloads/sources.csv">Sources (.csv)</a></p>
+      <img class="on-dark" src="assets/brand/dao-logo-on-dark-256.png" alt="Redbelly DAO" width="56" height="40">
+      <img class="on-light" src="assets/brand/dao-logo-on-light-256.png" alt="Redbelly DAO" width="56" height="40">
+      <p><strong>General information only, not legal advice.</strong> Independent community explainer prepared for the Redbelly DAO. Not an official publication of Redbelly Network, Tokeniser, ASIC or the Australian Government.</p>
+      <p class="mono" style="font-size:12px">Last verified 27 Oct 2026</p>
+    </div>
+    <div class="links">
+      <p><a href="./">Guide</a> · <a href="summary">Share kit</a> · <a href="sources">Evidence</a></p>
+      <p>Downloads: <a href="downloads/australia-daf-act-explainer.pdf">PDF</a> · <a href="downloads/australia-daf-act-explainer.docx">Word</a> · <a href="downloads/community-summary.md">Summary</a> · <a href="downloads/sources.csv">Sources CSV</a></p>
     </div>
   </div>
 </footer>

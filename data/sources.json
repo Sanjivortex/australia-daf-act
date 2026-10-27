@@ -3,6 +3,7 @@
   "sources": [
     {
       "id": "act",
+      "short": "DAF Act",
       "kind": "Primary law",
       "title": "Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made",
       "publisher": "Federal Register of Legislation",
@@ -18,6 +19,7 @@
     },
     {
       "id": "constitution",
+      "short": "Constitution",
       "kind": "Primary law",
       "title": "Commonwealth of Australia Constitution Act (The Constitution), section 51(xx)",
       "publisher": "Federal Register of Legislation",
@@ -27,6 +29,7 @@
     },
     {
       "id": "aph",
+      "short": "Parliament bill page",
       "kind": "Parliament",
       "title": "Corporations Amendment (Digital Assets Framework) Bill 2025: bill homepage and progress",
       "publisher": "Parliament of Australia",
@@ -36,6 +39,7 @@
     },
     {
       "id": "treasury",
+      "short": "Treasury release",
       "kind": "Government",
       "title": "New digital asset laws to unlock innovation and safeguard investment (joint media release)",
       "publisher": "Treasurer and Minister for Financial Services",
@@ -45,6 +49,7 @@
     },
     {
       "id": "roadmap",
+      "short": "ASIC roadmap",
       "kind": "Regulator (ASIC)",
       "title": "ASIC's roadmap for digital assets law reform implementation",
       "publisher": "Australian Securities and Investments Commission",
@@ -54,6 +59,7 @@
     },
     {
       "id": "asicmay",
+      "short": "ASIC news, 4 May 2026",
       "kind": "Regulator (ASIC)",
       "title": "Deadline looms for digital asset businesses to apply for a licence",
       "publisher": "Australian Securities and Investments Commission",
@@ -63,6 +69,7 @@
     },
     {
       "id": "asicext",
+      "short": "ASIC no-action extension",
       "kind": "Regulator (ASIC)",
       "title": "ASIC extends no-action position for digital asset businesses to 30 September 2026",
       "publisher": "Australian Securities and Investments Commission",
@@ -72,6 +79,7 @@
     },
     {
       "id": "mr245",
+      "short": "ASIC 26-245MR",
       "kind": "Regulator (ASIC)",
       "title": "26-245MR ASIC consults on implementation of new digital asset laws",
       "publisher": "Australian Securities and Investments Commission",
@@ -81,6 +89,7 @@
     },
     {
       "id": "cp392",
+      "short": "ASIC CP 392",
       "kind": "Regulator (ASIC)",
       "title": "Consultation Paper 392 Digital asset law reform implementation: Proposed standards and guidance",
       "publisher": "Australian Securities and Investments Commission",
@@ -96,6 +105,7 @@
     },
     {
       "id": "rg000",
+      "short": "ASIC draft RG 000",
       "kind": "Regulator (ASIC)",
       "title": "Draft Regulatory Guide 000 Digital asset platforms and tokenised custody platforms (Attachment 1 to CP 392)",
       "publisher": "Australian Securities and Investments Commission",
@@ -105,6 +115,7 @@
     },
     {
       "id": "tokhome",
+      "short": "Tokeniser home",
       "kind": "Company (Tokeniser)",
       "title": "Tokeniser: home page and FAQ",
       "publisher": "Tokeniser Pty Ltd",
@@ -114,6 +125,7 @@
     },
     {
       "id": "toktech",
+      "short": "Tokeniser technology",
       "kind": "Company (Tokeniser)",
       "title": "Tokeniser: Our technology",
       "publisher": "Tokeniser Pty Ltd",
@@ -123,6 +135,7 @@
     },
     {
       "id": "tokpf",
+      "short": "Tokeniser protocol finance",
       "kind": "Company (Tokeniser)",
       "title": "Tokeniser: Protocol finance",
       "publisher": "Tokeniser Pty Ltd",
@@ -132,6 +145,7 @@
     },
     {
       "id": "tokcomp",
+      "short": "Tokeniser compliance FAQ",
       "kind": "Company (Tokeniser)",
       "title": "How does Tokeniser handle investor compliance? (Knowledge Hub)",
       "publisher": "Tokeniser Pty Ltd",
@@ -141,6 +155,7 @@
     },
     {
       "id": "tokcust",
+      "short": "Tokeniser custody FAQ",
       "kind": "Company (Tokeniser)",
       "title": "What is self-custodial asset administration? (Knowledge Hub)",
       "publisher": "Tokeniser Pty Ltd",
@@ -150,6 +165,7 @@
     },
     {
       "id": "tokabout",
+      "short": "Tokeniser about",
       "kind": "Company (Tokeniser)",
       "title": "Tokeniser: About us",
       "publisher": "Tokeniser Pty Ltd",
@@ -159,6 +175,7 @@
     },
     {
       "id": "rbtok",
+      "short": "Redbelly tokenisation",
       "kind": "Company (Redbelly)",
       "title": "Asset tokenisation on Redbelly Network",
       "publisher": "Redbelly Network",
@@ -168,6 +185,7 @@
     },
     {
       "id": "rbreceptor",
+      "short": "Redbelly Receptor docs",
       "kind": "Company (Redbelly)",
       "title": "Receptor (ID protocol), Redbelly Network technical documentation",
       "publisher": "Redbelly Network",
@@ -177,6 +195,7 @@
     },
     {
       "id": "rbelig",
+      "short": "Redbelly Eligibility Kit",
       "kind": "Company (Redbelly)",
       "title": "Eligibility Kit overview, Redbelly Network technical documentation",
       "publisher": "Redbelly Network",
@@ -186,6 +205,7 @@
     },
     {
       "id": "rbcriteria",
+      "short": "Redbelly eligibility criteria",
       "kind": "Company (Redbelly)",
       "title": "Configure eligibility criteria, Redbelly Network technical documentation",
       "publisher": "Redbelly Network",
@@ -195,6 +215,7 @@
     },
     {
       "id": "rbindiv",
+      "short": "Redbelly individual onboarding",
       "kind": "Company (Redbelly)",
       "title": "Individual onboarding overview, Redbelly Network technical documentation",
       "publisher": "Redbelly Network",
@@ -204,6 +225,7 @@
     },
     {
       "id": "rbbiz",
+      "short": "Redbelly business onboarding",
       "kind": "Company (Redbelly)",
       "title": "Business onboarding overview, Redbelly Network technical documentation",
       "publisher": "Redbelly Network",
@@ -213,6 +235,7 @@
     },
     {
       "id": "rbnodes",
+      "short": "Redbelly network nodes",
       "kind": "Company (Redbelly)",
       "title": "Network nodes, Redbelly Vine developer portal",
       "publisher": "Redbelly Network",
@@ -222,6 +245,7 @@
     },
     {
       "id": "rbreconfig",
+      "short": "Redbelly reconfiguration",
       "kind": "Company (Redbelly)",
       "title": "Network reconfiguration, Redbelly Vine developer portal",
       "publisher": "Redbelly Network",
@@ -231,6 +255,7 @@
     },
     {
       "id": "rbrewards",
+      "short": "Redbelly node rewards",
       "kind": "Company (Redbelly)",
       "title": "Rewards and incentives, Redbelly Vine developer portal",
       "publisher": "Redbelly Network",

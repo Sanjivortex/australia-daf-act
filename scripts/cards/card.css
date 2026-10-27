@@ -1,0 +1,17 @@
+/* Shared styles for the share-kit images. Redbelly DAO Task Board brand kit:
+   slate surfaces, one red accent (#EF5350), Be Vietnam Pro for text,
+   JetBrains Mono for dates and other machine values. */
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body { width: var(--w); height: var(--h); background: #0c1317; color: #f1f5f8; font-family: "Be Vietnam Pro", system-ui, sans-serif; overflow: hidden; position: relative; }
+.frame { position: absolute; inset: 0; padding: 80px 96px 72px; display: flex; flex-direction: column; }
+.main { flex: 1; display: flex; flex-direction: column; justify-content: center; }
+.top { display: flex; justify-content: space-between; align-items: flex-start; }
+.logo { height: 92px; width: auto; }
+.kicker { font-size: 20px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: #ffb3ae; margin-top: 40px; }
+h1 { font-size: 72px; font-weight: 700; letter-spacing: -.02em; line-height: 1.08; margin: 14px 0 0; max-width: 1150px; }
+h1 em { font-style: normal; color: #ffb3ae; }
+.mono { font-family: "JetBrains Mono", ui-monospace, monospace; font-weight: 500; letter-spacing: .05em; }
+.foot { margin-top: auto; display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; border-top: 1px solid #263641; padding-top: 22px; font-size: 20px; color: #c2ced6; }
+.foot .mono { font-size: 18px; color: #8fa1ad; }
+.band { background: #1d3140; border: 1px solid #263641; border-radius: 8px; }

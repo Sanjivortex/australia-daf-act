@@ -1,170 +1,185 @@
 <!doctype html>
-<html lang="en-AU">
+<html lang="en-AU" data-theme="dark">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>DAF Act Community Summary</title>
-<meta name="description" content="A short plain-language summary of Australia's Digital Assets Framework Act for the Redbelly community, as an X thread and as paragraphs. General information, not legal advice.">
+<title>DAF Act Share Kit</title>
+<meta name="description" content="A ten-post X thread, three ready-made images and a paragraph version explaining Australia's Digital Assets Framework Act for the Redbelly community. General information, not legal advice.">
 <meta name="robots" content="noindex, nofollow">
-<meta name="theme-color" content="#142530">
-<meta property="og:title" content="DAF Act: community summary">
-<meta property="og:description" content="What Australia's Digital Assets Framework Act means for issuers and Tokeniser, in a short thread. General information, not legal advice.">
+<meta name="theme-color" content="#0c1317">
+<meta property="og:title" content="DAF Act share kit">
+<meta property="og:description" content="What Australia's Digital Assets Framework Act means for issuers and Tokeniser, in ten posts. General information, not legal advice.">
 <meta property="og:image" content="https://australia-daf-act.vercel.app/assets/og-card.png">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="assets/brand/redbelly-isotype-red.svg" type="image/svg+xml">
+<link rel="icon" href="assets/brand/icon.png" type="image/png">
+<script>(function(){var d=document.documentElement;d.classList.add('js');try{var t=localStorage.getItem('theme');if(t!=='light'&&t!=='dark'){t=window.matchMedia&&window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';}d.setAttribute('data-theme',t);}catch(e){}})();</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="assets/css/dao-tokens.css">
 <link rel="stylesheet" href="assets/css/site.css">
-<script>try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
 </head>
 <body>
-<a class="skip-link" href="#main">Skip to content</a>
+<a class="skip" href="#main">Skip to content</a>
 
-<header class="site-header">
-  <div class="inner">
-    <a class="brand" href="./" aria-label="DAF Act explainer home">
-      <img class="logo-light" src="assets/brand/redbelly-horizontal-colour.svg" alt="Redbelly" width="108" height="30">
-      <img class="logo-dark" src="assets/brand/redbelly-horizontal-negative.svg" alt="Redbelly" width="108" height="30">
-      <span class="tag">Community explainer<br>DAF Act 2026</span>
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="./" aria-label="DAF Act field guide, home">
+      <img class="on-dark" src="assets/brand/dao-logo-on-dark-256.png" alt="Redbelly DAO" width="56" height="40">
+      <img class="on-light" src="assets/brand/dao-logo-on-light-256.png" alt="Redbelly DAO" width="56" height="40">
+      <span class="name"><b>DAF Act field guide</b><span>Community explainer</span></span>
     </a>
-    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
-    <nav class="site-nav" id="site-nav" aria-label="Main">
-      <a href="./">Explainer</a>
-      <a href="summary" aria-current="page">Community summary</a>
-      <a href="sources">Sources &amp; checks</a>
+    <button class="iconbtn menubtn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="./">Guide</a>
+      <a href="summary" aria-current="page">Share kit</a>
+      <a href="sources">Evidence</a>
       <a href="downloads/australia-daf-act-explainer.pdf">PDF</a>
     </nav>
-    <button class="theme-toggle" type="button" aria-label="Switch colour theme" title="Switch colour theme">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+    <button class="iconbtn theme" type="button" aria-label="Switch light or dark theme" title="Switch theme">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5"/></svg>
     </button>
   </div>
+  <div class="progress" aria-hidden="true"></div>
 </header>
 
-<div class="hero">
-  <div class="inner">
-    <div class="eyebrow">For the community</div>
-    <h1>The DAF Act in <span class="accent">two minutes</span></h1>
-    <p class="lede">A short, shareable summary of Australia's Digital Assets Framework Act and what it means for issuers and Tokeniser. Use the X thread or the paragraph version. The full explainer has the detail and the sources.</p>
-    <div class="actions">
-      <a class="btn btn-primary" href="./">Read the full explainer</a>
-      <a class="btn btn-ghost" href="downloads/community-summary.md">Download (.md)</a>
-    </div>
-  </div>
-</div>
-
-<div class="disclaimer">
-  <div class="box" role="note" aria-labelledby="disclaimer-title">
-    <div class="icon" aria-hidden="true">!</div>
+<section class="notice" aria-labelledby="notice-title">
+  <div class="wrap">
+    <div class="mark" aria-hidden="true">!</div>
     <div>
-      <h2 id="disclaimer-title">General information only. This is not legal advice.</h2>
-      <p>This summary is not legal, financial or investment advice, and it does not say that Redbelly Network, Tokeniser or any issuer is licensed, exempt or compliant. Lines starting "Our read" are the writer's analysis, not the law.</p>
+      <h2 id="notice-title">General information only. This is not legal advice.</h2>
+      <p>This summary is not legal, financial or investment advice, and it does not say that Redbelly Network, Tokeniser or any issuer is licensed, exempt or compliant. Lines that start "Our read" are the writer's analysis, not the law.</p>
     </div>
   </div>
-</div>
+</section>
+
+<section class="pagehead">
+  <div class="wrap">
+    <div>
+      <span class="caps">Share kit</span>
+      <h1>The DAF Act in ten posts</h1>
+      <p>A thread, three images and a paragraph version the DAO can share. Each post fits in 280 characters and lists the sources it rests on.</p>
+    </div>
+    <div class="actions">
+      <button class="btn primary no-print" type="button" data-copy="thread">Copy thread</button>
+      <a class="btn" href="downloads/community-summary.md">Download text</a>
+    </div>
+  </div>
+</section>
 
 <main class="page" id="main">
+<div class="wrap">
   <article id="summary">
 
-  <section id="thread-section">
-    <h2>X thread</h2>
-    <p class="muted small">Ten posts, each within X's 280-character limit (links count as 23 characters). The sources line under each post is for checking and is not part of the post.</p>
-    <p class="no-print"><button class="copy" type="button" data-copy="thread">Copy whole thread</button></p>
+  <section class="block" id="thread-section" aria-labelledby="thread-title">
+    <h2 id="thread-title"><span class="mono">01</span>X thread</h2>
     <ol class="thread" id="thread">
-      <li class="post"><div class="head"><span>1/10</span><button class="copy no-print" type="button" data-copy="post-1">Copy</button></div>
-<p id="post-1">Australia's Digital Assets Framework Act became law on 8 April 2026. It brings two new kinds of platform under ASIC licensing.
+      <li class="post"><span class="n">01/10</span><div>
+<p class="txt" id="post-1">Australia's Digital Assets Framework Act became law on 8 April 2026. It brings two new kinds of platform under ASIC licensing.
 
-A plain-language thread on what it means for issuers and for Tokeniser 🧵
+Here is what it means for issuers and for Tokeniser, in ten posts.
 
 General information only, not legal advice.</p>
-        <div class="small muted">Sources: <a class="cite" href="#src-act" title="Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made">[1]</a><a class="cite" href="#src-treasury" title="New digital asset laws to unlock innovation and safeguard investment (joint media release)">[4]</a></div></li>
+        <div class="meta"><span class="meter" data-post="1"><i style="--fill:85%"></i><b>239/280</b></span><button class="copy no-print" type="button" data-copy="post-1">Copy</button><span>Sources<a class="cite" href="#src-act" data-pin="assent" title="DAF Act, assent">[1]</a><a class="cite" href="#src-treasury" data-pin="media release" title="Treasury release, media release">[4]</a></span></div></div></li>
 
-      <li class="post"><div class="head"><span>2/10</span><button class="copy no-print" type="button" data-copy="post-2">Copy</button></div>
-<p id="post-2">The two new financial products:
+      <li class="post"><span class="n">02/10</span><div>
+<p class="txt" id="post-2">The two new financial products:
 
-• Digital asset platform (DAP): a business holds digital tokens for customers
-• Tokenised custody platform (TCP): a business holds an asset, such as gold or a share, and issues one redeemable token for it</p>
-        <div class="small muted">Sources: <a class="cite" href="#src-act" title="Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made">[1]</a></div></li>
+Digital asset platform (DAP): a business holds digital tokens for customers.
 
-      <li class="post"><div class="head"><span>3/10</span><button class="copy no-print" type="button" data-copy="post-3">Copy</button></div>
-<p id="post-3">Operators of DAPs and TCPs will generally need an Australian financial services licence from ASIC.
+Tokenised custody platform (TCP): a business holds an asset, such as gold or a share, and issues one redeemable token for it.</p>
+        <div class="meta"><span class="meter" data-post="2"><i style="--fill:84%"></i><b>236/280</b></span><button class="copy no-print" type="button" data-copy="post-2">Copy</button><span>Sources<a class="cite" href="#src-act" data-pin="ss 761GC, 761GD" title="DAF Act, ss 761GC, 761GD">[1]</a></span></div></div></li>
 
-They also take on platform rules, ASIC standards for holding assets and settling trades, and a plain-English guide for retail clients.</p>
-        <div class="small muted">Sources: <a class="cite" href="#src-treasury" title="New digital asset laws to unlock innovation and safeguard investment (joint media release)">[4]</a><a class="cite" href="#src-act" title="Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made">[1]</a><a class="cite" href="#src-cp392" title="Consultation Paper 392 Digital asset law reform implementation: Proposed standards and guidance">[9]</a></div></li>
+      <li class="post"><span class="n">03/10</span><div>
+<p class="txt" id="post-3">Operators of DAPs and TCPs will generally need an Australian financial services licence from ASIC.
 
-      <li class="post"><div class="head"><span>4/10</span><button class="copy no-print" type="button" data-copy="post-4">Copy</button></div>
-<p id="post-4">Some things sit outside the net:
+They also take on platform rules, ASIC standards for holding assets and settling trades, and a guide that retail clients get before they join.</p>
+        <div class="meta"><span class="meter" data-post="3"><i style="--fill:86%"></i><b>242/280</b></span><button class="copy no-print" type="button" data-copy="post-3">Copy</button><span>Sources<a class="cite" href="#src-treasury" data-pin="media release" title="Treasury release, media release">[4]</a><a class="cite" href="#src-act" data-pin="ss 912BB, 912BC, 1020AN" title="DAF Act, ss 912BB, 912BC, 1020AN">[1]</a><a class="cite" href="#src-cp392" data-pin="para 39" title="ASIC CP 392, para 39">[9]</a></span></div></div></li>
 
-• Small DAPs: no more than $10m in transactions over 12 months and $5,000 per customer, with a notice to ASIC
-• Public blockchains that pass a 3-part test are not financial products, and validating them is not a financial service</p>
-        <div class="small muted">Sources: <a class="cite" href="#src-act" title="Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made">[1]</a></div></li>
+      <li class="post"><span class="n">04/10</span><div>
+<p class="txt" id="post-4">Some activity sits outside the licence.
 
-      <li class="post"><div class="head"><span>5/10</span><button class="copy no-print" type="button" data-copy="post-5">Copy</button></div>
-<p id="post-5">Key dates:
+Small DAPs: up to $10m in transactions over 12 months and up to $5,000 per customer, with a notice to ASIC.
 
-• 27 Nov 2026: ASIC's consultation (CP 392) closes
-• 8 Apr 2027: the Act commences
-• 7 Oct 2027: last day for existing platforms to apply and keep operating while ASIC decides
+Public blockchains that pass a 3-part test are not financial products, and validating them is not a financial service.</p>
+        <div class="meta"><span class="meter" data-post="4"><i style="--fill:96%"></i><b>268/280</b></span><button class="copy no-print" type="button" data-copy="post-4">Copy</button><span>Sources<a class="cite" href="#src-act" data-pin="ss 911A(2)(ja), 9E, 766A(3)(b)" title="DAF Act, ss 911A(2)(ja), 9E, 766A(3)(b)">[1]</a></span></div></div></li>
+
+      <li class="post"><span class="n">05/10</span><div>
+<p class="txt" id="post-5">Key dates:
+
+27 Nov 2026: ASIC consultation (CP 392) closes
+8 Apr 2027: the Act commences
+7 Oct 2027: last day for existing platforms to apply and keep operating while ASIC decides
 
 Earlier ASIC material said 9 April. ASIC's latest says 8 April.</p>
-        <div class="small muted">Sources: <a class="cite" href="#src-mr245" title="26-245MR ASIC consults on implementation of new digital asset laws">[8]</a><a class="cite" href="#src-cp392" title="Consultation Paper 392 Digital asset law reform implementation: Proposed standards and guidance">[9]</a><a class="cite" href="#src-roadmap" title="ASIC's roadmap for digital assets law reform implementation">[5]</a></div></li>
+        <div class="meta"><span class="meter" data-post="5"><i style="--fill:87%"></i><b>244/280</b></span><button class="copy no-print" type="button" data-copy="post-5">Copy</button><span>Sources<a class="cite" href="#src-mr245" data-pin="body" title="ASIC 26-245MR, body">[8]</a><a class="cite" href="#src-cp392" data-pin="p 5" title="ASIC CP 392, p 5">[9]</a><a class="cite" href="#src-roadmap" data-pin="second paragraph" title="ASIC roadmap, second paragraph">[5]</a></span></div></div></li>
 
-      <li class="post"><div class="head"><span>6/10</span><button class="copy no-print" type="button" data-copy="post-6">Copy</button></div>
-<p id="post-6">For issuers using Tokeniser, three questions matter most:
+      <li class="post"><span class="n">06/10</span><div>
+<p class="txt" id="post-6">For issuers on Tokeniser, three questions decide most of it:
 
 1. Who controls the tokens or keys?
 2. Is a separate asset held behind each token?
 3. Is the product already regulated, for example as a managed investment scheme?</p>
-        <div class="small muted">Sources: <a class="cite" href="#src-act" title="Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made">[1]</a><a class="cite" href="#src-rg000" title="Draft Regulatory Guide 000 Digital asset platforms and tokenised custody platforms (Attachment 1 to CP 392)">[10]</a></div></li>
+        <div class="meta"><span class="meter" data-post="6"><i style="--fill:80%"></i><b>225/280</b></span><button class="copy no-print" type="button" data-copy="post-6">Copy</button><span>Sources<a class="cite" href="#src-act" data-pin="ss 761GB, 761GC, 761GD" title="DAF Act, ss 761GB, 761GC, 761GD">[1]</a><a class="cite" href="#src-rg000" data-pin="RG 000.35, 000.49" title="ASIC draft RG 000, RG 000.35, 000.49">[10]</a></span></div></div></li>
 
-      <li class="post"><div class="head"><span>7/10</span><button class="copy no-print" type="button" data-copy="post-7">Copy</button></div>
-<p id="post-7">ASIC's draft guide says that where each token is a unit in a unit trust and the blockchain is the main register, it would generally be a managed investment scheme, not a TCP.
+      <li class="post"><span class="n">07/10</span><div>
+<p class="txt" id="post-7">ASIC's draft guide says that where each token is a unit in a unit trust and the blockchain is the main register, it would generally be a managed investment scheme, not a TCP.
 
 Our read: for many native issues, the existing fund rules stay front and centre.</p>
-        <div class="small muted">Sources: <a class="cite" href="#src-rg000" title="Draft Regulatory Guide 000 Digital asset platforms and tokenised custody platforms (Attachment 1 to CP 392)">[10]</a></div></li>
+        <div class="meta"><span class="meter" data-post="7"><i style="--fill:91%"></i><b>256/280</b></span><button class="copy no-print" type="button" data-copy="post-7">Copy</button><span>Sources<a class="cite" href="#src-rg000" data-pin="note to RG 000.35" title="ASIC draft RG 000, note to RG 000.35">[10]</a></span></div></div></li>
 
-      <li class="post"><div class="head"><span>8/10</span><button class="copy no-print" type="button" data-copy="post-8">Copy</button></div>
-<p id="post-8">Redbelly's identity and eligibility tools (Receptor, Eligibility Kit) let issuers set who may hold an asset and check it with credentials.
+      <li class="post"><span class="n">08/10</span><div>
+<p class="txt" id="post-8">Redbelly's identity and eligibility tools (Receptor and the Eligibility Kit) let issuers set who may hold an asset and check it with credentials.
 
-Our read: that fits the Act's call for clear eligibility rules, but the legal duty stays with the licensed operator or issuer.</p>
-        <div class="small muted">Sources: <a class="cite" href="#src-rbreceptor" title="Receptor (ID protocol), Redbelly Network technical documentation">[18]</a><a class="cite" href="#src-rbelig" title="Eligibility Kit overview, Redbelly Network technical documentation">[19]</a><a class="cite" href="#src-act" title="Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made">[1]</a></div></li>
+Our read: that fits the Act's call for clear eligibility rules. The legal duty stays with the licensed operator or issuer.</p>
+        <div class="meta"><span class="meter" data-post="8"><i style="--fill:96%"></i><b>269/280</b></span><button class="copy no-print" type="button" data-copy="post-8">Copy</button><span>Sources<a class="cite" href="#src-rbreceptor" data-pin="overview" title="Redbelly Receptor docs, overview">[18]</a><a class="cite" href="#src-rbelig" data-pin="overview" title="Redbelly Eligibility Kit, overview">[19]</a><a class="cite" href="#src-act" data-pin="s 912BG(1)(a)" title="DAF Act, s 912BG(1)(a)">[1]</a></span></div></div></li>
 
-      <li class="post"><div class="head"><span>9/10</span><button class="copy no-print" type="button" data-copy="post-9">Copy</button></div>
-<p id="post-9">Still unclear:
+      <li class="post"><span class="n">09/10</span><div>
+<p class="txt" id="post-9">Still open:
 
-• whether Redbelly counts as "public digital token infrastructure" under the Act
-• whether trading tokenised assets through liquidity pools needs a market licence
+Does Redbelly count as public digital token infrastructure under the Act?
+Does trading tokenised assets through liquidity pools need a market licence?
 
-ASIC guidance, planned for March 2027, and regulations may settle these.</p>
-        <div class="small muted">Sources: <a class="cite" href="#src-act" title="Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made">[1]</a><a class="cite" href="#src-rg000" title="Draft Regulatory Guide 000 Digital asset platforms and tokenised custody platforms (Attachment 1 to CP 392)">[10]</a><a class="cite" href="#src-cp392" title="Consultation Paper 392 Digital asset law reform implementation: Proposed standards and guidance">[9]</a></div></li>
+ASIC guidance planned for March 2027, and regulations, may settle these.</p>
+        <div class="meta"><span class="meter" data-post="9"><i style="--fill:85%"></i><b>237/280</b></span><button class="copy no-print" type="button" data-copy="post-9">Copy</button><span>Sources<a class="cite" href="#src-act" data-pin="s 9E" title="DAF Act, s 9E">[1]</a><a class="cite" href="#src-rg000" data-pin="RG 000.22, 000.60" title="ASIC draft RG 000, RG 000.22, 000.60">[10]</a><a class="cite" href="#src-cp392" data-pin="p 5" title="ASIC CP 392, p 5">[9]</a></span></div></div></li>
 
-      <li class="post"><div class="head"><span>10/10</span><button class="copy no-print" type="button" data-copy="post-10">Copy</button></div>
-<p id="post-10">Full explainer, PDF and a source for every claim: https://australia-daf-act.vercel.app
+      <li class="post"><span class="n">10/10</span><div>
+<p class="txt" id="post-10">Full guide, PDF and a source for every claim: https://australia-daf-act.vercel.app
 
 General information, not legal or financial advice. Nothing here says any project or issuer is licensed or compliant.</p>
-        <div class="small muted">Sources: see the full source list below.</div></li>
+        <div class="meta"><span class="meter" data-post="10"><i style="--fill:67%"></i><b>188/280</b></span><button class="copy no-print" type="button" data-copy="post-10">Copy</button><span>Sources: full list below</span></div></div></li>
     </ol>
   </section>
 
-  <section id="paragraphs">
-    <h2>Paragraph version</h2>
-    <p class="no-print"><button class="copy" type="button" data-copy="para-text">Copy paragraphs</button></p>
-    <div id="para-text">
-      <p>Australia's <em>Corporations Amendment (Digital Assets Framework) Act 2026</em> became law on 8 April 2026 and, on ASIC's latest timetable, commences on 8 April 2027. It creates two new financial products: digital asset platforms, where a business holds digital tokens for customers, and tokenised custody platforms, where a business holds an asset and issues one redeemable token for it. Operators will generally need an Australian financial services licence and must follow ASIC standards, platform rules and retail disclosure rules. Existing platforms have until 7 October 2027 to apply and can keep operating while ASIC decides.<a class="cite" href="#src-act" title="Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made">[1]</a><a class="cite" href="#src-cp392" title="Consultation Paper 392 Digital asset law reform implementation: Proposed standards and guidance">[9]</a><a class="cite" href="#src-mr245" title="26-245MR ASIC consults on implementation of new digital asset laws">[8]</a></p>
-      <p>Not everything is caught. Small digital asset platforms (no more than $10 million in transactions over 12 months and $5,000 per customer, with a notice to ASIC) do not need a licence, and public blockchains that meet a three-part test are not financial products. ASIC is consulting on its draft standards and guidance until 27 November 2026 and plans to finalise them in March 2027.<a class="cite" href="#src-act" title="Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made">[1]</a><a class="cite" href="#src-mr245" title="26-245MR ASIC consults on implementation of new digital asset laws">[8]</a><a class="cite" href="#src-cp392" title="Consultation Paper 392 Digital asset law reform implementation: Proposed standards and guidance">[9]</a></p>
-      <p>For issuers tokenising through Tokeniser, the key questions are who controls the tokens or keys, whether a separate asset sits behind each token, and whether the product is already regulated, for example as a managed investment scheme. ASIC's draft guide says native tokenised units in a unit trust would generally be a managed investment scheme rather than a tokenised custody platform.<a class="cite" href="#src-rg000" title="Draft Regulatory Guide 000 Digital asset platforms and tokenised custody platforms (Attachment 1 to CP 392)">[10]</a> Our read: Redbelly's identity and eligibility tools line up well with the Act's focus on clear eligibility rules and good records, but the legal duties stay with the licensed operator or issuer. Some questions remain open, including whether Redbelly counts as public digital token infrastructure.<a class="cite" href="#src-rbreceptor" title="Receptor (ID protocol), Redbelly Network technical documentation">[18]</a><a class="cite" href="#src-act" title="Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made">[1]</a></p>
-      <p>This is general information, not legal or financial advice, and it does not say that any project or issuer is licensed or compliant. Full explainer and sources: https://australia-daf-act.vercel.app</p>
+  <section class="block" id="images" aria-labelledby="images-title">
+    <h2 id="images-title"><span class="mono">02</span>Three images for the thread</h2>
+    <p class="muted" style="max-width:70ch">1600 by 900 PNG, sized for an X single-image post. Each carries its own "last verified" date and the not-legal-advice line, so it still makes sense when shared on its own.</p>
+    <div class="grid3 shots">
+      <figure class="card"><img src="downloads/cards/daf-act-dates.png" alt="Key dates: Royal Assent 8 April 2026, ASIC consultation closes 27 November 2026, the Act commences 8 April 2027, last day for existing platforms to apply 7 October 2027." width="1600" height="900" loading="lazy"><figcaption><span>With post 05</span><a class="btn" href="downloads/cards/daf-act-dates.png" download>Download</a></figcaption></figure>
+      <figure class="card"><img src="downloads/cards/daf-act-licensing-line.png" alt="Where the licensing line falls: what needs a licence, what sits outside it, and what depends on the facts." width="1600" height="900" loading="lazy"><figcaption><span>With post 04</span><a class="btn" href="downloads/cards/daf-act-licensing-line.png" download>Download</a></figcaption></figure>
+      <figure class="card"><img src="downloads/cards/daf-act-issuer-questions.png" alt="Three questions for issuers on Tokeniser: who controls the keys, is an asset held behind each token, is the product already regulated." width="1600" height="900" loading="lazy"><figcaption><span>With post 06</span><a class="btn" href="downloads/cards/daf-act-issuer-questions.png" download>Download</a></figcaption></figure>
     </div>
   </section>
 
-  <section id="sources">
-    <h2>Sources for this summary</h2>
-    <p class="small muted">Numbers match the full source list in the explainer.</p>
+  <section class="block" id="paragraphs" aria-labelledby="para-title">
+    <h2 id="para-title"><span class="mono">03</span>Paragraph version</h2>
+    <p class="no-print"><button class="copy" type="button" data-copy="para-text">Copy paragraphs</button></p>
+    <div id="para-text" class="prose">
+      <p>Australia's <em>Corporations Amendment (Digital Assets Framework) Act 2026</em> became law on 8 April 2026 and, on ASIC's latest timetable, commences on 8 April 2027. It creates two new financial products: digital asset platforms, where a business holds digital tokens for customers, and tokenised custody platforms, where a business holds an asset and issues one redeemable token for it. Operators will generally need an Australian financial services licence and must follow ASIC standards, platform rules and retail disclosure rules. Existing platforms have until 7 October 2027 to apply and can keep operating while ASIC decides.<a class="cite" href="#src-act" data-pin="assent; ss 761GC, 761GD" title="DAF Act, assent; ss 761GC, 761GD">[1]</a><a class="cite" href="#src-cp392" data-pin="p 6 key points" title="ASIC CP 392, p 6 key points">[9]</a><a class="cite" href="#src-mr245" data-pin="first paragraph" title="ASIC 26-245MR, first paragraph">[8]</a></p>
+      <p>Not everything is caught. Small digital asset platforms (no more than $10 million in transactions over 12 months and $5,000 per customer, with a notice to ASIC) do not need a licence, and public blockchains that meet a three-part test are not financial products. ASIC is consulting on its draft standards and guidance until 27 November 2026 and plans to finalise them in March 2027.<a class="cite" href="#src-act" data-pin="ss 911A(2)(ja), 9E" title="DAF Act, ss 911A(2)(ja), 9E">[1]</a><a class="cite" href="#src-mr245" data-pin="body" title="ASIC 26-245MR, body">[8]</a><a class="cite" href="#src-cp392" data-pin="p 5" title="ASIC CP 392, p 5">[9]</a></p>
+      <p>For issuers tokenising through Tokeniser, the key questions are who controls the tokens or keys, whether a separate asset sits behind each token, and whether the product is already regulated, for example as a managed investment scheme. ASIC's draft guide says native tokenised units in a unit trust would generally be a managed investment scheme rather than a tokenised custody platform.<a class="cite" href="#src-rg000" data-pin="note to RG 000.35" title="ASIC draft RG 000, note to RG 000.35">[10]</a> Our read: Redbelly's identity and eligibility tools line up well with the Act's focus on clear eligibility rules and good records, but the legal duties stay with the licensed operator or issuer. Some questions remain open, including whether Redbelly counts as public digital token infrastructure.<a class="cite" href="#src-rbreceptor" data-pin="overview" title="Redbelly Receptor docs, overview">[18]</a><a class="cite" href="#src-act" data-pin="ss 912BG, 9E" title="DAF Act, ss 912BG, 9E">[1]</a></p>
+      <p>This is general information, not legal or financial advice, and it does not say that any project or issuer is licensed or compliant. Full guide and sources: https://australia-daf-act.vercel.app</p>
+    </div>
+  </section>
+
+  <section class="block" id="sources" aria-labelledby="src-title">
+    <h2 id="src-title"><span class="mono">04</span>Sources for this kit</h2>
+    <p class="muted">Numbers match the full source list in the guide and on the Evidence page.</p>
     <!-- SOURCES:START -->
 <ol class="sources">
 <li id="src-act"><span class="n">[1]</span><div>
   <div class="t">Corporations Amendment (Digital Assets Framework) Act 2026 (No. 38, 2026), as made</div>
-  <div class="m"><span class="kind kind-primary">Primary law</span>Federal Register of Legislation · Assented to 8 April 2026</div>
+  <div class="m"><span class="kind law">Primary law</span>Federal Register of Legislation · Assented to 8 April 2026</div>
   <div class="u"><a href="https://www.legislation.gov.au/C2026A00038/asmade/text">https://www.legislation.gov.au/C2026A00038/asmade/text</a> · PDF: <a href="https://www.legislation.gov.au/C2026A00038/asmade/2026-04-08/text/original/pdf">https://www.legislation.gov.au/C2026A00038/asmade/2026-04-08/text/original/pdf</a></div>
   <div class="s"><strong>Used for:</strong> Assent date; commencement rule (s 2) and the Register's commencement column; definitions of digital token, DAP, TCP, wrapped token and public digital token infrastructure (ss 761GB, 761GC, 761GD, 765E, 9E); constitutionally-covered corporation rule (s 766M); licensee obligations (ss 912BB to 912BH); DAP/TCP Guide, voting policy and communications (ss 1020AN to 1020AR); design and distribution trigger (s 994B); fundraising rules (ss 741A, 741B); exemptions (ss 9 (me), (mf), 765A(1), 766A(3), 768A(2)(ha), 911A(2)(ja), (jb), 911A(4B)); managed investment scheme carve-outs (s 9 (mc), (md)); ministerial powers (ss 767B, 767C, 768B, 768C, 912BH); transitional rules (ss 1730 to 1733).</div>
 </div></li>
@@ -215,17 +230,19 @@ General information, not legal or financial advice. Nothing here says any projec
   </section>
 
   </article>
+</div>
 </main>
 
-<footer class="site-footer">
-  <div class="inner">
+<footer class="foot">
+  <div class="wrap">
     <div>
-      <img class="logo-light" src="assets/brand/redbelly-horizontal-colour.svg" alt="Redbelly" width="86" height="24">
-      <img class="logo-dark" src="assets/brand/redbelly-horizontal-negative.svg" alt="Redbelly" width="86" height="24">
+      <img class="on-dark" src="assets/brand/dao-logo-on-dark-256.png" alt="Redbelly DAO" width="56" height="40">
+      <img class="on-light" src="assets/brand/dao-logo-on-light-256.png" alt="Redbelly DAO" width="56" height="40">
       <p><strong>General information only, not legal advice.</strong> Independent community explainer prepared for the Redbelly DAO. Not an official publication of Redbelly Network, Tokeniser, ASIC or the Australian Government.</p>
+      <p class="mono" style="font-size:12px">Last verified 27 Oct 2026</p>
     </div>
-    <div>
-      <p><a href="./">Explainer</a> · <a href="summary">Community summary</a> · <a href="sources">Sources &amp; checks</a></p>
+    <div class="links">
+      <p><a href="./">Guide</a> · <a href="summary">Share kit</a> · <a href="sources">Evidence</a></p>
     </div>
   </div>
 </footer>

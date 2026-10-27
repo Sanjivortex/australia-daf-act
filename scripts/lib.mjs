@@ -73,6 +73,6 @@ export function xLength(text) {
 }
 
 export function threadPosts(summaryHtml) {
-  return [...summaryHtml.matchAll(/<p id="post-(\d+)">([\s\S]*?)<\/p>/g)]
+  return [...summaryHtml.matchAll(/<p class="txt" id="post-(\d+)">([\s\S]*?)<\/p>/g)]
     .map((m) => ({ n: Number(m[1]), text: textOf(m[2]) }));
 }
