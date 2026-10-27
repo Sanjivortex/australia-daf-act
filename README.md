@@ -45,7 +45,7 @@ Built on the **Redbelly DAO Task Board brand kit** ("Kinetic Consensus"): https:
 - Colour, type, radius and spacing come from the kit's own token file, copied unchanged to `public/assets/css/dao-tokens.css`. The site styles only compose those tokens.
 - Brand red `#EF5350` is the single accent; surfaces are the kit's slate neutrals; hero bands stay dark steel in both themes; dark is the default with the kit's light theme on `data-theme="light"`.
 - Be Vietnam Pro for all text; JetBrains Mono only for dates, section numbers, source numbers and other machine values.
-- The DAO lockup (`dao-logo-on-dark.png`, `dao-logo-on-light.png`) and icon, used bare with no plate. No Redbelly Network corporate logo.
+- The DAO lockup (`dao-logo-on-dark.png`, `dao-logo-on-light.png`), used bare with no plate. The favicon is the DAO mark on a transparent background (`favicon.svg`), switching between the dark-ink and light-ink marks to suit the browser theme. No Redbelly Network corporate logo.
 - 4px and 8px radii, no pill buttons, status shown as a dot plus a monospace label, tonal depth without heavy shadows.
 - Voice rules: no em or en dashes, no emoji, no filler verbs. Images are 1600 x 900 and carry a dated "Last verified" line.
 

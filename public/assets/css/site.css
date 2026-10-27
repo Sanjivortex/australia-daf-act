@@ -422,7 +422,10 @@ a.cite:hover { text-decoration: underline; }
 [data-theme="light"] .foot .on-light { display: block; }
 [data-theme="light"] .foot .on-dark { display: none; }
 .foot p { margin: 0 0 .5em; }
-@media screen and (max-width: 760px) { .foot .wrap { grid-template-columns: 1fr; } }
+.foot .links { display: grid; grid-template-columns: max-content max-content; column-gap: 6px; row-gap: 8px; align-content: start; }
+.foot .links .row { white-space: nowrap; }
+@media screen and (max-width: 480px) { .foot .links { grid-template-columns: 1fr; } .foot .links .lbl:empty { display: none; } .foot .links .row { white-space: normal; } }
+@media screen and (max-width: 1000px) { .foot .wrap { grid-template-columns: 1fr; } }
 
 /* Print edition (PDF): light theme values, cover page, notes kept in the margin */
 .print-only { display: none; }
